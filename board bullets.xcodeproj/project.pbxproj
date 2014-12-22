@@ -29,6 +29,9 @@
 		46C149621A48018A005879F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C149611A48018A005879F1 /* SystemConfiguration.framework */; };
 		46C149641A480190005879F1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C149631A480190005879F1 /* libz.dylib */; };
 		46C149661A480196005879F1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C149651A480196005879F1 /* libsqlite3.dylib */; };
+		46C1496D1A4804C7005879F1 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C1496C1A4804C7005879F1 /* LoadingViewController.swift */; };
+		46C1496F1A4804D2005879F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C1496E1A4804D2005879F1 /* LoginViewController.swift */; };
+		46C149711A4804E4005879F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C149701A4804E4005879F1 /* HomeViewController.swift */; };
 		46D7E9E21A0D5B17008A9481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7E9E11A0D5B17008A9481 /* AppDelegate.swift */; };
 		46D7E9E41A0D5B17008A9481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D7E9E31A0D5B17008A9481 /* ViewController.swift */; };
 		46D7E9E71A0D5B17008A9481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D7E9E51A0D5B17008A9481 /* Main.storyboard */; };
@@ -71,6 +74,9 @@
 		46C149631A480190005879F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		46C149651A480196005879F1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		46C149681A48028C005879F1 /* board bullets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "board bullets-Bridging-Header.h"; sourceTree = "<group>"; };
+		46C1496C1A4804C7005879F1 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		46C1496E1A4804D2005879F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46C149701A4804E4005879F1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		46D7E9DC1A0D5B17008A9481 /* board bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "board bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D7E9E01A0D5B17008A9481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D7E9E11A0D5B17008A9481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 			children = (
 				46D7E9E11A0D5B17008A9481 /* AppDelegate.swift */,
 				46D7E9E31A0D5B17008A9481 /* ViewController.swift */,
+				46C1496C1A4804C7005879F1 /* LoadingViewController.swift */,
+				46C1496E1A4804D2005879F1 /* LoginViewController.swift */,
+				46C149701A4804E4005879F1 /* HomeViewController.swift */,
 				46D7E9E51A0D5B17008A9481 /* Main.storyboard */,
 				46D7E9E81A0D5B17008A9481 /* Images.xcassets */,
 				46D7E9EA1A0D5B17008A9481 /* LaunchScreen.xib */,
@@ -328,8 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C149711A4804E4005879F1 /* HomeViewController.swift in Sources */,
+				46C1496F1A4804D2005879F1 /* LoginViewController.swift in Sources */,
 				46D7E9E41A0D5B17008A9481 /* ViewController.swift in Sources */,
 				46D7E9E21A0D5B17008A9481 /* AppDelegate.swift in Sources */,
+				46C1496D1A4804C7005879F1 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
