@@ -14,11 +14,11 @@
 		<string>https://github.com/AndrewSB/board-bullets.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Board-Bullets/Board-Bullets.xcodeproj</string>
+	<string>Board-Bullets.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C2167FB1D1619F800828D6D01E7EA82F04571674</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/AndrewSB/board-bullets.git</string>
