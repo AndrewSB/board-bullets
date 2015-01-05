@@ -30,6 +30,8 @@
 		46FCEB431A5A74BD009E5171 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FCEB3E1A5A74BD009E5171 /* ParseFacebookUtils.framework */; };
 		46FCEB441A5A74BD009E5171 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FCEB3F1A5A74BD009E5171 /* ParseUI.framework */; };
 		46FCEB4B1A5A765F009E5171 /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46FCEB4A1A5A765F009E5171 /* API-Keys.plist */; };
+		46FCEB4E1A5A814F009E5171 /* PopNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB4C1A5A814F009E5171 /* PopNoAnimationSegue.swift */; };
+		46FCEB4F1A5A814F009E5171 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB4D1A5A814F009E5171 /* PushNoAnimationSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		46FCEB3F1A5A74BD009E5171 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Board-Bullets-Bridging-Header.h"; sourceTree = "<group>"; };
 		46FCEB4A1A5A765F009E5171 /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
+		46FCEB4C1A5A814F009E5171 /* PopNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNoAnimationSegue.swift; sourceTree = "<group>"; };
+		46FCEB4D1A5A814F009E5171 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 				46FCEB081A5A7116009E5171 /* Main.storyboard */,
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
+				46FCEB501A5A8152009E5171 /* Transitions */,
 				46FCEB021A5A7116009E5171 /* Supporting Files */,
 			);
 			path = "Board-Bullets";
@@ -196,6 +201,15 @@
 				46FCEB241A5A744A009E5171 /* libz.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46FCEB501A5A8152009E5171 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				46FCEB4C1A5A814F009E5171 /* PopNoAnimationSegue.swift */,
+				46FCEB4D1A5A814F009E5171 /* PushNoAnimationSegue.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +315,8 @@
 			files = (
 				46FCEB071A5A7116009E5171 /* ViewController.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,
+				46FCEB4E1A5A814F009E5171 /* PopNoAnimationSegue.swift in Sources */,
+				46FCEB4F1A5A814F009E5171 /* PushNoAnimationSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

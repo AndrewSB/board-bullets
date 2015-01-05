@@ -8,11 +8,14 @@
         <!--Navigation Controller-->
         <scene sceneID="sd3-sH-8al">
             <objects>
-                <navigationController id="rip-tY-ooa" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="rip-tY-ooa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tHM-k9-ewq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FBK-r2-bS6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="UmC-8x-DZf"/>
                     </connections>
@@ -38,6 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="399" y="337"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ojd-Wv-m2y">
