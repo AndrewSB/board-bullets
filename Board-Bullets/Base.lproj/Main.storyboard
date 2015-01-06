@@ -290,22 +290,22 @@
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-ZI-rWQ" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-ZI-rWQ" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="86" y="289" width="428" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-83-S9N" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVF-83-S9N" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="86" y="234" width="428" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="firstname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-8n-2g9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="firstname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-8n-2g9">
                                 <rect key="frame" x="86" y="165" width="200" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-Ef-jaM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lastname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-Ef-jaM">
                                 <rect key="frame" x="314" y="165" width="200" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -350,11 +350,17 @@
                             <constraint firstAttribute="trailingMargin" secondItem="l7x-ZI-rWQ" secondAttribute="trailing" constant="70" id="7Sq-jr-CM0"/>
                             <constraint firstItem="l7x-ZI-rWQ" firstAttribute="leading" secondItem="w0B-XL-eSa" secondAttribute="leadingMargin" constant="70" id="CgQ-AB-4bn"/>
                             <constraint firstItem="zVF-83-S9N" firstAttribute="leading" secondItem="w0B-XL-eSa" secondAttribute="leadingMargin" constant="70" id="D3g-yq-nG6"/>
+                            <constraint firstItem="l7x-ZI-rWQ" firstAttribute="top" secondItem="zVF-83-S9N" secondAttribute="bottom" constant="25" id="Dd2-ow-7qo"/>
+                            <constraint firstItem="zVF-83-S9N" firstAttribute="top" secondItem="kY4-Ef-jaM" secondAttribute="bottom" constant="39" id="E7K-FX-c4h"/>
                             <constraint firstAttribute="trailing" secondItem="x3C-wc-UEW" secondAttribute="trailing" id="FM1-bO-NHt"/>
+                            <constraint firstItem="kY4-Ef-jaM" firstAttribute="top" secondItem="mXQ-C4-YmY" secondAttribute="bottom" constant="17" id="H0M-Hu-3pG"/>
+                            <constraint firstItem="c5w-8n-2g9" firstAttribute="top" secondItem="mXQ-C4-YmY" secondAttribute="bottom" constant="17" id="IkX-bp-qPa"/>
                             <constraint firstItem="8ve-4G-X21" firstAttribute="top" secondItem="8sA-Uz-CLU" secondAttribute="bottom" constant="10" id="JLF-1T-l68"/>
                             <constraint firstItem="zVF-83-S9N" firstAttribute="top" secondItem="mXQ-C4-YmY" secondAttribute="bottom" constant="25" id="Ktt-Am-1Ok"/>
+                            <constraint firstItem="kY4-Ef-jaM" firstAttribute="leading" secondItem="c5w-8n-2g9" secondAttribute="trailing" constant="28" id="LHc-Id-Z3x"/>
                             <constraint firstItem="XiE-xc-ftd" firstAttribute="leading" secondItem="pow-1W-7jA" secondAttribute="trailing" constant="-2" id="RcA-lV-gbg"/>
                             <constraint firstItem="pIt-UK-pf8" firstAttribute="leading" secondItem="XiE-xc-ftd" secondAttribute="trailing" constant="-2" id="b5M-2V-CwG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zVF-83-S9N" secondAttribute="trailing" constant="70" id="bEI-SM-kEa"/>
                             <constraint firstItem="x3C-wc-UEW" firstAttribute="width" secondItem="MY5-hQ-TOl" secondAttribute="width" id="emg-tt-i9e"/>
                             <constraint firstItem="XiE-xc-ftd" firstAttribute="top" secondItem="8sA-Uz-CLU" secondAttribute="bottom" constant="10" id="fT9-eM-Pwz"/>
                             <constraint firstItem="pIt-UK-pf8" firstAttribute="top" secondItem="8sA-Uz-CLU" secondAttribute="bottom" constant="10" id="hh8-DH-h5I"/>
@@ -363,6 +369,7 @@
                             <constraint firstItem="pIt-UK-pf8" firstAttribute="trailing" secondItem="x3C-wc-UEW" secondAttribute="leading" id="pxD-xB-r9v"/>
                             <constraint firstItem="x3C-wc-UEW" firstAttribute="top" secondItem="8sA-Uz-CLU" secondAttribute="bottom" constant="8" id="rqV-in-Fzi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zVF-83-S9N" secondAttribute="trailing" constant="70" id="te4-b7-kYR"/>
+                            <constraint firstItem="c5w-8n-2g9" firstAttribute="leading" secondItem="w0B-XL-eSa" secondAttribute="leadingMargin" constant="70" id="v7R-hW-Ifc"/>
                             <constraint firstItem="mXQ-C4-YmY" firstAttribute="top" secondItem="XiE-xc-ftd" secondAttribute="bottom" constant="30" id="w9K-QI-eTv"/>
                             <constraint firstItem="MY5-hQ-TOl" firstAttribute="leading" secondItem="w0B-XL-eSa" secondAttribute="leading" id="yFW-Dt-BwK"/>
                             <constraint firstAttribute="centerX" secondItem="mXQ-C4-YmY" secondAttribute="centerX" constant="-15.5" id="yGv-3R-Qmh"/>
