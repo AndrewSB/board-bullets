@@ -26,7 +26,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
+        let loggedIn = PFUser.currentUser() != nil
+        let storyboard = loggedIn ? "Main" : "Login"
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let vc = UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+        
         return true
+    }
+    
+    func switchToMain() {
+        window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
+    }
+    
+    func logout() {
+        window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
     }
 
 }

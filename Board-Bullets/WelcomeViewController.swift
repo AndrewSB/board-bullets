@@ -9,6 +9,9 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
+    }
 
     @IBAction func logInHit(sender: AnyObject) {
     }
