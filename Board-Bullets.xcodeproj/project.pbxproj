@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
+		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
+		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
 		46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB041A5A7116009E5171 /* AppDelegate.swift */; };
 		46FCEB0A1A5A7116009E5171 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FCEB081A5A7116009E5171 /* Login.storyboard */; };
 		46FCEB0C1A5A7116009E5171 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FCEB0B1A5A7116009E5171 /* Images.xcassets */; };
@@ -35,7 +37,6 @@
 		46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */; };
 		46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB571A5A95D2009E5171 /* LoginViewController.swift */; };
 		46FCEB5A1A5A95DF009E5171 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB591A5A95DF009E5171 /* SignupViewController.swift */; };
-		46FCEB5E1A5A9829009E5171 /* CircularTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB5D1A5A9829009E5171 /* CircularTextField.swift */; };
 		46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
+		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
 		46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board-Bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FCEB031A5A7116009E5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FCEB041A5A7116009E5171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +86,6 @@
 		46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46FCEB591A5A95DF009E5171 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		46FCEB5D1A5A9829009E5171 /* CircularTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTextField.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,9 +99,11 @@
 				46FCEB301A5A7476009E5171 /* CFNetwork.framework in Frameworks */,
 				46FCEB401A5A74BD009E5171 /* Bolts.framework in Frameworks */,
 				46FCEB311A5A7476009E5171 /* CoreGraphics.framework in Frameworks */,
+				469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */,
 				46FCEB421A5A74BD009E5171 /* ParseCrashReporting.framework in Frameworks */,
 				46FCEB441A5A74BD009E5171 /* ParseUI.framework in Frameworks */,
 				46FCEB321A5A7476009E5171 /* CoreLocation.framework in Frameworks */,
+				469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */,
 				46FCEB411A5A74BD009E5171 /* Parse.framework in Frameworks */,
 				46FCEB431A5A74BD009E5171 /* ParseFacebookUtils.framework in Frameworks */,
 				46FCEB331A5A7476009E5171 /* MobileCoreServices.framework in Frameworks */,
@@ -121,6 +125,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		469C65D61A5FBF2100758740 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				46FCEB381A5A7489009E5171 /* libsqlite3.dylib */,
+				46FCEB261A5A7476009E5171 /* AudioToolbox.framework */,
+				46FCEB271A5A7476009E5171 /* CFNetwork.framework */,
+				46FCEB281A5A7476009E5171 /* CoreGraphics.framework */,
+				46FCEB291A5A7476009E5171 /* CoreLocation.framework */,
+				46FCEB2A1A5A7476009E5171 /* MobileCoreServices.framework */,
+				46FCEB2B1A5A7476009E5171 /* QuartzCore.framework */,
+				46FCEB2C1A5A7476009E5171 /* Security.framework */,
+				46FCEB2D1A5A7476009E5171 /* StoreKit.framework */,
+				46FCEB2E1A5A7476009E5171 /* SystemConfiguration.framework */,
+				46FCEB241A5A744A009E5171 /* libz.dylib */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		469C65D71A5FBF2A00758740 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				46FCEB3A1A5A74BD009E5171 /* parse-library-1.6.1 */,
+				469C65D61A5FBF2100758740 /* Dependencies */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
 		46FCEAF61A5A7116009E5171 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +177,6 @@
 				46FCEB041A5A7116009E5171 /* AppDelegate.swift */,
 				46FCEB081A5A7116009E5171 /* Login.storyboard */,
 				469C65CF1A5FB70200758740 /* Main.storyboard */,
-				46FCEB5D1A5A9829009E5171 /* CircularTextField.swift */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
@@ -200,18 +230,9 @@
 		46FCEB451A5A74CA009E5171 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46FCEB3A1A5A74BD009E5171 /* parse-library-1.6.1 */,
-				46FCEB381A5A7489009E5171 /* libsqlite3.dylib */,
-				46FCEB261A5A7476009E5171 /* AudioToolbox.framework */,
-				46FCEB271A5A7476009E5171 /* CFNetwork.framework */,
-				46FCEB281A5A7476009E5171 /* CoreGraphics.framework */,
-				46FCEB291A5A7476009E5171 /* CoreLocation.framework */,
-				46FCEB2A1A5A7476009E5171 /* MobileCoreServices.framework */,
-				46FCEB2B1A5A7476009E5171 /* QuartzCore.framework */,
-				46FCEB2C1A5A7476009E5171 /* Security.framework */,
-				46FCEB2D1A5A7476009E5171 /* StoreKit.framework */,
-				46FCEB2E1A5A7476009E5171 /* SystemConfiguration.framework */,
-				46FCEB241A5A744A009E5171 /* libz.dylib */,
+				469C65D21A5FBEBA00758740 /* Crashlytics.framework */,
+				469C65D31A5FBEBA00758740 /* Fabric.framework */,
+				469C65D71A5FBF2A00758740 /* Parse */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,6 +274,7 @@
 				46FCEAFB1A5A7116009E5171 /* Sources */,
 				46FCEAFC1A5A7116009E5171 /* Frameworks */,
 				46FCEAFD1A5A7116009E5171 /* Resources */,
+				469C65D11A5FBE9100758740 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -341,12 +363,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		469C65D11A5FBE9100758740 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cf31bd871fb35d3e3e94b3732cd654bbde1f5b0c 33804315ff66b7966281403539d1d005fcf98139ee03282942a67832a10b0f8e";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46FCEAFB1A5A7116009E5171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46FCEB5E1A5A9829009E5171 /* CircularTextField.swift in Sources */,
 				46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
 				46FCEB5A1A5A95DF009E5171 /* SignupViewController.swift in Sources */,
@@ -480,6 +517,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
+					"$(PROJECT_DIR)/Board-Bullets",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -498,6 +536,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
+					"$(PROJECT_DIR)/Board-Bullets",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

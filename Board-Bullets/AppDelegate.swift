@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,9 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
+        Fabric.with([Crashlytics()])
+        
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Main" : "Login"
-        
+    
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let vc = UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
         window?.rootViewController = vc
