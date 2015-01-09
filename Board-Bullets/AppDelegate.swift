@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
     }
     
-    func logout() {
+    func switchToLogin() {
         window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
     }
 

@@ -56,13 +56,13 @@
 		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
 		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
 		469C65D81A60479400758740 /* nisarg_questions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nisarg_questions.csv; sourceTree = "<group>"; };
-		46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board-Bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FCEAFF1A5A7116009E5171 /* Board Bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board Bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FCEB031A5A7116009E5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FCEB041A5A7116009E5171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FCEB091A5A7116009E5171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		46FCEB0B1A5A7116009E5171 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46FCEB0E1A5A7116009E5171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		46FCEB141A5A7116009E5171 /* Board-BulletsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Board-BulletsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FCEB141A5A7116009E5171 /* Board BulletsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Board BulletsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FCEB191A5A7116009E5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FCEB1A1A5A7116009E5171 /* Board_BulletsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_BulletsTests.swift; sourceTree = "<group>"; };
 		46FCEB241A5A744A009E5171 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -175,8 +175,8 @@
 		46FCEB001A5A7116009E5171 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */,
-				46FCEB141A5A7116009E5171 /* Board-BulletsTests.xctest */,
+				46FCEAFF1A5A7116009E5171 /* Board Bullets.app */,
+				46FCEB141A5A7116009E5171 /* Board BulletsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46FCEAFE1A5A7116009E5171 /* Board-Bullets */ = {
+		46FCEAFE1A5A7116009E5171 /* Board Bullets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */;
+			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board Bullets" */;
 			buildPhases = (
 				46FCEAFB1A5A7116009E5171 /* Sources */,
 				46FCEAFC1A5A7116009E5171 /* Frameworks */,
@@ -291,14 +291,14 @@
 			);
 			dependencies = (
 			);
-			name = "Board-Bullets";
+			name = "Board Bullets";
 			productName = "Board-Bullets";
-			productReference = 46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */;
+			productReference = 46FCEAFF1A5A7116009E5171 /* Board Bullets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		46FCEB131A5A7116009E5171 /* Board-BulletsTests */ = {
+		46FCEB131A5A7116009E5171 /* Board BulletsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46FCEB211A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-BulletsTests" */;
+			buildConfigurationList = 46FCEB211A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board BulletsTests" */;
 			buildPhases = (
 				46FCEB101A5A7116009E5171 /* Sources */,
 				46FCEB111A5A7116009E5171 /* Frameworks */,
@@ -309,9 +309,9 @@
 			dependencies = (
 				46FCEB161A5A7116009E5171 /* PBXTargetDependency */,
 			);
-			name = "Board-BulletsTests";
+			name = "Board BulletsTests";
 			productName = "Board-BulletsTests";
-			productReference = 46FCEB141A5A7116009E5171 /* Board-BulletsTests.xctest */;
+			productReference = 46FCEB141A5A7116009E5171 /* Board BulletsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +333,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board-Bullets" */;
+			buildConfigurationList = 46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board Bullets" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -346,8 +346,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46FCEAFE1A5A7116009E5171 /* Board-Bullets */,
-				46FCEB131A5A7116009E5171 /* Board-BulletsTests */,
+				46FCEAFE1A5A7116009E5171 /* Board Bullets */,
+				46FCEB131A5A7116009E5171 /* Board BulletsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,7 +419,7 @@
 /* Begin PBXTargetDependency section */
 		46FCEB161A5A7116009E5171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 46FCEAFE1A5A7116009E5171 /* Board-Bullets */;
+			target = 46FCEAFE1A5A7116009E5171 /* Board Bullets */;
 			targetProxy = 46FCEB151A5A7116009E5171 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -526,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
@@ -534,7 +535,7 @@
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Board Bullets";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Board-Bullets-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -545,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
@@ -553,7 +555,7 @@
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Board Bullets";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Board-Bullets-Bridging-Header.h";
 			};
 			name = Release;
@@ -572,7 +574,7 @@
 				);
 				INFOPLIST_FILE = "Board-BulletsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Board BulletsTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Board-Bullets.app/Board-Bullets";
 			};
 			name = Debug;
@@ -587,7 +589,7 @@
 				);
 				INFOPLIST_FILE = "Board-BulletsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Board BulletsTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Board-Bullets.app/Board-Bullets";
 			};
 			name = Release;
@@ -595,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board-Bullets" */ = {
+		46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board Bullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FCEB1C1A5A7116009E5171 /* Debug */,
@@ -604,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */ = {
+		46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board Bullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FCEB1F1A5A7116009E5171 /* Debug */,
@@ -613,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46FCEB211A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-BulletsTests" */ = {
+		46FCEB211A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board BulletsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FCEB221A5A7116009E5171 /* Debug */,

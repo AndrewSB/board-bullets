@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-               BuildableName = "Board-Bullets.app"
-               BlueprintName = "Board-Bullets"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               BuildableName = "Board Bullets.app"
+               BlueprintName = "Board Bullets"
+               ReferencedContainer = "container:Board Bullets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46FCEB131A5A7116009E5171"
-               BuildableName = "Board-BulletsTests.xctest"
-               BlueprintName = "Board-BulletsTests"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               BuildableName = "Board BulletsTests.xctest"
+               BlueprintName = "Board BulletsTests"
+               ReferencedContainer = "container:Board Bullets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46FCEB131A5A7116009E5171"
-               BuildableName = "Board-BulletsTests.xctest"
-               BlueprintName = "Board-BulletsTests"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               BuildableName = "Board BulletsTests.xctest"
+               BlueprintName = "Board BulletsTests"
+               ReferencedContainer = "container:Board Bullets.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "Board Bullets.app"
+            BlueprintName = "Board Bullets"
+            ReferencedContainer = "container:Board Bullets.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "Board Bullets.app"
+            BlueprintName = "Board Bullets"
+            ReferencedContainer = "container:Board Bullets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "Board Bullets.app"
+            BlueprintName = "Board Bullets"
+            ReferencedContainer = "container:Board Bullets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
