@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        addParse(launchOptions)
+        Fabric.with([Crashlytics()])
+        
+        let loggedIn = PFUser.currentUser() != nil
+        let storyboard = loggedIn ? "Main" : "Login"
+    
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+    
+    func addParse(lo: [NSObject: AnyObject]?) {
         Parse.enableLocalDatastore()
         
         if let keys = NSBundle.mainBundle().pathForResource("API-Keys", ofType: "plist") {
@@ -27,19 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("You don't have access to the API Keys")
         }
         
-        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
-        
-        Fabric.with([Crashlytics()])
-        
-        let loggedIn = PFUser.currentUser() != nil
-        let storyboard = loggedIn ? "Main" : "Login"
-    
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let vc = UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
-        window?.rootViewController = vc
-        window?.makeKeyAndVisible()
-        
-        return true
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
     }
     
     func switchToMain() {
