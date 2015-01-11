@@ -246,12 +246,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-Hd-QyM" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-Hd-QyM" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="38" y="230" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSZ-fL-MGG" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSZ-fL-MGG" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="38" y="285" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="2016" y="-429"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="Juj-Xw-Wtf">
             <objects>
-                <viewController id="ztV-e4-0Ar" customClass="LoginViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ztV-e4-0Ar" customClass="SignupViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gy3-gx-vXe"/>
                         <viewControllerLayoutGuide type="bottom" id="fPu-Ec-PIh"/>
@@ -360,14 +360,8 @@
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7J-AK-WJB">
-                                <rect key="frame" x="251" y="167" width="98" height="38"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yl2-MK-uow" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="38" y="230" width="524" height="30"/>
+                                <rect key="frame" x="38" y="273.5" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -382,52 +376,75 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8b-7G-ouX" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="38" y="340" width="524" height="30"/>
+                                <rect key="frame" x="38" y="383.5" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medical School" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xyn-cR-RDK" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="38" y="395" width="524" height="30"/>
+                                <rect key="frame" x="38" y="438.5" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnH-ug-F42" customClass="CircularTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="38" y="285" width="524" height="30"/>
+                                <rect key="frame" x="38" y="328.5" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7J-AK-WJB">
+                                <rect key="frame" x="251" y="210.5" width="98" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEZ-c1-gqc">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="GSl-Ne-vVc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Y0-zx9">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="fhL-gv-6iZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cnH-ug-F42" firstAttribute="top" secondItem="Yl2-MK-uow" secondAttribute="bottom" constant="25" id="3q0-6R-vNZ"/>
                             <constraint firstItem="XEQ-M7-tzA" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leading" id="4vn-g5-KH1"/>
+                            <constraint firstItem="H7J-AK-WJB" firstAttribute="top" secondItem="QEZ-c1-gqc" secondAttribute="bottom" id="7zc-LM-CrF"/>
                             <constraint firstItem="VVO-TY-Y5c" firstAttribute="leading" secondItem="JNs-Y0-jhG" secondAttribute="trailing" id="9eQ-Zk-ZWB"/>
-                            <constraint firstItem="H7J-AK-WJB" firstAttribute="top" secondItem="Cuw-hD-pzN" secondAttribute="bottom" constant="88" id="9uf-Vb-a0L"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="leading" secondItem="y0X-ul-GMg" secondAttribute="trailing" constant="-2" id="DR6-V6-5sc"/>
                             <constraint firstItem="Xyn-cR-RDK" firstAttribute="top" secondItem="f8b-7G-ouX" secondAttribute="bottom" constant="25" id="DYT-rH-ZrY"/>
+                            <constraint firstItem="9bw-Y0-zx9" firstAttribute="height" secondItem="QEZ-c1-gqc" secondAttribute="height" id="GFV-Oa-xkx"/>
                             <constraint firstItem="cnH-ug-F42" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="GmM-WJ-PSE"/>
                             <constraint firstItem="f8b-7G-ouX" firstAttribute="top" secondItem="cnH-ug-F42" secondAttribute="bottom" constant="25" id="Hjp-MU-Hop"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yl2-MK-uow" secondAttribute="trailing" constant="22" id="IBp-sj-Tbk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xyn-cR-RDK" secondAttribute="trailing" constant="22" id="Lin-Du-j2C"/>
+                            <constraint firstItem="QEZ-c1-gqc" firstAttribute="top" secondItem="Cuw-hD-pzN" secondAttribute="bottom" id="OT5-3O-ydN"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="10" id="Ouy-jW-4cJ"/>
                             <constraint firstItem="f8b-7G-ouX" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="Pmf-4b-Jue"/>
                             <constraint firstItem="Yl2-MK-uow" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="RZ8-n9-C0j"/>
                             <constraint firstItem="JNs-Y0-jhG" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="8" id="ThS-Qy-6dc"/>
+                            <constraint firstAttribute="centerX" secondItem="9bw-Y0-zx9" secondAttribute="centerX" id="WSk-Gf-JTy"/>
                             <constraint firstAttribute="trailing" secondItem="PKz-83-Z5B" secondAttribute="trailing" id="XC8-3W-D29"/>
                             <constraint firstItem="y0X-ul-GMg" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="10" id="b1j-zd-wbI"/>
                             <constraint firstItem="Cuw-hD-pzN" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="10" id="cEr-WT-QK8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cnH-ug-F42" secondAttribute="trailing" constant="22" id="cf3-hR-TiY"/>
+                            <constraint firstAttribute="centerX" secondItem="QEZ-c1-gqc" secondAttribute="centerX" id="cgq-qz-Ine"/>
                             <constraint firstAttribute="centerX" secondItem="H7J-AK-WJB" secondAttribute="centerX" constant="-0.5" id="gU6-ZH-b0c"/>
                             <constraint firstItem="JNs-Y0-jhG" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leading" id="iLG-VC-oTC"/>
                             <constraint firstItem="VVO-TY-Y5c" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="10" id="jUh-hx-61U"/>
                             <constraint firstItem="PKz-83-Z5B" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="8" id="rBV-cm-d1L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f8b-7G-ouX" secondAttribute="trailing" constant="22" id="rs2-YR-4uJ"/>
-                            <constraint firstItem="fPu-Ec-PIh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xyn-cR-RDK" secondAttribute="bottom" constant="100" id="rs5-sT-Pdq"/>
                             <constraint firstItem="y0X-ul-GMg" firstAttribute="leading" secondItem="Cuw-hD-pzN" secondAttribute="trailing" constant="-2" id="s6Z-Tf-xbb"/>
                             <constraint firstItem="Xyn-cR-RDK" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="tBI-1N-KAX"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="trailing" secondItem="PKz-83-Z5B" secondAttribute="leading" id="uCQ-e2-y84"/>
+                            <constraint firstItem="9bw-Y0-zx9" firstAttribute="top" secondItem="Xyn-cR-RDK" secondAttribute="bottom" id="uGG-aW-nWw"/>
                             <constraint firstItem="XEQ-M7-tzA" firstAttribute="top" secondItem="TfP-ry-7oW" secondAttribute="top" constant="10" id="uLX-BD-JWA"/>
                             <constraint firstItem="Cuw-hD-pzN" firstAttribute="leading" secondItem="VVO-TY-Y5c" secondAttribute="trailing" constant="-2" id="vjB-Pt-oqJ"/>
+                            <constraint firstItem="fPu-Ec-PIh" firstAttribute="top" secondItem="9bw-Y0-zx9" secondAttribute="bottom" id="x3A-sx-j4d"/>
                             <constraint firstItem="PKz-83-Z5B" firstAttribute="width" secondItem="JNs-Y0-jhG" secondAttribute="width" id="yXX-Zy-KVx"/>
                             <constraint firstItem="Yl2-MK-uow" firstAttribute="top" secondItem="H7J-AK-WJB" secondAttribute="bottom" constant="25" id="zmK-e9-LuD"/>
                         </constraints>
