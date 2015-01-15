@@ -1,0 +1,1631 @@
+[
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Neonate with arm paralysis following difficult birth ?",
+    "1":"Klumpke'e palsy",
+    "2":"Erb-Duchenne palsy",
+    "3":"Saturday night palsy",
+    "4":"Erb-Duchenne palsy"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Childbirth defect affecting the inferior trunk of brachial plexus ( C8,T1) ?",
+    "1":"Klumpke'e palsy",
+    "2":"Erb-Duchenne palsy",
+    "3":"Saturday night palsy",
+    "4":"Klumpke's palsy"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Fracture at midshaft of humerus causes ?",
+    "1":"Klumpke'e palsy",
+    "2":"Erb-Duchenne palsy",
+    "3":"Saturday night palsy",
+    "4":"Saturday night palsy"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Sudden traction on the outstretched and pronated arm of a child causes ?",
+    "1":"Klumpke'e palsy",
+    "2":"Nursemaid's elbow",
+    "3":"Carpal tunnel syndrome",
+    "4":"Nursemaid's elbow"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Fracture at the surgical neck of humerus damages ?",
+    "1":"Radial nerve",
+    "2":"Ulnar nerve",
+    "3":"Axillary nerve",
+    "4":"Axillary nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Fracture at the medial epicondyle damages ?",
+    "1":"Radial nerve",
+    "2":"Ulnar nerve",
+    "3":"Axillary nerve",
+    "4":"Ulnar nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Fracture at the mid shaft of humerus damages ?",
+    "1":"Radial nerve",
+    "2":"Ulnar nerve",
+    "3":"Axillary nerve",
+    "4":"Radial nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Wrist drop is a sign of damage of which nerve ?",
+    "1":"Radial nerve",
+    "2":"Ulnar nerve",
+    "3":"Median nerve",
+    "4":"Radial nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Carpal tunnel sydrome is caused by compression of which nerve ?",
+    "1":"Radial nerve",
+    "2":"Ulnar nerve",
+    "3":"Median nerve",
+    "4":"Median nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Claw hand with loss of medial lumbrical function is caused by damage of ?",
+    "1":"Ulnar nerve",
+    "2":"Median Nerve",
+    "3":"Radial nerve",
+    "4":"Ulnar nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Claw hand with loss of lateral lumbrical function is caused by damage of ?",
+    "1":"Ulnar nerve",
+    "2":"Median Nerve",
+    "3":"Radial nerve",
+    "4":"Median nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Unopposable thumb ( Ape hand ) is caused by damage of ?",
+    "1":"Distal median nerve",
+    "2":"Proximal median nerve",
+    "3":"Radial nerve",
+    "4":"Proximal median nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Winging of scapula is caused by damage to ?",
+    "1":"Radial nerve",
+    "2":"Long thoracic nerve",
+    "3":"Axillary nerve",
+    "4":"Long thoracic nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Loss of sensation on dorsum of foot is caused by damage of ?",
+    "1":"Common peroneal nerve",
+    "2":"Obturator nerve",
+    "3":"Tibial nerve",
+    "4":"Common peroneal nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Which is the safest quadrant for intramuscular injections in the buttock ?",
+    "1":"Superomedial",
+    "2":"Superolateral",
+    "3":"Inferomedial",
+    "4":"Superolateral"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Muscles of the medial compartment of tigh are supplied by ?",
+    "1":"Femoral nerve",
+    "2":"Inferior gulteal nerve",
+    "3":"Obturator nerve",
+    "4":"Obturator nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Positive Trendlenburg test is caused by damage of ?",
+    "1":"Femoral nerve",
+    "2":"Inferior gulteal nerve",
+    "3":"Superior gluteal nerve",
+    "4":"Superior gluteal nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Difficulty rising from seated position is caused by damage of ?",
+    "1":"Femoral nerve",
+    "2":"Inferior gulteal nerve",
+    "3":"Superior gluteal nerve",
+    "4":"Inferior gluteal nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Loss of sensation on skin of sole of foot is caused by damage of ?",
+    "1":"Common peroneal nerve",
+    "2":"Obturator nerve",
+    "3":"Tibial nerve",
+    "4":"Tibial nerve"
+  },
+  {
+    "Field":"Anatomy",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Foot drop is caused by damage of which nerve ?",
+    "1":"Common peroneal nerve",
+    "2":"Inferior gulteal nerve",
+    "3":"Femoral nerve",
+    "4":"Common peroneal nerve"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Infant with microcephaly, rocker-bottom feet, clenched hands, and structural heart defect ?",
+    "1":"Edward's syndrome",
+    "2":"Patau's syndrome",
+    "3":"Down syndrome",
+    "4":"Edward's syndrome"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Infant with microcephaly, cleft lip/palate, polydactyly and omphalocele ?",
+    "1":"Edward's syndrome",
+    "2":"Patau's syndrome",
+    "3":"Down syndrome",
+    "4":"Patau's syndrome"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Infant with mental retardation, flat facies, epicanthal folds and simian crease ?",
+    "1":"Edward's syndrome",
+    "2":"Patau's syndrome",
+    "3":"Down syndrome",
+    "4":"Down syndrome"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"MCC of increased alpha feto protein during preganancy ?",
+    "1":"Neural tube defects",
+    "2":"Dating error",
+    "3":"Multiple gestation",
+    "4":"Dating error"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Male child with recurrent infections and no mature B cells ?",
+    "1":"DiGeorge syndrome",
+    "2":"Chronic granulomatous disease",
+    "3":"Bruton's agammaglobulinemia",
+    "4":"Bruton's agammaglobulinemia"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Lack of NADPH oxidase is seen in ?",
+    "1":"DiGeorge syndrome",
+    "2":"Chronic granulomatous disease",
+    "3":"Bruton's agammaglobulinemia",
+    "4":"Chronic granulomatous disease"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Genetics",
+    "Question":"Abscence of mature T-cells is seen in ?",
+    "1":"DiGeorge syndrome",
+    "2":"Chronic granulomatous disease",
+    "3":"Bruton's agammaglobulinemia",
+    "4":"DiGeorge syndrome"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which histone does not lie in the nucleosome core?",
+    "1":"H1",
+    "2":"H2",
+    "3":"H3",
+    "4":"H1"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What makes the DNA transcriptionally active?",
+    "1":"Methylation",
+    "2":"Hypermethylation",
+    "3":"Acetylation",
+    "4":"Acetylation"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the deaminated form of Adenine?",
+    "1":"Cytosine",
+    "2":"Guanine",
+    "3":"Thymine",
+    "4":"Guanine"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Ribunucleotide reductase is inhibited by?",
+    "1":"Hydroxyurea",
+    "2":"6-MP",
+    "3":"5-FU",
+    "4":"Hydroxyurea"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What does methotrexate inhibit?",
+    "1":"Ribonucleotide reductase",
+    "2":"Thymidylate synthase",
+    "3":"Dihydrofolate reductase",
+    "4":"Dihydrofolate reductase"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the inheritance of Lesch-Nyhan syndrome?",
+    "1":"AR",
+    "2":"XR",
+    "3":"AD",
+    "4":"XR"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the mutation resulting in early stop codon?",
+    "1":"Silent",
+    "2":"Missense",
+    "3":"Nonsense",
+    "4":"Nonsense"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Mutation that has replaced a purine with a pyrimidine or vice versa?",
+    "1":"Transversion",
+    "2":"Transition",
+    "3":"Frame shift",
+    "4":"Transversion"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What kind of mutation occurs in Sickle cell hemoglobin?",
+    "1":"Silent",
+    "2":"Missense",
+    "3":"Nonsense",
+    "4":"Missense"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which enzyme helps unwind the DNA template at replication fork?",
+    "1":"Helicase",
+    "2":"Primase",
+    "3":"DNA ligase",
+    "4":"Helicase"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"DNA polymerase I is present in?",
+    "1":"Prokaryotes",
+    "2":"Eukaryotes",
+    "3":"None",
+    "4":"Prokaryotes"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which enzyme is defective in HNPCC?",
+    "1":"Primase",
+    "2":"DNA polymerase I",
+    "3":"DNA polymerase III",
+    "4":"DNA polymerase III"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which deficiency is the cause of Xeroderma Pigmentosa?",
+    "1":"Endonuclease",
+    "2":"Glycosylase",
+    "3":"Polymerase",
+    "4":"Endonuclease"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"How does ionising radiation cause DNA damage?",
+    "1":"dsDNA fractures",
+    "2":"Mismatch repair",
+    "3":"Base Excision repair",
+    "4":"dsDNA fractures"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which is the most abundant RNA?",
+    "1":"rRNA",
+    "2":"mRNA",
+    "3":"tRNA",
+    "4":"rRNA"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which is the longest RNA?",
+    "1":"rRNA",
+    "2":"mRNA",
+    "3":"tRNA",
+    "4":"mRNA"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which codon is not a stop codon?",
+    "1":"UGA",
+    "2":"UGG",
+    "3":"UAA",
+    "4":"UGG"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the site of rRNA synthesis?",
+    "1":"Mitochondria",
+    "2":"ER",
+    "3":"Nucleolus",
+    "4":"Nucleolus"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which RNA polymerase makes mRNA?",
+    "1":"I",
+    "2":"II",
+    "3":"III",
+    "4":"II"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which RNA polymerase makes 5s rRNA?",
+    "1":"I",
+    "2":"II",
+    "3":"III",
+    "4":"III"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which RNA polymerase is inhibited by amatoxins found in mushrooms?",
+    "1":"I",
+    "2":"II",
+    "3":"III",
+    "4":"II"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the stretch of DNA that alters gene expression by binding transcription factors?",
+    "1":"Promoter",
+    "2":"Enhancer",
+    "3":"Silencer",
+    "4":"Enhancer"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What helps in the stabilisation of primary protein structure?",
+    "1":"Peptide bonds",
+    "2":"Hydrogen bonds",
+    "3":"Ionic bonds",
+    "4":"Peptide bonds"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the site of synthesis of secretory proteins?",
+    "1":"RER",
+    "2":"SER",
+    "3":"Ribosomes",
+    "4":"RER"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Permanent cells stay in which phase?",
+    "1":"G0",
+    "2":"G1",
+    "3":"G2",
+    "4":"G0"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which is a stable cell type?",
+    "1":"Neuron",
+    "2":"Hepatocyte",
+    "3":"Bone marrow",
+    "4":"Hepatocyte"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the immunohistochemical stain for connective tissue?",
+    "1":"Cytokeratin",
+    "2":"Desmin",
+    "3":"Vimentin",
+    "4":"Vimentin"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which collagen type is defective in Osteogenesis Imperfecta?",
+    "1":"I",
+    "2":"II",
+    "3":"III",
+    "4":"I"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is defective in Ehlers-Danlos?",
+    "1":"Elastin",
+    "2":"Type I collagen",
+    "3":"Type III collagen",
+    "4":"Type III collagen"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which collagen type is defective in Alport Syndrome?",
+    "1":"II",
+    "2":"III",
+    "3":"IV",
+    "4":"III"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which blotting procedure is used to identify DNA mutations?",
+    "1":"Northern",
+    "2":"Southern",
+    "3":"Western",
+    "4":"Southern"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Which blotting procedure is used for diagnosis of Lyme disease?",
+    "1":"Northern",
+    "2":"Southern",
+    "3":"Western",
+    "4":"Western"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is responsible for exclusively maternal inheritance to both male and female offspring?",
+    "1":"Pleiotropy",
+    "2":"Heteroplasmy",
+    "3":"Mosaicism",
+    "4":"Heteroplasmy"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"Pradder-Willi syndrome is an example of?",
+    "1":"Anticipation",
+    "2":"Linkage disequilibrium",
+    "3":"Imprinting",
+    "4":"Impriniting"
+  },
+  {
+    "Field":"Biochemsitry",
+    "Subfield":"Molecular",
+    "Question":"What is the inheritance pattern of most structural abnormalities?",
+    "1":"AD",
+    "2":"AR",
+    "3":"XR",
+    "4":"AD"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-positive, catalase positive clusters are seen in ?",
+    "1":"Streptococcus",
+    "2":"Staphylococcus",
+    "3":"Enterococcus",
+    "4":"Staphylococcus"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-postive, branching filamentous, anaerobes are seen in ?",
+    "1":"Nocardia",
+    "2":"Actinomyces",
+    "3":"Bacillus",
+    "4":"Actinomyces"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-postive, gamma hemolytic chains which grow in bile and 6.5% NaCl point to ?",
+    "1":"Nonenterococcus",
+    "2":"S. mutans",
+    "3":"Enterococcus",
+    "4":"Enterococcus"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-postive, gamma hemolytic chains which grow in bile but not in 6.5% NaCl point to ?",
+    "1":"Enterococcus",
+    "2":"Nonenterococcus",
+    "3":"S. agalactiae",
+    "4":"Nonenterococcus"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Toxin shock syndrome is caused by ?",
+    "1":"Staphylococcus aureus",
+    "2":"Streptococcus pyogenes",
+    "3":"Enterococcus",
+    "4":"Staphylococcus aureus"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Toxic shock like syndrome is suggestive of ?",
+    "1":"Staphylococcus aureus",
+    "2":"Streptococcus pyogenes",
+    "3":"Enterococcus",
+    "4":"Streptococcus pyogenes"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-postive, branching filamentous, aerobes are seen in ?",
+    "1":"Nocardia",
+    "2":"Clostridium",
+    "3":"Bacillus",
+    "4":"Nocardia"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Gram-positive, catalase negative chains are seen in ?",
+    "1":"Streptococcus",
+    "2":"Staphylococcus",
+    "3":"Enterococcus",
+    "4":"Streptococcus"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Dog or cat bite leads to what kind of infection ? ",
+    "1":"Pasteurella",
+    "2":"Legionella",
+    "3":"Brucella",
+    "4":"Pasteurella"
+  },
+  {
+    "Field":"Microbiology",
+    "Subfield":"Infections",
+    "Question":"Red currant jelly sputum in alcoholic or diabetic patients is caused by ?",
+    "1":"Streptococcus",
+    "2":"Klebsiella",
+    "3":"Staphylococcus",
+    "4":"Klebsiella"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Bounding pulses, diastolic heart murmur, head blobbing are seen in ?",
+    "1":"Aortic stenosis ",
+    "2":"Mitral regurgitation",
+    "3":"Aortic regurgitation",
+    "4":"Aortic regurgitation"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Aneurysm in the ascending aorta points to ? ",
+    "1":"Atherosclerosis",
+    "2":"Tertiary syphilis",
+    "3":"Marfan's syndrome",
+    "4":"Marfan's syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Aneurysm in the arch of aorta is commonly seen in ?",
+    "1":"Atherosclerosis",
+    "2":"Tertiary syphilis",
+    "3":"Marfan's syndrome",
+    "4":"Tertiary syphilis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Aneurysm in the abdominal and descending aorta is suggestive of ?",
+    "1":"Atherosclerosis",
+    "2":"Tertiary syphilis",
+    "3":"Marfan's syndrome",
+    "4":"Atherosclerosis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Dissecting aneurysm is seen in ? ",
+    "1":"Atherosclerosis",
+    "2":"Hypertension",
+    "3":"Marfan's syndrome",
+    "4":"Hypertension"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Chest pain on exertion is seen in ?",
+    "1":"Pericarditis",
+    "2":"Pleuritis",
+    "3":"Angina",
+    "4":"Angina"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Chest pain, pericardial effusion, persistent fever following MI suggests ?",
+    "1":"Fibrinous pericarditis",
+    "2":"Infective pericarditis",
+    "3":"Constrictive pericarditis",
+    "4":"Fibrinous pericarditis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Continuous machinery heart murmur is a characteristic of ?",
+    "1":"VSD",
+    "2":"PDA",
+    "3":"ASD",
+    "4":"PDA"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Painful, raised red lesions on palms and soles are characterized as ?",
+    "1":"Osler's node",
+    "2":"Janeway lesions",
+    "3":"Raynaud's syndrome",
+    "4":"Osler's node"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Painless, erythematous lesions on palms and soles suggest ?",
+    "1":"Osler's node",
+    "2":"Janeway lesions",
+    "3":"Raynaud's syndrome",
+    "4":"Janeway lesions"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Systolic ejection crescendo-decrescendo murmur is seen in ?",
+    "1":"Aortic stenosis ",
+    "2":"Mitral regurgitation",
+    "3":"Aortic regurgitation",
+    "4":"Aortic stenosis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Splinter hemorrhages in fingernails suggest ?",
+    "1":"Raynaud's syndrome",
+    "2":"Fungal infection",
+    "3":"Bacterial endocarditis",
+    "4":"Bacterial endocarditis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Cardiovascular",
+    "Question":"Boot shaped heart on X ray is seen in ?",
+    "1":"Tetrology of Fallot",
+    "2":"Coarctation of Aorta",
+    "3":"Mitral stenosis",
+    "4":"Tetrology of Fallot"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Cold intolerance is commonly seen in ?",
+    "1":"Grave's",
+    "2":"Hyperthyroidism",
+    "3":"Hypothyroidism",
+    "4":"Hypothyroidism"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Hypertension, hypokalemia and metabolic alkalosis is seen in ?",
+    "1":"Addison's",
+    "2":"Cushing's",
+    "3":"Conn's",
+    "4":"Conn's"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"No lactation postpartum, absent menstruation, cold intolerance ?",
+    "1":"Hypothyroidism",
+    "2":"Prolcatinoma",
+    "3":"Pituitary infarction",
+    "4":"Pituitary infarction"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Pancreatic, pituitary and parathyroid tumors are seen in ?",
+    "1":"MEN 1",
+    "2":"MEN 2A",
+    "3":"MEN 2B",
+    "4":"MEN 1"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Thyroid carcinoma, pheochromocytoma and marfanoid habitus is seen in ?",
+    "1":"MEN 1",
+    "2":"MEN 2A",
+    "3":"MEN 2B",
+    "4":"MEN 2B"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Thyroid carcinoma, pheochromocytoma and parathyroid tumors are seen in ?",
+    "1":"MEN 1",
+    "2":"MEN 2A",
+    "3":"MEN 2B",
+    "4":"MEN 2A"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Endocrine",
+    "Question":"Skin hyperpigmentation is seen in ?",
+    "1":"Addison's",
+    "2":"Hyperthyroidism",
+    "3":"Conn's",
+    "4":"Addison's"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Apple core' lesion on abdominal X-ray is seen in ?",
+    "1":"Right sided colon cancer",
+    "2":"Left sided colon cancer",
+    "3":"Transverse colon cancer",
+    "4":"Left sided colon cancer"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Abdominal pain, ascites, hepatomegaly seen in ?",
+    "1":"Cirrhosis",
+    "2":"Budd-Chiari syndrome",
+    "3":"Portal Hypertension",
+    "4":"Budd-Chiari syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Alternating areas of transmural inflammation and normal colon suggest ?",
+    "1":"Ulcerative colitis",
+    "2":"Infectious colitis",
+    "3":"Crohn's disease",
+    "4":"Crohn's disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Fat, female, forty and fertile are risk factors for ?",
+    "1":"Acute pancreatitis",
+    "2":"Acute cholecystitis",
+    "3":"Chronic cholecystitis",
+    "4":"Acute cholecystitis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Severe jaundice in neonate is caused by ?",
+    "1":"Gilbert's syndrome",
+    "2":"Dubin-Johnson syndrome",
+    "3":"Crigler-Najjar syndrome",
+    "4":"Crigler-Najjar syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Gastrointestinal",
+    "Question":"Vomiting blood following esophagogastric lacerations ?",
+    "1":"Boerhaave syndrome",
+    "2":"Mallory-Weiss syndrome",
+    "3":"Esophageal varices",
+    "4":"Mallory-Weiss syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Mucosal bleeding and prolonged bleeding time is caused by ?",
+    "1":"Coagulation disorders",
+    "2":"Platelet disorders",
+    "3":"Antithrombin deficiency",
+    "4":"Platelet disorders"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Painful blue fingers and hemolytic anemia are associated with ?",
+    "1":"Raynaud's syndrome",
+    "2":"Cold agglutinin disease",
+    "3":"G6PD deficiency",
+    "4":"Cold agglutinin disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Antiboidies associated with Scleroderma ? ",
+    "1":"Antihistone",
+    "2":"Antinuclear",
+    "3":"Anticentromere",
+    "4":"Anticentromere"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Antimitochondrial antibodies are diagnostic for ?",
+    "1":"Primary sclerosing cholangitis",
+    "2":"Primary biliary cirrhosis",
+    "3":"Autoimmune hepatitis",
+    "4":"Primary biliary cirrhosis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Antihistone antibodies are seen in ?",
+    "1":"Drug Induced SLE",
+    "2":"Vasculitis",
+    "3":"Pemphigus Vulgaris",
+    "4":"Drug Induced SLE"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"When is a Bamboo spine seen on X ray ?",
+    "1":"Rheumatoid Arthritis",
+    "2":"Osteomyelitis",
+    "3":"Ankylosing Spondylitis",
+    "4":"Ankylosing Spondilitis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Bilateral hilar adenopathy, uveitis are seen in ?",
+    "1":"SLE",
+    "2":"Sarcoidosis",
+    "3":"Sjogren's syndrome",
+    "4":"Sarcoidosis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Arachnodactyly, lens dislocation, aortic dissection, hyperflexible joints are suggestive of ?",
+    "1":"Ehlers-Danlos syndrome",
+    "2":"Marfan's syndrome",
+    "3":"Osteogenesis Imperfecta",
+    "4":"Marfan's syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Type of defect seen in Osteogenesis Imperfecta ?",
+    "1":"Fibrillin",
+    "2":"Type 1 collagen",
+    "3":"Type 3 collagen",
+    "4":"Type 1 collagen"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Bone pain, bone enlargement, arthritis suggest ?",
+    "1":"Osteomyelitis",
+    "2":"Osteoasthritis",
+    "3":"Paget's disease",
+    "4":"Paget's disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Actinic keratosis has an association with ?",
+    "1":"Squamous cell carcinome",
+    "2":"Basal cell carcinoma",
+    "3":"Acne vulgaris",
+    "4":"Squamous cell carcinoma"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Butterfly facial rash and raynaud's phenomenon in a young female is suggestive of ?",
+    "1":"SLE",
+    "2":"Scleroderma",
+    "3":"Sarcoidosis",
+    "4":"SLE"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Gower's sign is seen in ?",
+    "1":"ALS",
+    "2":"Muscular dystrophy",
+    "3":"Freidrich's ataxia",
+    "4":"Muscular dystophy"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Calf pseudohypertrophy is a feature of ?",
+    "1":"Myotonic dystrophy",
+    "2":"Muscular dystrophy",
+    "3":"Freidrich's ataxia",
+    "4":"Muscular dystophy"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Dry eyes, dry mouth and arthritis are seen in ?",
+    "1":"SLE",
+    "2":"Sarcoidosis",
+    "3":"Sjogren's syndrome",
+    "4":"Sjogren's syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Elastic skin and hypermobility of joints is seen in ?",
+    "1":"Ehlers-Danlos syndrome",
+    "2":"Marfan's syndrome",
+    "3":"Osteogenesis Imperfecta",
+    "4":"Ehlers-Danlos syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Enlarged, hard left supraclavicular lymph node is seen in metastasis from ?",
+    "1":"Lungs",
+    "2":"Liver",
+    "3":"Abdomen",
+    "4":"Abdomen"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Facial muscle spasm upon tapping is seen in ?",
+    "1":"Hypocalcemia",
+    "2":"Hypercalcemia",
+    "3":"Hypokalemia",
+    "4":"Hypocalcemia"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Green-yellow rings around peripheral cornea are caused by excess depostion of ?",
+    "1":"Iron",
+    "2":"Arsenic",
+    "3":"Copper",
+    "4":"Copper"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Keratin pearls on a skin biopsy are seen in ?",
+    "1":"Basal cell carcinoma",
+    "2":"Squamous cell carcinoma",
+    "3":"Melanoma",
+    "4":"Squamous cell carcinoma"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Palpable purpura on buttocks, joint pain and abdominal pain in a child suggest ?",
+    "1":"Osler's node",
+    "2":"Thrombotic thrombocytopenic purpura",
+    "3":"Henoch-Schonlein purpura",
+    "4":"Henoch-Schonlein purpura"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Positive anterior drawer sign is seen during injury of ?",
+    "1":"Posterior cruciate ligament",
+    "2":"Medial meniscus",
+    "3":"Anterior cruciate ligament",
+    "4":"Anterior cruciate ligament"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Sudden swollen/painful big toe joint is associated with ?",
+    "1":"Osteoarthritis",
+    "2":"Gout",
+    "3":"Paget's disease",
+    "4":"Gout"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Urethritis, conjunctivitis, arthritis in a male are caused by ?",
+    "1":"Reactive arthritis",
+    "2":"Rheumatoid arthritis",
+    "3":"Osteoarthritis",
+    "4":"Reactive arthritis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Bamboo spine on X-ray is seen in ?",
+    "1":"Rheumatoid Arthritis",
+    "2":"Ankylosing spondylitis",
+    "3":"Osteoarthritis",
+    "4":"Ankylosing spondylitis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Hypercoagulability leading to migrating DVTs and vasculitis is seen in carcinoma of ?",
+    "1":"Pancreas",
+    "2":"Colon",
+    "3":"Breast",
+    "4":"Pancreas"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Acute gastric ulcer associated with burns ?",
+    "1":"Cushing's ulcer",
+    "2":"Curling's ulcer",
+    "3":"Zollinger-Ellison syndrome",
+    "4":"Curling's syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Acute gastric ulcer associated with CNS injury ?",
+    "1":"Cushing's ulcer",
+    "2":"Curling's ulcer",
+    "3":"Zollinger-Ellison syndrome",
+    "4":"Cushing's ulcer"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Chorea, dementia and caudate degeneration is seen in ?",
+    "1":"Huntington's disease",
+    "2":"Parkinson's disease",
+    "3":"ALS",
+    "4":"Huntington's disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Dilated cardiomyopathy, edema, polyneuropathy suggest deficiency of ?",
+    "1":"B1",
+    "2":"B3",
+    "3":"C",
+    "4":"B1"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Dermatitis, diarrhea and dementia suggest deficiency of which vitamin ?",
+    "1":"B1",
+    "2":"B3",
+    "3":"C",
+    "4":"B3"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Hperreflexia, hypertonia and postive Babinski's sign is seen in what kind of damage ?",
+    "1":"LMN",
+    "2":"UMN",
+    "3":"Bell's palsy",
+    "4":"UMN"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Hyporeflexia, hypotonia and atrophy is suggestive of damage of ?",
+    "1":"LMN",
+    "2":"UMN",
+    "3":"Bell's palsy",
+    "4":"LMN"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Hyperphagia, hypersexuality, hyperorality and hperdocility is caused by a lesion in ?",
+    "1":"Corpus callosum",
+    "2":"Thalamus",
+    "3":"Amygdala",
+    "4":"Amygdala"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Lucid interval after traumatic brain injury is characteristic of ?",
+    "1":"Epidural hematoma ",
+    "2":"Subdural hematoma",
+    "3":"Subarachnoid hemorrhage",
+    "4":"Epidural hemtoma"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Nystagmus, intention tremor, scanning speech, bilateral internuclear ophthalmoplegia is seen in ?",
+    "1":"Multiple sclerosis",
+    "2":"ALS",
+    "3":"LMN lesion",
+    "4":"Multiple sclerosis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Ptosis, miosis and anhidrosis are seen in ?",
+    "1":"Horner's syndrome",
+    "2":"ALS",
+    "3":"Multiple sclerosis",
+    "4":"Horner's syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Pupil accomodates but doesn't react during ?",
+    "1":"Horner's syndrome",
+    "2":"Neurosyphilis",
+    "3":"Bell's palsy",
+    "4":"Neurosyphilis"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Rapidly progressive leg weakness that ascends ?",
+    "1":"ALS",
+    "2":"Guillain-Barre syndrome",
+    "3":"Multiple sclerosis",
+    "4":"Guillain-Barre syndrome"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Resting tremor, rigidity, akinesia, postural instability are suggestive of ?",
+    "1":"Multiple sclerosis",
+    "2":"Parkinson's disease",
+    "3":"Huntington's disease",
+    "4":"Parkinson's disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Unilateral facial drooping involving forehead is caused by ?",
+    "1":"Horner's syndrome",
+    "2":"ALS",
+    "3":"Bell's palsy",
+    "4":"Bell's palsy"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Neurology",
+    "Question":"Worst headache of my life' points to ?",
+    "1":"Epidural hematoma ",
+    "2":"Migraine",
+    "3":"Subarachnoid hemorrhage",
+    "4":"Subarachnoid hemorrhage"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Renal",
+    "Question":"Waxy casts with very low urine flow suggest ?",
+    "1":"Acute tubular necrosis",
+    "2":"Acute pyelonephritis",
+    "3":"Chronic renal disease",
+    "4":"Chronic renal disease"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Reproductive",
+    "Question":"Indurated, ulcerated, painful genital lesions are caused by ?",
+    "1":"Treponema pallidum",
+    "2":"Hemophilus ducreyi",
+    "3":"Trichomonas vaginalis",
+    "4":"Hemophilus ducreyi"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Reproductive",
+    "Question":"Indurated, ulcerated, painless genital lesions are caused by ?",
+    "1":"Treponema pallidum",
+    "2":"Hemophilus ducreyi",
+    "3":"Trichomonas vaginalis",
+    "4":"Treponema pallidum"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Respiratory",
+    "Question":"Pink complexion, dyspnea and hyperventilation is suggestive of ?",
+    "1":"Chronic bronchitis",
+    "2":"Lung cancer",
+    "3":"Emphysema",
+    "4":"Emphysema"
+  },
+  {
+    "Field":"Pathology",
+    "Subfield":"Respiratory",
+    "Question":"Hypoxemia, polycythemia and hypercapnia is seen in ?",
+    "1":"Chronic bronchitis",
+    "2":"Lung cancer",
+    "3":"Emphysema",
+    "4":"Chronic bronchitis"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Cardiovascular",
+    "Question":"Treatment for arrhythmia in damaged cardiac tissue ?",
+    "1":"Metoprolol",
+    "2":"Quinidine",
+    "3":"Lidocaine",
+    "4":"Lidocaine"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"Treatment for central diabets insipidus ?",
+    "1":"Indomethacin",
+    "2":"Metformin",
+    "3":"Desmopressin",
+    "4":"Desmopressin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"Treatment for type 1 Diabetes mellitus ?",
+    "1":"Insulin replacement",
+    "2":"Metformin",
+    "3":"Desmopressin",
+    "4":"Insulin replacement"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"Treatment for erectile dysfunction ?",
+    "1":"Tamsulosin",
+    "2":"Sildenafil",
+    "3":"Danazol",
+    "4":"Sildenafil"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"First line treatment for hypercholesterolemia ?",
+    "1":"Fibrate",
+    "2":"Niacin",
+    "3":"Statin",
+    "4":"Statin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"First line treatment for hypertriglyceridemia ?",
+    "1":"Fibrate",
+    "2":"Niacin",
+    "3":"Statin",
+    "4":"Fibrate"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"Which lipid lowering agent causes red flushed face ?",
+    "1":"Fibrate",
+    "2":"Niacin",
+    "3":"Statin",
+    "4":"Niacin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Endocrine",
+    "Question":"Which lipid lowering agent causes rhabdomyolysis ?",
+    "1":"Fibrate",
+    "2":"Niacin",
+    "3":"Statin",
+    "4":"Statin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Trearment for Acute Promyelocytic Leukemia (M3) ?",
+    "1":"Imatinib",
+    "2":"Rituximab",
+    "3":"All-trans Retinoic acid",
+    "4":"All-trans Retinoic Acid"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for Chronic Myelogenous Leukemia ?",
+    "1":"Imatinib",
+    "2":"Rituximab",
+    "3":"All-trans Retinoic acid",
+    "4":"Imatinib"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for anticoagulation during pregnancy ?",
+    "1":"Warfarin",
+    "2":"Heparin",
+    "3":"Ticlodipine",
+    "4":"Heparin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for breast cancer in postmenopausal women ?",
+    "1":"Trastuzumab",
+    "2":"Tamoxifen",
+    "3":"Anastrazole",
+    "4":"Anastrazole"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"First line therpay for Carcinoid syndrome ?",
+    "1":"Diphenhydramine",
+    "2":"Loratidine",
+    "3":"Octreotide",
+    "4":"Octreotide"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for ER-positive breast cancer ?",
+    "1":"Trastuzumab",
+    "2":"Anastrazole",
+    "3":"Tamoxifen",
+    "4":"Tamoxifen"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for HER2/neu-positive breast cancer ?",
+    "1":"Trastuzumab",
+    "2":"Anastrazole",
+    "3":"Tamoxifen",
+    "4":"Trastuzumab"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Treatment for ethylene glycol intoxication ?",
+    "1":"Fomepizole",
+    "2":"Disulfiram",
+    "3":"Fluids",
+    "4":"Fomepizole"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Which drug is used to treat hemorrhagic cystitis ?",
+    "1":"Bleomycin",
+    "2":"Doxorubicin",
+    "3":"Mesna",
+    "4":"Mesna"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Which drug is responsible for cardiotoxicity ?",
+    "1":"Bleomycin",
+    "2":"Doxorubicin",
+    "3":"Mesna",
+    "4":"Doxorubicin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Which drug leads to pulmonary fibrosis ?",
+    "1":"Bleomycin",
+    "2":"Doxorubicin",
+    "3":"Mesna",
+    "4":"Bleomycin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Which drug causes peripheral neuropathy ?",
+    "1":"Cisplatin",
+    "2":"Vincristine",
+    "3":"Methotrexate",
+    "4":"Vincristine"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Hemetology/Oncology",
+    "Question":"Which drug leads to acoustic nerve damage ?",
+    "1":"Cisplatin",
+    "2":"Vincristine",
+    "3":"Methotrexate",
+    "4":""
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Treatment for acute Gout ?",
+    "1":"NSAIDs",
+    "2":"NSAIDs, Colchicine",
+    "3":"Colchicine",
+    "4":"NSAIDs, Colchicine"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"MSK, Skin and Connective tissue",
+    "Question":"Treatment for chronic Gout ?",
+    "1":"Colchicine",
+    "2":"Allopurinol",
+    "3":"NSAIDs",
+    "4":"Allopurinol"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Neurology",
+    "Question":"Treatment for Absence Seizures ?",
+    "1":"Ethosuximide",
+    "2":"Phenytoin",
+    "3":"Lamotrigine",
+    "4":"Ethosuximide"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Neurology",
+    "Question":"What is the treatment for a person infected with Clostridium botulinum ?",
+    "1":"Antitoxin",
+    "2":"Metronidazole",
+    "3":"Antitoxin+Vaccine booster",
+    "4":"Antitoxin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Neurology",
+    "Question":"What is the treatment for a person infected with Clostridium tetani ?",
+    "1":"Antitoxin",
+    "2":"Metronidazole",
+    "3":"Antitoxin+Vaccine booster",
+    "4":"Antitoxin+Vaccine booster"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Neurology",
+    "Question":"What is the treatment for a person infected with Clostridium difficile ?",
+    "1":"Antitoxin",
+    "2":"Metronidazole",
+    "3":"Antitoxin+Vaccine booster",
+    "4":"Metronidazole"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"Treatment for Alcohol Withdrwal ?",
+    "1":"Benzodiazepines",
+    "2":"SSRIs",
+    "3":"Tricyclic Antidepressants",
+    "4":"Benzodiazepines"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"Treatment for ADHD ?",
+    "1":"Benzodiazepines",
+    "2":"SSRIs",
+    "3":"Methylphenidate",
+    "4":"Methylphenidate"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"Treatment for Anorexia ?",
+    "1":"Benzodiazepines",
+    "2":"SSRIs",
+    "3":"Tricyclic Antidepressants",
+    "4":"SSRIs"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"Treatment for Bipolar Disorder ?",
+    "1":"SSRIs",
+    "2":"Lithium",
+    "3":"Tricyclic Antidepressants",
+    "4":"Lithium"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"First Line therapy for Bulimia ? ",
+    "1":"SSRIs",
+    "2":"Tricyclic Antidepressants",
+    "3":"Benzodiazepines",
+    "4":"SSRIs"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Psychiatry",
+    "Question":"First line treatment for Depression ?",
+    "1":"Tricyclic Antidepressants",
+    "2":"Benzodiazepines",
+    "3":"SSRIs",
+    "4":"SSRIs"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Reproductive",
+    "Question":"Treatment for Benign Prostatic Hyperplasia ?",
+    "1":"Tamsulosin",
+    "2":"Bethanechol",
+    "3":"Atropine",
+    "4":"Tamsulosin"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Respiratory",
+    "Question":"Treatment for Cryptococcus neoformans ?",
+    "1":"Flucytosine",
+    "2":"Fluconazole",
+    "3":"Fluorouracil",
+    "4":"Fluconazole"
+  },
+  {
+    "Field":"Pharmacology",
+    "Subfield":"Respiratory",
+    "Question":"Treatment for Cytomegalovirus ?",
+    "1":"Ganciclovir",
+    "2":"Acyclovir",
+    "3":"Ribavirin",
+    "4":"Ganciclovir"
+  }
+]

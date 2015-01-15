@@ -15,10 +15,12 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option1Label: UIButton!
     @IBOutlet weak var option2Label: UIButton!
     @IBOutlet weak var option3Label: UIButton!
+    
+    let csv = CSV(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("nisarg_questions", ofType: "csv")!)!, error: nil)!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        println(csv.rows.count)
     }
 
     override func didReceiveMemoryWarning() {
