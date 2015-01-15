@@ -438,29 +438,38 @@
                                     <constraint firstAttribute="height" constant="44" id="ZqG-9p-sWx"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPo-Oc-DII">
-                                <rect key="frame" x="265" y="349.5" width="71" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPo-Oc-DII" userLabel="option 1">
+                                <rect key="frame" x="269" y="350" width="62" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="optinon 1">
+                                <state key="normal" title="option 1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="option1WasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="FK4-sc-1DJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKf-LI-ds3">
-                                <rect key="frame" x="269" y="405.5" width="62" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGQ-Dq-zcH" userLabel="option 2">
+                                <rect key="frame" x="269" y="406" width="62" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="option 2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="option2WasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="0Zn-c1-ZKn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOY-ty-iSR">
-                                <rect key="frame" x="280" y="462" width="62" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKf-LI-ds3" userLabel="option 3">
+                                <rect key="frame" x="269" y="462" width="62" height="34"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="option 3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="option3WasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="Yg8-eu-fCd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -470,11 +479,8 @@
                             <constraint firstAttribute="centerX" secondItem="oPo-Oc-DII" secondAttribute="centerX" constant="-0.5" id="9pw-Ma-iSh"/>
                             <constraint firstItem="Q55-df-tLW" firstAttribute="top" secondItem="aF7-yX-2d8" secondAttribute="bottom" constant="-10" id="D09-h8-z9D"/>
                             <constraint firstItem="DIQ-4x-KDM" firstAttribute="top" secondItem="bBn-de-dbo" secondAttribute="bottom" id="DIk-bS-BjS"/>
-                            <constraint firstAttribute="centerX" secondItem="vOY-ty-iSR" secondAttribute="centerX" constant="-11" id="Dlm-6u-e1G"/>
                             <constraint firstAttribute="centerX" secondItem="DIQ-4x-KDM" secondAttribute="centerX" id="ER0-1Z-mxV"/>
-                            <constraint firstItem="bBn-de-dbo" firstAttribute="top" secondItem="vOY-ty-iSR" secondAttribute="bottom" id="F1D-1M-G6O"/>
                             <constraint firstItem="qF8-SG-JFP" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="-8" id="IzW-IJ-bwA"/>
-                            <constraint firstItem="vOY-ty-iSR" firstAttribute="top" secondItem="LKf-LI-ds3" secondAttribute="bottom" constant="22.5" id="JWF-YQ-zbp"/>
                             <constraint firstItem="bBn-de-dbo" firstAttribute="height" secondItem="GbP-J6-eqk" secondAttribute="height" id="LML-OU-Na6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5rz-u0-CBX" secondAttribute="trailing" constant="7" id="LwN-ka-utq"/>
                             <constraint firstAttribute="centerX" secondItem="Q55-df-tLW" secondAttribute="centerX" constant="-11" id="Oui-WC-RSn"/>
@@ -483,19 +489,22 @@
                             <constraint firstAttribute="trailingMargin" secondItem="iUH-rc-CM0" secondAttribute="trailing" constant="44" id="Tdb-AV-THD"/>
                             <constraint firstItem="aF7-yX-2d8" firstAttribute="top" secondItem="5rz-u0-CBX" secondAttribute="bottom" constant="-14" id="U05-tT-xa1"/>
                             <constraint firstItem="lyf-eW-KzG" firstAttribute="top" secondItem="Y8q-em-qVn" secondAttribute="bottom" constant="30" id="WAm-Oh-mJL"/>
-                            <constraint firstItem="LKf-LI-ds3" firstAttribute="top" secondItem="oPo-Oc-DII" secondAttribute="bottom" constant="22" id="Zx4-bH-NH1"/>
+                            <constraint firstItem="LKf-LI-ds3" firstAttribute="bottom" secondItem="bBn-de-dbo" secondAttribute="top" id="Wj6-i2-26j"/>
                             <constraint firstAttribute="centerX" secondItem="iUH-rc-CM0" secondAttribute="centerX" id="bw5-nU-uXd"/>
                             <constraint firstItem="lyf-eW-KzG" firstAttribute="top" secondItem="DIQ-4x-KDM" secondAttribute="bottom" constant="30" id="dX4-v5-vIc"/>
                             <constraint firstItem="qF8-SG-JFP" firstAttribute="top" secondItem="aF7-yX-2d8" secondAttribute="bottom" constant="-10" id="eO9-PA-3p2"/>
+                            <constraint firstItem="xGQ-Dq-zcH" firstAttribute="top" secondItem="oPo-Oc-DII" secondAttribute="bottom" constant="22" id="fJK-5J-gvZ"/>
                             <constraint firstItem="Y8q-em-qVn" firstAttribute="leading" secondItem="DIQ-4x-KDM" secondAttribute="trailing" constant="-3.5" id="ffM-4N-y82"/>
                             <constraint firstAttribute="centerX" secondItem="LKf-LI-ds3" secondAttribute="centerX" id="jaj-Bo-qws"/>
+                            <constraint firstAttribute="centerX" secondItem="xGQ-Dq-zcH" secondAttribute="centerX" constant="-0.5" id="oo5-w9-dq8"/>
                             <constraint firstItem="GbP-J6-eqk" firstAttribute="top" secondItem="Q55-df-tLW" secondAttribute="bottom" id="q6v-HX-Zef"/>
+                            <constraint firstItem="LKf-LI-ds3" firstAttribute="top" secondItem="xGQ-Dq-zcH" secondAttribute="bottom" constant="22" id="tY1-zk-jJq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="option1Label" destination="oPo-Oc-DII" id="8hO-u0-Z2h"/>
-                        <outlet property="option2Label" destination="LKf-LI-ds3" id="dt0-Y5-jdH"/>
-                        <outlet property="option3Label" destination="vOY-ty-iSR" id="ZXc-mh-tTt"/>
+                        <outlet property="option1Button" destination="oPo-Oc-DII" id="cze-ny-rYo"/>
+                        <outlet property="option2Button" destination="xGQ-Dq-zcH" id="jtv-4E-MrV"/>
+                        <outlet property="option3Button" destination="LKf-LI-ds3" id="Y8r-6l-mJb"/>
                         <outlet property="pauseButton" destination="5rz-u0-CBX" id="N4i-kK-Jds"/>
                         <outlet property="questionLabel" destination="iUH-rc-CM0" id="1BV-jM-Cs7"/>
                         <outlet property="reviewButton" destination="Q55-df-tLW" id="qmu-fS-Igw"/>
