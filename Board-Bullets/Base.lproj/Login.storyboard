@@ -80,7 +80,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYH-jR-jHy">
-                                <rect key="frame" x="273" y="346.5" width="53" height="41"/>
+                                <rect key="frame" x="273" y="346" width="53" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="log in">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynB-hd-WZj">
-                                <rect key="frame" x="263" y="392.5" width="74" height="41"/>
+                                <rect key="frame" x="263" y="392" width="74" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="sign up">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,12 +104,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5x-RJ-5Zv">
-                                <rect key="frame" x="245" y="438.5" width="111" height="41"/>
+                                <rect key="frame" x="195" y="438" width="210" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" title="sign in with">
+                                <state key="normal" title="sign in with facebook">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInWithFacebook:" destination="evO-q9-bXG" eventType="touchUpInside" id="CuS-yV-eMB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="d" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-MY-pGi">
                                 <rect key="frame" x="275" y="30" width="25" height="49"/>
@@ -117,24 +120,6 @@
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-Zq-wBP">
-                                <rect key="frame" x="305" y="484.5" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="twitterButtonHit:" destination="evO-q9-bXG" eventType="touchUpInside" id="ECJ-1W-oTq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcv-85-shg">
-                                <rect key="frame" x="249" y="484.5" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="facebookButtonHit:" destination="evO-q9-bXG" eventType="touchUpInside" id="Nb2-ey-kYO"/>
-                                </connections>
-                            </button>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39R-8o-K2N">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -152,14 +137,12 @@
                         <constraints>
                             <constraint firstItem="90P-Ug-WOg" firstAttribute="top" secondItem="wyw-YB-cbu" secondAttribute="bottom" constant="105" id="0nI-Qc-ZNP"/>
                             <constraint firstAttribute="centerX" secondItem="ynB-hd-WZj" secondAttribute="centerX" id="4aw-qC-kW2"/>
-                            <constraint firstItem="Fcv-85-shg" firstAttribute="top" secondItem="t5x-RJ-5Zv" secondAttribute="bottom" constant="5" id="4lV-7m-1tO"/>
                             <constraint firstItem="BmS-dA-NL1" firstAttribute="trailing" secondItem="Je3-Jc-b7s" secondAttribute="leading" id="9D0-2O-am2"/>
                             <constraint firstItem="BmS-dA-NL1" firstAttribute="top" secondItem="wyw-YB-cbu" secondAttribute="bottom" constant="10" id="B1Q-U7-A4Y"/>
                             <constraint firstAttribute="trailing" secondItem="Je3-Jc-b7s" secondAttribute="trailing" id="BeD-7f-aVr"/>
                             <constraint firstItem="t5x-RJ-5Zv" firstAttribute="top" secondItem="ynB-hd-WZj" secondAttribute="bottom" constant="5" id="H6W-kp-aOV"/>
                             <constraint firstItem="PFG-2k-YEO" firstAttribute="top" secondItem="wyw-YB-cbu" secondAttribute="bottom" constant="10" id="HhP-tT-IOl"/>
                             <constraint firstAttribute="centerXWithinMargins" secondItem="90P-Ug-WOg" secondAttribute="trailing" constant="-8" id="Lvi-DN-ruX"/>
-                            <constraint firstItem="lNa-Zq-wBP" firstAttribute="leading" secondItem="We0-Xq-fS1" secondAttribute="centerXWithinMargins" constant="5" id="MCt-47-NYI"/>
                             <constraint firstItem="Gau-uN-Vre" firstAttribute="top" secondItem="t5x-RJ-5Zv" secondAttribute="bottom" constant="30" id="MHx-y7-wzJ"/>
                             <constraint firstItem="39R-8o-K2N" firstAttribute="top" secondItem="DrS-vY-vUu" secondAttribute="bottom" constant="-25" id="MbR-Fw-XrL"/>
                             <constraint firstItem="6eY-MY-pGi" firstAttribute="top" secondItem="wyw-YB-cbu" secondAttribute="bottom" constant="10" id="P44-nu-UQa"/>
@@ -169,7 +152,6 @@
                             <constraint firstAttribute="centerX" secondItem="YYH-jR-jHy" secondAttribute="centerX" id="V4P-tZ-AQN"/>
                             <constraint firstItem="PFG-2k-YEO" firstAttribute="leading" secondItem="4lL-5M-0lx" secondAttribute="trailing" id="V8p-ze-RqF"/>
                             <constraint firstItem="AqN-k6-yiV" firstAttribute="leading" secondItem="6eY-MY-pGi" secondAttribute="trailing" constant="-2" id="aey-lm-bO8"/>
-                            <constraint firstItem="lNa-Zq-wBP" firstAttribute="top" secondItem="t5x-RJ-5Zv" secondAttribute="bottom" constant="5" id="bET-47-Bmf"/>
                             <constraint firstItem="BmS-dA-NL1" firstAttribute="leading" secondItem="AqN-k6-yiV" secondAttribute="trailing" constant="-2" id="ct3-gY-Ckh"/>
                             <constraint firstAttribute="centerX" secondItem="Gau-uN-Vre" secondAttribute="centerX" id="dQQ-2g-DeY"/>
                             <constraint firstItem="DrS-vY-vUu" firstAttribute="leading" secondItem="We0-Xq-fS1" secondAttribute="centerXWithinMargins" constant="-7" id="dsm-eL-9c5"/>
@@ -181,7 +163,6 @@
                             <constraint firstAttribute="centerX" secondItem="t5x-RJ-5Zv" secondAttribute="centerX" id="lZ0-Ob-FbI"/>
                             <constraint firstItem="Je3-Jc-b7s" firstAttribute="width" secondItem="4lL-5M-0lx" secondAttribute="width" id="mBA-EU-fbJ"/>
                             <constraint firstItem="39R-8o-K2N" firstAttribute="height" secondItem="Gau-uN-Vre" secondAttribute="height" id="mUT-O7-mQy"/>
-                            <constraint firstAttribute="centerXWithinMargins" secondItem="Fcv-85-shg" secondAttribute="trailing" constant="5" id="n2E-JP-Uzb"/>
                             <constraint firstItem="de7-Ba-aFR" firstAttribute="top" secondItem="Gau-uN-Vre" secondAttribute="bottom" id="s4i-3G-q3b"/>
                             <constraint firstItem="YYH-jR-jHy" firstAttribute="top" secondItem="39R-8o-K2N" secondAttribute="bottom" constant="-10" id="wBO-HH-s8V"/>
                         </constraints>

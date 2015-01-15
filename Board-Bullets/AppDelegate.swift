@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = loggedIn ? "Main" : "Login"
     
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
+        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController)
         window?.makeKeyAndVisible()
         
         return true

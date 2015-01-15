@@ -9,8 +9,8 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    @IBOutlet weak var reviewLabel: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var reviewButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var option1Button: UIButton!
     @IBOutlet weak var option2Button: UIButton!
@@ -20,7 +20,7 @@ class QuizViewController: UIViewController {
     var answers = [Int]()
     var indices = [Int]()
     var numberOfQuestions = 10
-
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -29,11 +29,24 @@ class QuizViewController: UIViewController {
         indices = genRandom(numberOfQuestions, limit: data.count)
         super.viewDidLoad()
         loadQuestion(indices[0])
+        let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+        reviewLabel.setTitle("60", forState: .Normal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func secondPassed(sender: AnyObject!) {
+        if let t = reviewLabel.titleLabel?.text?.toInt() {
+            if t == 0 {
+                loadDone()
+            } else {
+                self.reviewLabel.setTitle("\(t-1)", forState: .Normal)
+            }
+        }
     }
     
     func genRandom(count: Int, limit: Int) -> [Int] {
@@ -55,21 +68,14 @@ class QuizViewController: UIViewController {
         option1Button.setTitle(data[i][String(r[0]+1)].string!, forState: .Normal)
         option2Button.setTitle(data[i][String(r[1]+1)].string!, forState: .Normal)
         option3Button.setTitle(data[i][String(r[2]+1)].string!, forState: .Normal)
+        
+        println("\(option1Button.titleLabel?.text) || \(option2Button.titleLabel?.text) || \(option3Button.titleLabel?.text) || ")
     }
     
     func loadDone() {
         println("answer were \(answers)")
+        performSegueWithIdentifier("segueToDone", sender: self)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func reviewButtonWasHit(sender: AnyObject) {
     }
@@ -104,6 +110,23 @@ class QuizViewController: UIViewController {
             loadQuestion(answers.count)
         } else {
             loadDone()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destination = segue.destinationViewController as? QuizDoneViewController {
+            for (index, element) in enumerate(indices) {
+                let correctAnswer = data[element]["4"].string!
+                let chosenAnswer = data[element][String(answers[index]+1)].string!
+                println("correct: \(correctAnswer) \n chosen: \(chosenAnswer)")
+                
+                if chosenAnswer == correctAnswer {
+                    println("correct")
+                    destination.answers.append(true)
+                } else {
+                    destination.answers.append(false)
+                }
+            }
         }
     }
 }

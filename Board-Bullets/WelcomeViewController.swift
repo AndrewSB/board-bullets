@@ -14,15 +14,15 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func logInHit(sender: AnyObject) {
+        
     }
 
     @IBAction func signUpHit(sender: AnyObject) {
+    
     }
 
-    @IBAction func facebookButtonHit(sender: AnyObject) {
-    }
-
-    @IBAction func twitterButtonHit(sender: AnyObject) {
+    @IBAction func signInWithFacebook(sender: AnyObject) {
+        
     }
 
 }
