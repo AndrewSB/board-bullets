@@ -356,10 +356,10 @@
             </objects>
             <point key="canvasLocation" x="1902" y="-541"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="Tb2-lw-5fh">
             <objects>
-                <viewController id="hm8-Rg-1D7" sceneMemberID="viewController">
+                <viewController id="hm8-Rg-1D7" customClass="QuizViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aF7-yX-2d8"/>
                         <viewControllerLayoutGuide type="bottom" id="lyf-eW-KzG"/>
@@ -400,6 +400,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pauseButtonWasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="CLQ-gg-oUa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q55-df-tLW">
                                 <rect key="frame" x="287" y="10" width="48" height="43.5"/>
@@ -411,6 +414,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="reviewButtonWasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="C8p-KU-NqI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-rc-CM0">
                                 <rect key="frame" x="60" y="97" width="480" height="127.5"/>
@@ -486,6 +492,14 @@
                             <constraint firstItem="GbP-J6-eqk" firstAttribute="top" secondItem="Q55-df-tLW" secondAttribute="bottom" id="q6v-HX-Zef"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="option1Label" destination="oPo-Oc-DII" id="8hO-u0-Z2h"/>
+                        <outlet property="option2Label" destination="LKf-LI-ds3" id="dt0-Y5-jdH"/>
+                        <outlet property="option3Label" destination="vOY-ty-iSR" id="ZXc-mh-tTt"/>
+                        <outlet property="pauseButton" destination="5rz-u0-CBX" id="N4i-kK-Jds"/>
+                        <outlet property="questionLabel" destination="iUH-rc-CM0" id="1BV-jM-Cs7"/>
+                        <outlet property="reviewButton" destination="Q55-df-tLW" id="qmu-fS-Igw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPi-ww-lAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
