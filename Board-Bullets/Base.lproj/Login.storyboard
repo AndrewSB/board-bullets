@@ -237,16 +237,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sys-zf-RZy">
-                                <rect key="frame" x="0.0" y="10" width="30" height="30"/>
-                                <state key="normal" title="x">
-                                    <color key="titleColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RGy-re-dkZ" kind="unwind" unwindAction="unwindToWelcome:" id="ZDa-CD-eIG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-sG-xUr">
                                 <rect key="frame" x="454" y="320" width="108" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
@@ -256,7 +246,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHS-wJ-rTH">
-                                <rect key="frame" x="277.5" y="359" width="45" height="36"/>
+                                <rect key="frame" x="277" y="359" width="45" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="log in">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -266,25 +256,37 @@
                                     <action selector="logInButtonHit:" destination="qqT-0f-fms" eventType="touchUpInside" id="LlX-9x-XCj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt6-0F-bsB">
+                                <rect key="frame" x="278" y="403" width="41" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInButtonHit:" destination="qqT-0f-fms" eventType="touchUpInside" id="UsT-3M-w1X"/>
+                                    <segue destination="RGy-re-dkZ" kind="unwind" unwindAction="unwindToWelcome:" id="Gpr-0n-aBT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EZK-9F-dzV" firstAttribute="leading" secondItem="lUQ-cR-ThR" secondAttribute="leading" id="6c6-0N-bau"/>
                             <constraint firstItem="B0i-FB-oVX" firstAttribute="leading" secondItem="qwE-gu-8Ks" secondAttribute="trailing" constant="-2" id="Arg-gd-w3Z"/>
-                            <constraint firstItem="Sys-zf-RZy" firstAttribute="top" secondItem="lUQ-cR-ThR" secondAttribute="top" constant="10" id="CI6-7u-tl9"/>
                             <constraint firstItem="Xf9-iT-F7i" firstAttribute="top" secondItem="DRF-sZ-HQq" secondAttribute="bottom" constant="10" id="D1o-rt-olu"/>
                             <constraint firstAttribute="centerX" secondItem="36C-z1-6Va" secondAttribute="centerX" constant="-0.5" id="Gwf-e9-JG4"/>
                             <constraint firstItem="pSZ-fL-MGG" firstAttribute="trailing" secondItem="vGA-sG-xUr" secondAttribute="trailing" id="HOy-of-HKM"/>
                             <constraint firstItem="pSZ-fL-MGG" firstAttribute="top" secondItem="fjQ-Hd-QyM" secondAttribute="bottom" constant="25" id="HyE-YC-ODY"/>
                             <constraint firstItem="fjQ-Hd-QyM" firstAttribute="leading" secondItem="lUQ-cR-ThR" secondAttribute="leadingMargin" constant="22" id="J1I-uF-UIj"/>
+                            <constraint firstAttribute="centerX" secondItem="Gt6-0F-bsB" secondAttribute="centerX" constant="1.5" id="K2Q-PA-uZA"/>
                             <constraint firstItem="fjQ-Hd-QyM" firstAttribute="top" secondItem="36C-z1-6Va" secondAttribute="bottom" constant="25" id="L4t-tW-RQP"/>
                             <constraint firstItem="pSZ-fL-MGG" firstAttribute="leading" secondItem="lUQ-cR-ThR" secondAttribute="leadingMargin" constant="22" id="LGc-a9-9di"/>
+                            <constraint firstItem="Gt6-0F-bsB" firstAttribute="top" secondItem="IHS-wJ-rTH" secondAttribute="bottom" constant="8" id="LLm-LF-TdJ"/>
                             <constraint firstItem="TWF-f1-gfS" firstAttribute="leading" secondItem="B0i-FB-oVX" secondAttribute="trailing" constant="-2" id="M1K-RI-Hin"/>
                             <constraint firstItem="Xf9-iT-F7i" firstAttribute="leading" secondItem="EZK-9F-dzV" secondAttribute="trailing" id="NvF-Fb-oiJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pSZ-fL-MGG" secondAttribute="trailing" constant="22" id="UPt-gc-erV"/>
                             <constraint firstItem="kj3-k3-wvL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pSZ-fL-MGG" secondAttribute="bottom" constant="100" id="WJH-Ze-miB"/>
                             <constraint firstItem="36C-z1-6Va" firstAttribute="top" secondItem="qwE-gu-8Ks" secondAttribute="bottom" constant="88" id="WSK-KT-qpG"/>
-                            <constraint firstItem="Sys-zf-RZy" firstAttribute="leading" secondItem="lUQ-cR-ThR" secondAttribute="leading" id="ZFC-YM-err"/>
                             <constraint firstItem="Eza-Sr-qY9" firstAttribute="top" secondItem="DRF-sZ-HQq" secondAttribute="bottom" constant="8" id="cx2-OR-aE2"/>
                             <constraint firstItem="EZK-9F-dzV" firstAttribute="top" secondItem="DRF-sZ-HQq" secondAttribute="bottom" constant="8" id="egN-1d-h9q"/>
                             <constraint firstItem="IHS-wJ-rTH" firstAttribute="top" secondItem="pSZ-fL-MGG" secondAttribute="bottom" constant="44" id="exZ-4n-0K5"/>
@@ -369,16 +371,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="yes" returnKeyType="next"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEQ-M7-tzA">
-                                <rect key="frame" x="0.0" y="10" width="30" height="30"/>
-                                <state key="normal" title="x">
-                                    <color key="titleColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="d56-H5-duK" kind="unwind" unwindAction="unwindToWelcome:" id="3BV-1V-tMl"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8b-7G-ouX" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="38" y="324" width="524" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -429,23 +421,36 @@
                                     <action selector="signupButtonHit:" destination="ztV-e4-0Ar" eventType="touchUpInside" id="OJp-DZ-TjP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-MZ-EFy">
+                                <rect key="frame" x="280" y="482" width="41" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupButtonHit:" destination="ztV-e4-0Ar" eventType="touchUpInside" id="hrk-Oz-wRd"/>
+                                    <segue destination="d56-H5-duK" kind="unwind" unwindAction="unwindToWelcome:" id="3ar-D4-fjc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5O5-GA-9I4" firstAttribute="top" secondItem="y0X-ul-GMg" secondAttribute="bottom" id="003-aw-kxd"/>
                             <constraint firstItem="cnH-ug-F42" firstAttribute="top" secondItem="Yl2-MK-uow" secondAttribute="bottom" constant="10" id="3q0-6R-vNZ"/>
-                            <constraint firstItem="XEQ-M7-tzA" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leading" id="4vn-g5-KH1"/>
                             <constraint firstItem="H7J-AK-WJB" firstAttribute="top" secondItem="QEZ-c1-gqc" secondAttribute="bottom" id="7zc-LM-CrF"/>
                             <constraint firstItem="VVO-TY-Y5c" firstAttribute="leading" secondItem="JNs-Y0-jhG" secondAttribute="trailing" id="9eQ-Zk-ZWB"/>
                             <constraint firstItem="QEZ-c1-gqc" firstAttribute="top" secondItem="5O5-GA-9I4" secondAttribute="bottom" id="C7i-zI-7HN"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="leading" secondItem="y0X-ul-GMg" secondAttribute="trailing" constant="-2" id="DR6-V6-5sc"/>
                             <constraint firstItem="Xyn-cR-RDK" firstAttribute="top" secondItem="f8b-7G-ouX" secondAttribute="bottom" constant="10" id="DYT-rH-ZrY"/>
+                            <constraint firstAttribute="centerX" secondItem="ehv-MZ-EFy" secondAttribute="centerX" constant="-1" id="FSn-HM-f4M"/>
                             <constraint firstAttribute="centerX" secondItem="5O5-GA-9I4" secondAttribute="centerX" id="FT6-21-VQd"/>
                             <constraint firstItem="9bw-Y0-zx9" firstAttribute="height" secondItem="QEZ-c1-gqc" secondAttribute="height" id="GFV-Oa-xkx"/>
                             <constraint firstItem="QEZ-c1-gqc" firstAttribute="top" secondItem="Cuw-hD-pzN" secondAttribute="bottom" id="Gaz-fk-9ZL"/>
                             <constraint firstItem="cnH-ug-F42" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="GmM-WJ-PSE"/>
                             <constraint firstItem="f8b-7G-ouX" firstAttribute="top" secondItem="cnH-ug-F42" secondAttribute="bottom" constant="10" id="Hjp-MU-Hop"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yl2-MK-uow" secondAttribute="trailing" constant="22" id="IBp-sj-Tbk"/>
+                            <constraint firstItem="ehv-MZ-EFy" firstAttribute="top" secondItem="GaZ-Ie-hRs" secondAttribute="bottom" constant="8" id="Imx-gN-tk3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xyn-cR-RDK" secondAttribute="trailing" constant="22" id="Lin-Du-j2C"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="top" secondItem="Gy3-gx-vXe" secondAttribute="bottom" constant="10" id="Ouy-jW-4cJ"/>
                             <constraint firstItem="f8b-7G-ouX" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="Pmf-4b-Jue"/>
@@ -472,7 +477,6 @@
                             <constraint firstItem="Xyn-cR-RDK" firstAttribute="leading" secondItem="TfP-ry-7oW" secondAttribute="leadingMargin" constant="22" id="tBI-1N-KAX"/>
                             <constraint firstItem="Eyi-rv-p4n" firstAttribute="trailing" secondItem="PKz-83-Z5B" secondAttribute="leading" id="uCQ-e2-y84"/>
                             <constraint firstItem="9bw-Y0-zx9" firstAttribute="top" secondItem="Xyn-cR-RDK" secondAttribute="bottom" id="uGG-aW-nWw"/>
-                            <constraint firstItem="XEQ-M7-tzA" firstAttribute="top" secondItem="TfP-ry-7oW" secondAttribute="top" constant="10" id="uLX-BD-JWA"/>
                             <constraint firstItem="Cuw-hD-pzN" firstAttribute="leading" secondItem="VVO-TY-Y5c" secondAttribute="trailing" constant="-2" id="vjB-Pt-oqJ"/>
                             <constraint firstItem="fPu-Ec-PIh" firstAttribute="top" secondItem="9bw-Y0-zx9" secondAttribute="bottom" id="x3A-sx-j4d"/>
                             <constraint firstItem="PKz-83-Z5B" firstAttribute="width" secondItem="JNs-Y0-jhG" secondAttribute="width" id="yXX-Zy-KVx"/>
