@@ -26,6 +26,7 @@ class QuizViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        addTextDismiss()
         indices = genRandom(numberOfQuestions, limit: data.count)
         super.viewDidLoad()
         loadQuestion(indices[0])

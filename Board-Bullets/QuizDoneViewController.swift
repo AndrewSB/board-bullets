@@ -14,6 +14,7 @@ class QuizDoneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addTextDismiss()
         var curY = 22
         for (index, element) in enumerate(answers) {
             let label = UILabel(frame: CGRectMake(22, CGFloat(curY), 100, 22))

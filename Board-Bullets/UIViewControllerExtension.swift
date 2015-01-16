@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIViewController {
-    func addTextBarObserver() {
-        view.addGestureRecognizer(UIGestureRecognizer(target: self, action: "hideKeyboard:"))
+    func addTextDismiss() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "hideKeyboard:"))
     }
     
     func hideKeyboard(sender: AnyObject) {

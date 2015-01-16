@@ -12,8 +12,8 @@ class WelcomeViewController: UIViewController {
     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
     
     override func viewDidLoad() {
-        addTextBarObserver()
         super.viewDidLoad()
+        addTextDismiss()
     }
     
     @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
