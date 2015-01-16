@@ -19,6 +19,7 @@ class QuizViewController: UIViewController {
     let data: JSON = JSON(data: NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("data", ofType: "json")!)!)
     var answers = [Int]()
     var indices = [Int]()
+    var timeTrail = false
     var numberOfQuestions = 10
     
     required init(coder aDecoder: NSCoder) {
