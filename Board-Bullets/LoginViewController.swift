@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 self.appDelegate.switchToMain()
             } else {
-                println(error)
+                println(error.description)
             }
         }
     }
