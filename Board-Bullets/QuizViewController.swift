@@ -21,6 +21,7 @@ class QuizViewController: UIViewController {
     var indices = [Int]()
     var timeTrail = false
     var numberOfQuestions = 10
+    var allotedTime = 1
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -30,15 +31,16 @@ class QuizViewController: UIViewController {
         addTextDismiss()
         indices = genRandom(numberOfQuestions, limit: data.count)
         super.viewDidLoad()
+        
         loadQuestion(indices[0])
+        configureTimer()
+    }
+
+    func configureTimer() {
+        allotedTime = numberOfQuestions * 12
         let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
         reviewLabel.setTitle("60", forState: .Normal)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func secondPassed(sender: AnyObject!) {
@@ -46,7 +48,10 @@ class QuizViewController: UIViewController {
             if t == 0 {
                 loadDone()
             } else {
-                self.reviewLabel.setTitle("\(t-1)", forState: .Normal)
+                self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
+                if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
+                    self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
+                }
             }
         }
     }
