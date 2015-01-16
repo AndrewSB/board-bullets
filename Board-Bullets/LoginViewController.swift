@@ -9,6 +9,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var emailLabel: CircularEdgeTextField!
+    @IBOutlet weak var passwordLabel: CircularEdgeTextField!
+    
+    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,4 +30,14 @@ class LoginViewController: UIViewController {
     }
     */
 
+    @IBAction func logInButtonHit(sender: AnyObject) {
+        PFUser.logInWithUsernameInBackground(emailLabel.text, password:passwordLabel.text) {
+            (user: PFUser!, error: NSError!) -> Void in
+            if user != nil {
+                self.appDelegate.switchToMain()
+            } else {
+                println(error)
+            }
+        }
+    }
 }

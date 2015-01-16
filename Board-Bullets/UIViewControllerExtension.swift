@@ -14,6 +14,7 @@ extension UIViewController {
     }
     
     func hideKeyboard(sender: AnyObject) {
+        println("lol")
         view.endEditing(true)
     }
 }

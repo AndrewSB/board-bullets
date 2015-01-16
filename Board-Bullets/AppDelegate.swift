@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         addParse(launchOptions)
         Fabric.with([Crashlytics()])
         
+        
+        PFUser.logOut()
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Main" : "Login"
     

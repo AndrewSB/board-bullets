@@ -15,6 +15,7 @@
 		467771F81A68866C00A5F386 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 467770DD1A68866B00A5F386 /* FBAudienceNetwork.README.txt */; };
 		467771F91A68866C00A5F386 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 467770DE1A68866B00A5F386 /* LICENSE */; };
 		467771FA1A68866C00A5F386 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 467770DF1A68866B00A5F386 /* README.txt */; };
+		467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467772B71A68CA3E00A5F386 /* SignupViewController.swift */; };
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
 		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
@@ -47,7 +48,6 @@
 		46FCEB4F1A5A814F009E5171 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB4D1A5A814F009E5171 /* PushNoAnimationSegue.swift */; };
 		46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */; };
 		46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB571A5A95D2009E5171 /* LoginViewController.swift */; };
-		46FCEB5A1A5A95DF009E5171 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB591A5A95DF009E5171 /* SignupViewController.swift */; };
 		46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +70,7 @@
 		467770DD1A68866B00A5F386 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
 		467770DE1A68866B00A5F386 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		467770DF1A68866B00A5F386 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		467772B71A68CA3E00A5F386 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
 		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		46FCEB4D1A5A814F009E5171 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
 		46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		46FCEB591A5A95DF009E5171 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,7 +319,7 @@
 			children = (
 				46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */,
 				46FCEB571A5A95D2009E5171 /* LoginViewController.swift */,
-				46FCEB591A5A95DF009E5171 /* SignupViewController.swift */,
+				467772B71A68CA3E00A5F386 /* SignupViewController.swift */,
 			);
 			name = Onboarding;
 			sourceTree = "<group>";
@@ -451,10 +451,10 @@
 			files = (
 				46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
+				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
 				461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */,
 				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
-				46FCEB5A1A5A95DF009E5171 /* SignupViewController.swift in Sources */,
 				46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,
 				46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */,

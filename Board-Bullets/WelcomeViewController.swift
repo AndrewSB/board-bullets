@@ -11,6 +11,11 @@ import UIKit
 class WelcomeViewController: UIViewController {
     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
     
+    override func viewDidLoad() {
+        addTextBarObserver()
+        super.viewDidLoad()
+    }
+    
     @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
     }
 
@@ -22,7 +27,8 @@ class WelcomeViewController: UIViewController {
     
     }
 
-    @IBAction func signInWithFacebook(sender: AnyObject) {
+    @IBAction func signInWithFbHit(sender: AnyObject) {
+        println("llol")
         PFFacebookUtils.logInWithPermissions(["public_profile", "email", "user_friends"], {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
@@ -35,6 +41,7 @@ class WelcomeViewController: UIViewController {
                 self.appDelegate.switchToMain()
             }
         })
+
     }
 
 }
