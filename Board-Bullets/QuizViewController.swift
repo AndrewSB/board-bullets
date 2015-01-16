@@ -40,7 +40,7 @@ class QuizViewController: UIViewController {
         allotedTime = numberOfQuestions * 12
         let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
-        reviewLabel.setTitle("60", forState: .Normal)
+        reviewLabel.setTitle("\(allotedTime)", forState: .Normal)
     }
     
     func secondPassed(sender: AnyObject!) {
