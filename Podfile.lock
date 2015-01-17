@@ -1,0 +1,10 @@
+PODS:
+  - YZSwipeBetweenViewController (0.0.3)
+
+DEPENDENCIES:
+  - YZSwipeBetweenViewController
+
+SPEC CHECKSUMS:
+  YZSwipeBetweenViewController: 6c849fb1902fba3f78381a78f99ee602883458e8
+
+COCOAPODS: 0.35.0
