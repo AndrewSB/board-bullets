@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */; };
+		461D82ED1A72008100B30AC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EC1A72008100B30AC6 /* Question.swift */; };
 		467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */; };
 		467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DA1A68866B00A5F386 /* Bolts.framework */; };
 		467771F61A68866C00A5F386 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DB1A68866B00A5F386 /* FacebookSDK.framework */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularEdgeTextField.swift; sourceTree = "<group>"; };
+		461D82EC1A72008100B30AC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDoneViewController.swift; sourceTree = "<group>"; };
 		467770DA1A68866B00A5F386 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		467770DB1A68866B00A5F386 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				469C65CF1A5FB70200758740 /* Main.storyboard */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 				461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */,
+				461D82EC1A72008100B30AC6 /* Question.swift */,
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
 				469C65DA1A60479A00758740 /* Resources */,
@@ -468,6 +471,7 @@
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
 				461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */,
 				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
+				461D82ED1A72008100B30AC6 /* Question.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
 				46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,

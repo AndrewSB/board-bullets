@@ -23,10 +23,6 @@ class QuizViewController: UIViewController {
     var numberOfQuestions = 10
     var allotedTime = 1
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     override func viewDidLoad() {
         addTextDismiss()
         indices = genRandom(numberOfQuestions, limit: data.count)
