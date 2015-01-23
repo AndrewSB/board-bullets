@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38B4269E66430636104FE1BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA5F91424797CEA6B48C47F /* libPods.a */; };
 		461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */; };
 		467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */; };
 		467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DA1A68866B00A5F386 /* Bolts.framework */; };
@@ -17,10 +16,6 @@
 		467771F91A68866C00A5F386 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 467770DE1A68866B00A5F386 /* LICENSE */; };
 		467771FA1A68866C00A5F386 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 467770DF1A68866B00A5F386 /* README.txt */; };
 		467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467772B71A68CA3E00A5F386 /* SignupViewController.swift */; };
-		468B39FC1A69E49D00368C5E /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B39FB1A69E49D00368C5E /* libstdc++.6.0.9.dylib */; };
-		468B39FD1A69E4B900368C5E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B39F91A69E40800368C5E /* libstdc++.dylib */; };
-		468B39FF1A69E4BA00368C5E /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B39FE1A69E4BA00368C5E /* libstdc++.6.dylib */; };
-		468B3A011A69E52E00368C5E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B3A001A69E52E00368C5E /* Social.framework */; };
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
 		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
@@ -78,10 +73,6 @@
 		467770DE1A68866B00A5F386 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		467770DF1A68866B00A5F386 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		467772B71A68CA3E00A5F386 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		468B39F91A69E40800368C5E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		468B39FB1A69E49D00368C5E /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
-		468B39FE1A69E4BA00368C5E /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		468B3A001A69E52E00368C5E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
 		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
@@ -122,9 +113,6 @@
 		46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		7FA5F91424797CEA6B48C47F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14B3B6E63B5A47EF7FDDFB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		DB8E329E9332B5E8AFBAEE59 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468B3A011A69E52E00368C5E /* Social.framework in Frameworks */,
-				468B39FF1A69E4BA00368C5E /* libstdc++.6.dylib in Frameworks */,
-				468B39FD1A69E4B900368C5E /* libstdc++.dylib in Frameworks */,
-				468B39FC1A69E49D00368C5E /* libstdc++.6.0.9.dylib in Frameworks */,
 				46FCEB391A5A7489009E5171 /* libsqlite3.dylib in Frameworks */,
 				467771F61A68866C00A5F386 /* FacebookSDK.framework in Frameworks */,
 				467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */,
@@ -157,7 +141,6 @@
 				46FCEB361A5A7476009E5171 /* StoreKit.framework in Frameworks */,
 				46FCEB371A5A7476009E5171 /* SystemConfiguration.framework in Frameworks */,
 				46FCEB251A5A744A009E5171 /* libz.dylib in Frameworks */,
-				38B4269E66430636104FE1BD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +228,6 @@
 				46FCEB451A5A74CA009E5171 /* Frameworks */,
 				46FCEB171A5A7116009E5171 /* Board-BulletsTests */,
 				46FCEB001A5A7116009E5171 /* Products */,
-				B194365CCA50AC00AB89E357 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -319,16 +301,11 @@
 		46FCEB451A5A74CA009E5171 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				468B3A001A69E52E00368C5E /* Social.framework */,
-				468B39FE1A69E4BA00368C5E /* libstdc++.6.dylib */,
-				468B39FB1A69E49D00368C5E /* libstdc++.6.0.9.dylib */,
-				468B39F91A69E40800368C5E /* libstdc++.dylib */,
 				467770D91A68866B00A5F386 /* FacebookSDK */,
 				46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */,
 				469C65D21A5FBEBA00758740 /* Crashlytics.framework */,
 				469C65D31A5FBEBA00758740 /* Fabric.framework */,
 				469C65D71A5FBF2A00758740 /* Parse */,
-				7FA5F91424797CEA6B48C47F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,15 +338,6 @@
 			name = Onboarding;
 			sourceTree = "<group>";
 		};
-		B194365CCA50AC00AB89E357 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB8E329E9332B5E8AFBAEE59 /* Pods.debug.xcconfig */,
-				D14B3B6E63B5A47EF7FDDFB6 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,12 +345,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */;
 			buildPhases = (
-				3500D8690D773C2BC616B070 /* Check Pods Manifest.lock */,
 				46FCEAFB1A5A7116009E5171 /* Sources */,
 				46FCEAFC1A5A7116009E5171 /* Frameworks */,
 				46FCEAFD1A5A7116009E5171 /* Resources */,
 				469C65D11A5FBE9100758740 /* ShellScript */,
-				81B85BD7FD65CFF5B327FA44 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,21 +443,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3500D8690D773C2BC616B070 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		469C65D11A5FBE9100758740 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,21 +455,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run cf31bd871fb35d3e3e94b3732cd654bbde1f5b0c 33804315ff66b7966281403539d1d005fcf98139ee03282942a67832a10b0f8e";
-		};
-		81B85BD7FD65CFF5B327FA44 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -615,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -651,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -660,7 +596,6 @@
 		};
 		46FCEB1F1A5A7116009E5171 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB8E329E9332B5E8AFBAEE59 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -672,7 +607,7 @@
 					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Board-Bullets";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Board-Bullets-Bridging-Header.h";
@@ -682,7 +617,6 @@
 		};
 		46FCEB201A5A7116009E5171 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14B3B6E63B5A47EF7FDDFB6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -694,7 +628,7 @@
 					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Board-Bullets";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Board-Bullets-Bridging-Header.h";
