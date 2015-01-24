@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVJ-Tq-f5G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVJ-Tq-f5G">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -292,6 +292,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiH-WQ-mmN">
+                                <rect key="frame" x="60" y="285" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="1aP-Tm-u2e"/>
+                                    <constraint firstAttribute="height" constant="30" id="k6P-67-2nz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="back-arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k52-SR-iLl">
+                                <rect key="frame" x="494" y="285" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="CTW-8w-EJX"/>
+                                    <constraint firstAttribute="height" constant="30" id="ixL-Xe-Lw6"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="next-arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -299,6 +319,7 @@
                             <constraint firstAttribute="centerX" secondItem="bBn-de-dbo" secondAttribute="centerX" id="9Jr-TP-vRe"/>
                             <constraint firstItem="iUH-rc-CM0" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="9o7-kx-i2Q"/>
                             <constraint firstAttribute="centerX" secondItem="oPo-Oc-DII" secondAttribute="centerX" constant="-0.5" id="9pw-Ma-iSh"/>
+                            <constraint firstAttribute="centerY" secondItem="fiH-WQ-mmN" secondAttribute="centerY" id="BFF-yE-aOg"/>
                             <constraint firstItem="DIQ-4x-KDM" firstAttribute="top" secondItem="bBn-de-dbo" secondAttribute="bottom" id="DIk-bS-BjS"/>
                             <constraint firstAttribute="centerX" secondItem="DIQ-4x-KDM" secondAttribute="centerX" id="ER0-1Z-mxV"/>
                             <constraint firstItem="qF8-SG-JFP" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" id="IzW-IJ-bwA"/>
@@ -306,6 +327,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="oPo-Oc-DII" secondAttribute="trailing" constant="44" id="Kal-f0-eEk"/>
                             <constraint firstItem="bBn-de-dbo" firstAttribute="height" secondItem="GbP-J6-eqk" secondAttribute="height" id="LML-OU-Na6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5rz-u0-CBX" secondAttribute="trailing" id="LwN-ka-utq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k52-SR-iLl" secondAttribute="trailing" constant="44" id="MAq-HP-ASu"/>
                             <constraint firstItem="iUH-rc-CM0" firstAttribute="top" secondItem="GbP-J6-eqk" secondAttribute="bottom" id="QCY-Rz-8tO"/>
                             <constraint firstItem="GbP-J6-eqk" firstAttribute="top" secondItem="kL1-Q5-TfJ" secondAttribute="bottom" id="Qbe-Ul-wAX"/>
                             <constraint firstAttribute="centerX" secondItem="GbP-J6-eqk" secondAttribute="centerX" id="QlY-mu-ymI"/>
@@ -323,9 +345,11 @@
                             <constraint firstItem="xGQ-Dq-zcH" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="kgX-kS-VjC"/>
                             <constraint firstAttribute="centerX" secondItem="xGQ-Dq-zcH" secondAttribute="centerX" constant="-0.5" id="oo5-w9-dq8"/>
                             <constraint firstItem="oPo-Oc-DII" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="ooS-mm-Cn3"/>
+                            <constraint firstItem="fiH-WQ-mmN" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="rIy-fd-gSP"/>
                             <constraint firstItem="LKf-LI-ds3" firstAttribute="top" secondItem="xGQ-Dq-zcH" secondAttribute="bottom" constant="22" id="tY1-zk-jJq"/>
                             <constraint firstItem="kL1-Q5-TfJ" firstAttribute="top" secondItem="aF7-yX-2d8" secondAttribute="bottom" id="uWT-C0-GYW"/>
                             <constraint firstItem="iUH-rc-CM0" firstAttribute="top" secondItem="kL1-Q5-TfJ" secondAttribute="bottom" constant="53" id="wOc-g2-8j9"/>
+                            <constraint firstAttribute="centerY" secondItem="k52-SR-iLl" secondAttribute="centerY" id="wdA-dP-Le6"/>
                             <constraint firstItem="LKf-LI-ds3" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="xGc-YA-k6h"/>
                         </constraints>
                         <variation key="default">
@@ -1082,4 +1106,8 @@
             <point key="canvasLocation" x="1893" y="-1221"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back-arrow" width="112" height="98"/>
+        <image name="next-arrow" width="112" height="98"/>
+    </resources>
 </document>
