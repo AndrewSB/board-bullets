@@ -31,6 +31,16 @@ class QuizViewController: UIViewController {
         quizData = genQuiz(numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
+        
+        //------------right  swipe gestures in view--------------//
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        //-----------left swipe gestures in view--------------//
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("leftSwiped"))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
     }
     
     func configureTimer() {
@@ -193,6 +203,20 @@ class QuizViewController: UIViewController {
     @IBAction func nextButtonWasHit(sender: AnyObject) {
         curQuestion++
         loadQuestion(curQuestion, isMovingForward: true)
+    }
+    
+    func rightSwiped() {
+        if backButton.layer.opacity != 0 {
+            curQuestion--
+            loadQuestion(curQuestion, isMovingForward: false)
+        }
+    }
+    
+    func leftSwiped() {
+        if nextButton.layer.opacity != 0 {
+            curQuestion++
+            loadQuestion(curQuestion, isMovingForward: true)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
