@@ -27,10 +27,6 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.layer.opacity = 0
-        if curQuestion == 0 {
-            backButton.layer.opacity = 0
-        }
         
         quizData = genQuiz(numberOfQuestions)
         loadQuestion(0)
@@ -63,11 +59,43 @@ class QuizViewController: UIViewController {
     }
     
     func loadQuestion(i: Int) {
-        questionLabel.text = quizData[i].question
         
-        option1Button.setTitle(quizData[i].optionOne, forState: .Normal)
-        option2Button.setTitle(quizData[i].optionTwo, forState: .Normal)
-        option3Button.setTitle(quizData[i].optionThree, forState: .Normal)
+        nextButton.layer.opacity = 0
+        if curQuestion == 0 {
+            backButton.layer.opacity = 0
+        } else {
+            backButton.layer.opacity = 1
+        }
+        
+        UIView.animateWithDuration(0.25, animations: {
+            
+            self.questionLabel.layer.opacity = 0
+            self.option1Button.layer.opacity = 0
+            self.option2Button.layer.opacity = 0
+            self.option3Button.layer.opacity = 0
+            
+        }, completion: { animationFinished in
+            for b in [self.option1Button, self.option2Button, self.option3Button] {
+                b.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 18)
+            }
+            self.questionLabel.text = self.quizData[i].question
+            self.option1Button.setTitle(self.quizData[i].optionOne, forState: .Normal)
+            self.option2Button.setTitle(self.quizData[i].optionTwo, forState: .Normal)
+            self.option3Button.setTitle(self.quizData[i].optionThree, forState: .Normal)
+            
+            UIView.animateWithDuration(0.25, animations: {
+                self.questionLabel.layer.opacity = 1
+                self.option1Button.layer.opacity = 1
+                self.option2Button.layer.opacity = 1
+                self.option3Button.layer.opacity = 1
+                
+            })
+                
+        })
+        
+       
+        
+        
     }
     
     func loadDone() {
