@@ -111,12 +111,12 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func backButtonWasHit(sender: AnyObject) {
-        curQuestion++
+        curQuestion--
         loadQuestion(curQuestion)
     }
     
     @IBAction func nextButtonWasHit(sender: AnyObject) {
-        curQuestion--
+        curQuestion++
         loadQuestion(curQuestion)
     }
     
