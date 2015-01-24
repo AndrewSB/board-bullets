@@ -86,6 +86,7 @@ class QuizViewController: UIViewController {
             self.option1Button.layer.opacity = 0
             self.option2Button.layer.opacity = 0
             self.option3Button.layer.opacity = 0
+            self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
             
         }, completion: { animationFinished in
             for b in [self.option1Button, self.option2Button, self.option3Button] {
@@ -95,12 +96,15 @@ class QuizViewController: UIViewController {
             self.option1Button.setTitle(self.quizData[i].optionOne, forState: .Normal)
             self.option2Button.setTitle(self.quizData[i].optionTwo, forState: .Normal)
             self.option3Button.setTitle(self.quizData[i].optionThree, forState: .Normal)
+            self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 100
             
             UIView.animateWithDuration(0.25, animations: {
                 self.questionLabel.layer.opacity = 1
                 self.option1Button.layer.opacity = 1
                 self.option2Button.layer.opacity = 1
                 self.option3Button.layer.opacity = 1
+                
+                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
                 
             })
                 
