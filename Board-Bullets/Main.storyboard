@@ -238,13 +238,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GbP-J6-eqk">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" id="nCk-sd-oIT"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-de-dbo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-de-dbo">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="PsQ-mQ-Ioc"/>
@@ -318,13 +312,18 @@
                                     <action selector="nextButtonWasHit:" destination="hm8-Rg-1D7" eventType="touchUpInside" id="srK-zV-dQg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbP-J6-eqk">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="nCk-sd-oIT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="kL1-Q5-TfJ" secondAttribute="centerX" id="2cs-Tn-cAe"/>
                             <constraint firstAttribute="centerX" secondItem="bBn-de-dbo" secondAttribute="centerX" id="9Jr-TP-vRe"/>
                             <constraint firstItem="iUH-rc-CM0" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="9o7-kx-i2Q"/>
-                            <constraint firstAttribute="centerX" secondItem="oPo-Oc-DII" secondAttribute="centerX" constant="-0.5" id="9pw-Ma-iSh"/>
                             <constraint firstItem="DIQ-4x-KDM" firstAttribute="top" secondItem="bBn-de-dbo" secondAttribute="bottom" id="DIk-bS-BjS"/>
                             <constraint firstAttribute="centerX" secondItem="DIQ-4x-KDM" secondAttribute="centerX" id="ER0-1Z-mxV"/>
                             <constraint firstItem="oPo-Oc-DII" firstAttribute="top" secondItem="k52-SR-iLl" secondAttribute="bottom" constant="22" id="IWP-nm-A19"/>
@@ -348,9 +347,7 @@
                             <constraint firstItem="qF8-SG-JFP" firstAttribute="top" secondItem="aF7-yX-2d8" secondAttribute="bottom" id="eO9-PA-3p2"/>
                             <constraint firstItem="xGQ-Dq-zcH" firstAttribute="top" secondItem="oPo-Oc-DII" secondAttribute="bottom" constant="22" id="fJK-5J-gvZ"/>
                             <constraint firstItem="Y8q-em-qVn" firstAttribute="leading" secondItem="DIQ-4x-KDM" secondAttribute="trailing" constant="-3.5" id="ffM-4N-y82"/>
-                            <constraint firstAttribute="centerX" secondItem="LKf-LI-ds3" secondAttribute="centerX" id="jaj-Bo-qws"/>
                             <constraint firstItem="xGQ-Dq-zcH" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="kgX-kS-VjC"/>
-                            <constraint firstAttribute="centerX" secondItem="xGQ-Dq-zcH" secondAttribute="centerX" constant="-0.5" id="oo5-w9-dq8"/>
                             <constraint firstItem="oPo-Oc-DII" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="44" id="ooS-mm-Cn3"/>
                             <constraint firstItem="fiH-WQ-mmN" firstAttribute="leading" secondItem="YHr-LO-OhQ" secondAttribute="leadingMargin" constant="22" id="rIy-fd-gSP"/>
                             <constraint firstItem="LKf-LI-ds3" firstAttribute="top" secondItem="xGQ-Dq-zcH" secondAttribute="bottom" constant="22" id="tY1-zk-jJq"/>
