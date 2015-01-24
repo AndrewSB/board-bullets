@@ -71,7 +71,7 @@ class QuizViewController: UIViewController {
         
     }
     
-    func loadQuestion(i: Int) {
+    func loadQuestion(i: Int, isMovingForward: Bool) {
         
         nextButton.layer.opacity = 0
         if curQuestion == 0 {
@@ -86,7 +86,18 @@ class QuizViewController: UIViewController {
             self.option1Button.layer.opacity = 0
             self.option2Button.layer.opacity = 0
             self.option3Button.layer.opacity = 0
-            self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
+            
+            if isMovingForward {
+                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
+                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 50
+                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 50
+                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 50
+            } else {
+                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 50
+                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 50
+                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 50
+                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 50
+            }
             
         }, completion: { animationFinished in
             for b in [self.option1Button, self.option2Button, self.option3Button] {
@@ -96,7 +107,19 @@ class QuizViewController: UIViewController {
             self.option1Button.setTitle(self.quizData[i].optionOne, forState: .Normal)
             self.option2Button.setTitle(self.quizData[i].optionTwo, forState: .Normal)
             self.option3Button.setTitle(self.quizData[i].optionThree, forState: .Normal)
-            self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 100
+            
+            if isMovingForward {
+                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 100
+                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 100
+                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 100
+                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 100
+            } else {
+                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 100
+                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 100
+                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 100
+                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 100
+            }
+
             
             UIView.animateWithDuration(0.25, animations: {
                 self.questionLabel.layer.opacity = 1
@@ -104,7 +127,17 @@ class QuizViewController: UIViewController {
                 self.option2Button.layer.opacity = 1
                 self.option3Button.layer.opacity = 1
                 
-                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
+                if isMovingForward {
+                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
+                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 50
+                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 50
+                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 50
+                } else {
+                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 50
+                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 50
+                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 50
+                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 50
+                }
                 
             })
                 
@@ -154,12 +187,12 @@ class QuizViewController: UIViewController {
     
     @IBAction func backButtonWasHit(sender: AnyObject) {
         curQuestion--
-        loadQuestion(curQuestion)
+        loadQuestion(curQuestion, isMovingForward: false)
     }
     
     @IBAction func nextButtonWasHit(sender: AnyObject) {
         curQuestion++
-        loadQuestion(curQuestion)
+        loadQuestion(curQuestion, isMovingForward: true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
