@@ -17,6 +17,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var swipeHintView: UIView!
     
     var answers = [Int]()
     var timeTrail = false
@@ -31,16 +32,9 @@ class QuizViewController: UIViewController {
         quizData = genQuiz(numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
+        configureSwipeHint()
+        configureSwipeGestures()
         
-        //------------right  swipe gestures in view--------------//
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeRight)
-        
-        //-----------left swipe gestures in view--------------//
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("leftSwiped"))
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeLeft)
     }
     
     func configureTimer() {
@@ -85,9 +79,14 @@ class QuizViewController: UIViewController {
         
         nextButton.layer.opacity = 0
         if curQuestion == 0 {
-            backButton.layer.opacity = 0
+            UIView.animateWithDuration(0.25, animations: {
+                self.backButton.layer.opacity = 0
+            })
+            
         } else {
-            backButton.layer.opacity = 1
+            UIView.animateWithDuration(0.25, animations: {
+                self.backButton.layer.opacity = 1
+            })
         }
         
         UIView.animateWithDuration(0.25, animations: {
@@ -171,6 +170,8 @@ class QuizViewController: UIViewController {
         UIView.animateWithDuration(0.25, animations: {
             self.nextButton.layer.opacity = 1
         })
+        
+        playSwipeHintAnimation()
     }
     
     
@@ -205,6 +206,18 @@ class QuizViewController: UIViewController {
         loadQuestion(curQuestion, isMovingForward: true)
     }
     
+    func configureSwipeGestures() {
+        //------------right  swipe gestures in view--------------//
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("rightSwiped"))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        //-----------left swipe gestures in view--------------//
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("leftSwiped"))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
     func rightSwiped() {
         if backButton.layer.opacity != 0 {
             backButtonWasHit(self)
@@ -215,6 +228,20 @@ class QuizViewController: UIViewController {
         if nextButton.layer.opacity != 0 {
             nextButtonWasHit(self)
         }
+    }
+    
+    func configureSwipeHint() {
+        swipeHintView.layer.cornerRadius = 15
+        swipeHintView.layer.backgroundColor = UIColor(red: 0.104, green: 0.457, blue: 0.734, alpha: 0.5).CGColor
+        swipeHintView.layer.opacity = 0
+    }
+    
+    func playSwipeHintAnimation() {
+        self.swipeHintView.layer.opacity = 1
+        UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseInOut, animations: {
+            self.swipeHintView.layer.opacity = 0
+            self.swipeHintView.frame.origin.x = self.swipeHintView.frame.origin.x - 88
+        }, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
