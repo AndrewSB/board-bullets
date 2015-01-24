@@ -29,7 +29,7 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         quizData = genQuiz(numberOfQuestions)
-        loadQuestion(0)
+        loadQuestionInitial()
         configureTimer()
     }
     
@@ -56,6 +56,19 @@ class QuizViewController: UIViewController {
             }
             
         }
+    }
+    
+    func loadQuestionInitial() {
+        
+        
+        questionLabel.text = quizData[0].question
+        option1Button.setTitle(quizData[0].optionOne, forState: .Normal)
+        option2Button.setTitle(quizData[0].optionTwo, forState: .Normal)
+        option3Button.setTitle(quizData[0].optionThree, forState: .Normal)
+        
+        backButton.layer.opacity = 0
+        nextButton.layer.opacity = 0
+        
     }
     
     func loadQuestion(i: Int) {
@@ -92,9 +105,6 @@ class QuizViewController: UIViewController {
             })
                 
         })
-        
-       
-        
         
     }
     
