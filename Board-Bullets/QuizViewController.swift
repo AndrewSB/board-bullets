@@ -16,7 +16,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option2Button: UIButton!
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var backButton: UIButton!
+
     @IBOutlet weak var swipeHintView: UIView!
     
     var answers = [Int]()
@@ -263,5 +263,8 @@ class QuizViewController: UIViewController {
         if let destination = segue.destinationViewController as? QuizDoneViewController {
             destination.questions = quizData
         }
+    }
+    
+    @IBAction func unwindToQuiz(segue: UIStoryboardSegue) {
     }
 }
