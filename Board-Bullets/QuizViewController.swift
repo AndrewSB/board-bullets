@@ -25,6 +25,7 @@ class QuizViewController: UIViewController {
     var allotedTime = Int()
     var quizData = [Question]()
     var curQuestion = 0
+    var originalNextButtonWidth : CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +33,12 @@ class QuizViewController: UIViewController {
         quizData = genQuiz(numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
+        configureQuestionNav()
         configureSwipeHint()
         configureSwipeGestures()
+        
+        originalNextButtonWidth = nextButton.frame.size.width
+        
         
     }
     
@@ -64,14 +69,10 @@ class QuizViewController: UIViewController {
     
     func loadQuestionInitial() {
         
-        
         questionLabel.text = quizData[0].question
         option1Button.setTitle(quizData[0].optionOne, forState: .Normal)
         option2Button.setTitle(quizData[0].optionTwo, forState: .Normal)
         option3Button.setTitle(quizData[0].optionThree, forState: .Normal)
-        
-        backButton.layer.opacity = 0
-        nextButton.layer.opacity = 0
         
     }
     
@@ -167,6 +168,14 @@ class QuizViewController: UIViewController {
             button.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 18)
         }
         
+        if curQuestion == numberOfQuestions - 1 {
+            nextButton.setBackgroundImage(nil, forState: .Normal)
+            nextButton.setTitle("DONE", forState: .Normal)
+        } else {
+            nextButton.setBackgroundImage(UIImage(named: "next-arrow"), forState: .Normal)
+            nextButton.setTitle("", forState: .Normal)
+        }
+        
         UIView.animateWithDuration(0.25, animations: {
             self.nextButton.layer.opacity = 1
         })
@@ -204,6 +213,12 @@ class QuizViewController: UIViewController {
     @IBAction func nextButtonWasHit(sender: AnyObject) {
         curQuestion++
         loadQuestion(curQuestion, isMovingForward: true)
+    }
+    
+    func configureQuestionNav() {
+        backButton.layer.opacity = 0
+        nextButton.layer.opacity = 0
+ 
     }
     
     func configureSwipeGestures() {
