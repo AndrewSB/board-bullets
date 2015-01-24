@@ -23,7 +23,7 @@ class QuizViewController: UIViewController {
     var numberOfQuestions = 10
     var allotedTime = Int()
     var quizData = [Question]()
-    let curQuestion = 0
+    var curQuestion = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class QuizViewController: UIViewController {
         }
         
         quizData = genQuiz(numberOfQuestions)
+        loadQuestion(0)
         configureTimer()
     }
     
@@ -107,6 +108,16 @@ class QuizViewController: UIViewController {
     @IBAction func option3WasHit(sender: AnyObject) {
         handleSelection(option3Button)
         //Sarode next button animation/loadDone
+    }
+    
+    @IBAction func backButtonWasHit(sender: AnyObject) {
+        curQuestion++
+        loadQuestion(curQuestion)
+    }
+    
+    @IBAction func nextButtonWasHit(sender: AnyObject) {
+        curQuestion--
+        loadQuestion(curQuestion)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
