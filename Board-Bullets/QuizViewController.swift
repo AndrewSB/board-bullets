@@ -22,12 +22,13 @@ class QuizViewController: UIViewController {
     var timeTrail = false
     var numberOfQuestions = 10
     var allotedTime = 1
+    var quizData = [Question]()
+    let curQuestion = 0
     
     override func viewDidLoad() {
-        addTextDismiss()
         super.viewDidLoad()
         
-        let quizData = genQuiz(numberOfQuestions)
+        quizData = genQuiz(numberOfQuestions)
         configureTimer()
     }
 
@@ -52,15 +53,11 @@ class QuizViewController: UIViewController {
     }
     
     func loadQuestion(i: Int) {
-        let r = genRandom(3, 3)
+        questionLabel.text = quizData[i].question
         
-        questionLabel.text = data[i]["Question"].string!
-        
-        option1Button.setTitle(data[i][String(r[0]+1)].string!, forState: .Normal)
-        option2Button.setTitle(data[i][String(r[1]+1)].string!, forState: .Normal)
-        option3Button.setTitle(data[i][String(r[2]+1)].string!, forState: .Normal)
-        
-        println("\(option1Button.titleLabel?.text) || \(option2Button.titleLabel?.text) || \(option3Button.titleLabel?.text) || ")
+        option1Button.setTitle(quizData[i].optionOne, forState: .Normal)
+        option2Button.setTitle(quizData[i].optionTwo, forState: .Normal)
+        option3Button.setTitle(quizData[i].optionThree, forState: .Normal)
     }
     
     func loadDone() {
@@ -101,18 +98,7 @@ class QuizViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? QuizDoneViewController {
-            for (index, element) in enumerate(indices) {
-                let correctAnswer = data[element]["4"].string!
-                let chosenAnswer = data[element][String(answers[index]+1)].string!
-                println("correct: \(correctAnswer) \n chosen: \(chosenAnswer)")
-                
-                if chosenAnswer == correctAnswer {
-                    println("correct")
-                    destination.answers.append(true)
-                } else {
-                    destination.answers.append(false)
-                }
-            }
+            destination.questions = quizData
         }
     }
 }

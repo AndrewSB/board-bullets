@@ -10,21 +10,10 @@ import UIKit
 
 class QuizDoneViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
-    var answers = [Bool]()
-
+    var questions = [Question]()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        addTextDismiss()
-        var curY = 22
-        for (index, element) in enumerate(answers) {
-            let label = UILabel(frame: CGRectMake(22, CGFloat(curY), 100, 22))
-            label.text = "Question \(index+1)"
-            label.textColor = element ? UIColor.greenColor() : UIColor.redColor()
-            
-            curY += 22
-            
-            view.addSubview(label)
-        }
+        super.viewDidLoad()        
     }
 
     /*
