@@ -16,6 +16,11 @@ class Question {
     var optionThree = String()
     
     var chosen = Int()
+    var correct = Bool()
     
     init() {}
+    
+    func isCorrect() {
+        chosen = answer == chosen
+    }
 }
