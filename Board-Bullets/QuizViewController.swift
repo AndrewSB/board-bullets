@@ -15,6 +15,8 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option1Button: UIButton!
     @IBOutlet weak var option2Button: UIButton!
     @IBOutlet weak var option3Button: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     var answers = [Int]()
     var timeTrail = false
@@ -24,6 +26,11 @@ class QuizViewController: UIViewController {
     let curQuestion = 0
     
     override func viewDidLoad() {
+        
+        nextButton.layer.opacity = 0
+        if curQuestion == 0 {
+            backButton.layer.opacity = 0
+        }
         super.viewDidLoad()
         
         println("\(timeTrail) \(numberOfQuestions)")
@@ -77,6 +84,12 @@ class QuizViewController: UIViewController {
             }
             button.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 18)
         }
+        
+        UIView.animateWithDuration(0.25, animations: {
+           self.nextButton.layer.opacity = 1
+        })
+
+        
     }
     
     
