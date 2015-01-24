@@ -207,15 +207,13 @@ class QuizViewController: UIViewController {
     
     func rightSwiped() {
         if backButton.layer.opacity != 0 {
-            curQuestion--
-            loadQuestion(curQuestion, isMovingForward: false)
+            backButtonWasHit(self)
         }
     }
     
     func leftSwiped() {
         if nextButton.layer.opacity != 0 {
-            curQuestion++
-            loadQuestion(curQuestion, isMovingForward: true)
+            nextButtonWasHit(self)
         }
     }
     
