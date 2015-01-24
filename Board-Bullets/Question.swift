@@ -9,11 +9,13 @@
 import Foundation
 
 class Question {
-    let question = String()
-    let answer = Int()
-    let optionOne = String()
-    let optionTwo = String()
-    let optionThree = String()
-
+    var question = String()
+    var answer = Int()
+    var optionOne = String()
+    var optionTwo = String()
+    var optionThree = String()
+    
+    var chosen = Int()
+    
     init() {}
 }

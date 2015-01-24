@@ -25,10 +25,9 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         addTextDismiss()
-        indices = genRandom(numberOfQuestions, limit: data.count)
         super.viewDidLoad()
         
-        loadQuestion(indices[0])
+        let quizData = genQuiz(numberOfQuestions)
         configureTimer()
     }
 
@@ -52,19 +51,8 @@ class QuizViewController: UIViewController {
         }
     }
     
-    func genRandom(count: Int, limit: Int) -> [Int] {
-        var a = [Int]()
-        while a.count != count {
-            let i = Int(arc4random_uniform(UInt32(limit)))
-            if !contains(a, i) {
-                a.append(i)
-            }
-        }
-        return a
-    }
-    
     func loadQuestion(i: Int) {
-        let r = genRandom(3, limit: 3)
+        let r = genRandom(3, 3)
         
         questionLabel.text = data[i]["Question"].string!
         
@@ -80,6 +68,16 @@ class QuizViewController: UIViewController {
         performSegueWithIdentifier("segueToDone", sender: self)
     }
     
+    func handleSelection(button: UIButton) {
+        if button.titleLabel?.font == UIFont(name: "HelveticaNeue-Thin", size: 18) {
+            for b in [option1Button, option2Button, option3Button] {
+                b.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 18)
+            }
+            button.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 18)
+        }
+    }
+    
+    
     @IBAction func reviewButtonWasHit(sender: AnyObject) {
     }
 
@@ -87,33 +85,18 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func option1WasHit(sender: AnyObject) {
-        option1Button.tintColor = UIColor.greenColor()
-        answers.append(0)
-        if answers.count < numberOfQuestions {
-            loadQuestion(answers.count)
-        } else {
-            loadDone()
-        }
+        handleSelection(option1Button)
+        //Sarode next button animation/loadDone
     }
     
     @IBAction func option2WasHit(sender: AnyObject) {
-        option2Button.tintColor = UIColor.greenColor()
-        answers.append(1)
-        if answers.count < numberOfQuestions {
-            loadQuestion(answers.count)
-        } else {
-            loadDone()
-        }
+        handleSelection(option2Button)
+        //Sarode next button animation/loadDone
     }
     
     @IBAction func option3WasHit(sender: AnyObject) {
-        option3Button.tintColor = UIColor.greenColor()
-        answers.append(2)
-        if answers.count < numberOfQuestions {
-            loadQuestion(answers.count)
-        } else {
-            loadDone()
-        }
+        handleSelection(option3Button)
+        //Sarode next button animation/loadDone
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
