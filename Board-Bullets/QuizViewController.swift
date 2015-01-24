@@ -16,17 +16,17 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option2Button: UIButton!
     @IBOutlet weak var option3Button: UIButton!
     
-    let data: JSON = JSON(data: NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("data", ofType: "json")!)!)
     var answers = [Int]()
-    var indices = [Int]()
     var timeTrail = false
     var numberOfQuestions = 10
-    var allotedTime = 1
+    var allotedTime = Int()
     var quizData = [Question]()
     let curQuestion = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        println("\(timeTrail) \(numberOfQuestions)")
         
         quizData = genQuiz(numberOfQuestions)
         configureTimer()
@@ -36,19 +36,24 @@ class QuizViewController: UIViewController {
         allotedTime = numberOfQuestions * 12
         let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
-        reviewLabel.setTitle("\(allotedTime)", forState: .Normal)
+        reviewLabel.setTitle("\(self.timeTrail ? allotedTime : 0)", forState: .Normal)
     }
     
     func secondPassed(sender: AnyObject!) {
         if let t = reviewLabel.titleLabel?.text?.toInt() {
-            if t == 0 {
-                loadDone()
-            } else {
-                self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
-                if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
-                    self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
-                }
+            self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
+            if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
+                self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
+
+            if reviewLabel.titleLabel?.text?.toInt()! == 0 {
+                loadDone()
+            }
+            
+            if (t > allotedTime) {
+                reviewLabel.titleLabel?.textColor = UIColor.redColor()
+            }
+            
         }
     }
     
