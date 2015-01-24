@@ -26,19 +26,16 @@ class QuizViewController: UIViewController {
     let curQuestion = 0
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         nextButton.layer.opacity = 0
         if curQuestion == 0 {
             backButton.layer.opacity = 0
         }
-        super.viewDidLoad()
-        
-        println("\(timeTrail) \(numberOfQuestions)")
         
         quizData = genQuiz(numberOfQuestions)
         configureTimer()
     }
-
+    
     func configureTimer() {
         allotedTime = numberOfQuestions * 12
         let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
@@ -52,7 +49,7 @@ class QuizViewController: UIViewController {
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
-
+            
             if reviewLabel.titleLabel?.text?.toInt()! == 0 {
                 loadDone()
             }
@@ -86,16 +83,14 @@ class QuizViewController: UIViewController {
         }
         
         UIView.animateWithDuration(0.25, animations: {
-           self.nextButton.layer.opacity = 1
+            self.nextButton.layer.opacity = 1
         })
-
-        
     }
     
     
     @IBAction func reviewButtonWasHit(sender: AnyObject) {
     }
-
+    
     @IBAction func pauseButtonWasHit(sender: AnyObject) {
     }
     
