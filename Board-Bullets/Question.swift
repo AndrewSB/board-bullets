@@ -21,6 +21,6 @@ class Question {
     init() {}
     
     func isCorrect() {
-        chosen = answer == chosen
+        correct = answer == chosen
     }
 }
