@@ -52,5 +52,4 @@ class QuizPickerViewController: UIViewController {
     @IBAction func startQuizButtonHit(sender: AnyObject) {
         
     }
-
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E8EFCD01A74549B007E6914 /* resultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */; };
 		0EC32C351A732FDE007E5ACB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC32C341A732FDE007E5ACB /* API-Keys.plist */; };
+		460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460957771A74AB83004EDF45 /* MainNavigationController.swift */; };
 		461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */; };
 		461D82ED1A72008100B30AC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EC1A72008100B30AC6 /* Question.swift */; };
 		461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EE1A72013C00B30AC6 /* QuizHelper.swift */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewCell.swift; sourceTree = "<group>"; };
 		0EC32C341A732FDE007E5ACB /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
+		460957771A74AB83004EDF45 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularEdgeTextField.swift; sourceTree = "<group>"; };
 		461D82EC1A72008100B30AC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		461D82EE1A72013C00B30AC6 /* QuizHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizHelper.swift; sourceTree = "<group>"; };
@@ -222,8 +224,8 @@
 		46FBFE371A6999C000B53C4E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
 				46CFB14E1A6786830091BCE9 /* Quiz */,
+				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 				461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */,
 				461D82EC1A72008100B30AC6 /* Question.swift */,
+				460957771A74AB83004EDF45 /* MainNavigationController.swift */,
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
 				469C65DA1A60479A00758740 /* Resources */,
@@ -480,6 +483,7 @@
 				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
 				461D82ED1A72008100B30AC6 /* Question.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
+				460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */,
 				46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */,
 				0E8EFCD01A74549B007E6914 /* resultViewCell.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,

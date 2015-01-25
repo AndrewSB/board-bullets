@@ -15,10 +15,12 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         addTextDismiss()
     }
-    
-    @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
-    }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        println("welcome appeared")
+    }
+    
     @IBAction func logInHit(sender: AnyObject) {
         
     }
@@ -43,5 +45,7 @@ class WelcomeViewController: UIViewController {
         })
 
     }
-
+    
+    @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
+    }
 }
