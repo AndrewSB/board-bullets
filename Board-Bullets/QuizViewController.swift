@@ -211,8 +211,14 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func nextButtonWasHit(sender: AnyObject) {
-        curQuestion++
-        loadQuestion(curQuestion, isMovingForward: true)
+        
+        
+        if curQuestion == numberOfQuestions - 1 {
+            performSegueWithIdentifier("segueToDone", sender: nil)
+        } else {
+            curQuestion++
+            loadQuestion(curQuestion, isMovingForward: true)
+        }
     }
     
     func configureQuestionNav() {
