@@ -1159,8 +1159,8 @@
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="submit a question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUA-iv-klt">
-                                <rect key="frame" x="195" y="154" width="209.5" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="submit a question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUA-iv-klt">
+                                <rect key="frame" x="196" y="154" width="207.5" height="33.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1177,17 +1177,17 @@
                                     <action selector="submitButtonWasHit:" destination="olI-DY-QFT" eventType="touchUpInside" id="NOc-Yi-xdo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-jo-lMy" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-jo-lMy" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="205" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="subcategory" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-k4-fEj" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-k4-fEj" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="253" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-uu-UlE" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dummy answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-uu-UlE" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="301" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1216,32 +1216,32 @@
                                     <segue destination="2QW-bM-lGE" kind="unwind" unwindAction="unwindToWelcome:" id="H8j-VS-48z"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7n-27-EkP">
-                                <rect key="frame" x="0.0" y="170" width="173.5" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7n-27-EkP">
+                                <rect key="frame" x="0.0" y="170" width="174" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Mwx-Zq-YVf"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yw0-DJ-Feo">
-                                <rect key="frame" x="427" y="170" width="173" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yw0-DJ-Feo">
+                                <rect key="frame" x="425" y="170" width="174.5" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="GoC-aM-3Ta"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-ns-DAJ" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="60" y="350" width="480" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dummy answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-ns-DAJ" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="60" y="349" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dummy answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wo-xZ-MvT" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="60" y="400" width="480" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wo-xZ-MvT" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="60" y="397" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dummy answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giT-5r-DJN" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="59" y="451" width="480" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="subcategory" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giT-5r-DJN" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="59" y="445" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1253,8 +1253,12 @@
                             <constraint firstAttribute="trailing" secondItem="Dwj-4Z-y5i" secondAttribute="trailing" id="63p-d6-Oby"/>
                             <constraint firstItem="hUA-iv-klt" firstAttribute="centerY" secondItem="Yw0-DJ-Feo" secondAttribute="centerY" id="6Gv-0z-iyi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x6Z-uu-UlE" secondAttribute="trailing" constant="44" id="993-jv-9yc"/>
+                            <constraint firstItem="5wo-xZ-MvT" firstAttribute="top" secondItem="vEh-ns-DAJ" secondAttribute="bottom" constant="18" id="B1R-3Q-5Cq"/>
+                            <constraint firstItem="giT-5r-DJN" firstAttribute="top" secondItem="5wo-xZ-MvT" secondAttribute="bottom" constant="18" id="CmK-9d-jH5"/>
                             <constraint firstItem="j9I-y9-CcX" firstAttribute="top" secondItem="9Cg-s4-vDs" secondAttribute="bottom" constant="30" id="E3p-Hv-on2"/>
                             <constraint firstItem="zOe-H0-NsX" firstAttribute="top" secondItem="4uU-Rq-dC0" secondAttribute="bottom" constant="10" id="Ffb-55-A4E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5wo-xZ-MvT" secondAttribute="trailing" constant="44" id="GQf-dA-Qj3"/>
+                            <constraint firstItem="5wo-xZ-MvT" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="44" id="HIG-e1-P40"/>
                             <constraint firstItem="hUA-iv-klt" firstAttribute="top" secondItem="Vvn-4W-Y3t" secondAttribute="bottom" id="Hd7-oJ-GOW"/>
                             <constraint firstItem="0wX-k4-fEj" firstAttribute="top" secondItem="0ln-jo-lMy" secondAttribute="bottom" constant="18" id="HgT-KZ-vql"/>
                             <constraint firstItem="9Cg-s4-vDs" firstAttribute="top" secondItem="CGd-Wi-6gs" secondAttribute="bottom" constant="8" id="Iht-dB-paE"/>
@@ -1264,18 +1268,22 @@
                             <constraint firstAttribute="centerX" secondItem="9Cg-s4-vDs" secondAttribute="centerX" id="PZV-bW-VXX"/>
                             <constraint firstItem="0wX-k4-fEj" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="44" id="Rix-zM-jlB"/>
                             <constraint firstItem="exv-y3-vaA" firstAttribute="leading" secondItem="zOe-H0-NsX" secondAttribute="trailing" constant="-2" id="T8T-ar-uqg"/>
+                            <constraint firstItem="vEh-ns-DAJ" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="44" id="TZJ-xL-RYm"/>
                             <constraint firstItem="zOe-H0-NsX" firstAttribute="leading" secondItem="10A-r0-vOF" secondAttribute="trailing" constant="-2" id="U2B-Ir-8e6"/>
                             <constraint firstItem="h7n-27-EkP" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="-16" id="UuX-5s-5J6"/>
                             <constraint firstItem="Alw-2T-bL5" firstAttribute="top" secondItem="CGd-Wi-6gs" secondAttribute="bottom" id="W1l-K2-wrL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yw0-DJ-Feo" secondAttribute="trailing" constant="-16" id="a2l-Nc-rEQ"/>
                             <constraint firstAttribute="centerX" secondItem="hUA-iv-klt" secondAttribute="centerX" id="awq-Jk-hfc"/>
+                            <constraint firstItem="giT-5r-DJN" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="43" id="bED-ef-uEC"/>
                             <constraint firstItem="x6Z-uu-UlE" firstAttribute="top" secondItem="0wX-k4-fEj" secondAttribute="bottom" constant="18" id="dYO-lw-izp"/>
                             <constraint firstAttribute="centerX" secondItem="Vvn-4W-Y3t" secondAttribute="centerX" id="dn8-Z0-PhG"/>
                             <constraint firstItem="Vvn-4W-Y3t" firstAttribute="top" secondItem="zOe-H0-NsX" secondAttribute="bottom" id="ehS-i9-voR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="giT-5r-DJN" secondAttribute="trailing" constant="45" id="exc-8D-ibr"/>
                             <constraint firstItem="Alw-2T-bL5" firstAttribute="height" secondItem="Vvn-4W-Y3t" secondAttribute="height" id="fW6-vL-iL8"/>
                             <constraint firstItem="Yw0-DJ-Feo" firstAttribute="leading" secondItem="hUA-iv-klt" secondAttribute="trailing" constant="22" id="faP-i9-EI2"/>
                             <constraint firstItem="hUA-iv-klt" firstAttribute="leading" secondItem="h7n-27-EkP" secondAttribute="trailing" constant="22" id="gLL-hY-eMp"/>
                             <constraint firstItem="R1B-ce-TtX" firstAttribute="leading" secondItem="9T4-99-645" secondAttribute="trailing" id="gZe-8v-OAp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vEh-ns-DAJ" secondAttribute="trailing" constant="44" id="h3j-4S-m03"/>
                             <constraint firstAttribute="centerX" secondItem="CGd-Wi-6gs" secondAttribute="centerX" id="jux-ZH-OiE"/>
                             <constraint firstItem="Dwj-4Z-y5i" firstAttribute="width" secondItem="9T4-99-645" secondAttribute="width" id="kGb-pp-zsX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0wX-k4-fEj" secondAttribute="trailing" constant="44" id="o1y-bs-NPx"/>
@@ -1283,23 +1291,22 @@
                             <constraint firstAttribute="trailingMargin" secondItem="0ln-jo-lMy" secondAttribute="trailing" constant="44" id="pQe-5Z-bAL"/>
                             <constraint firstItem="exv-y3-vaA" firstAttribute="trailing" secondItem="Dwj-4Z-y5i" secondAttribute="leading" id="qQU-tf-Tko"/>
                             <constraint firstItem="10A-r0-vOF" firstAttribute="leading" secondItem="R1B-ce-TtX" secondAttribute="trailing" constant="-2" id="rdf-jp-Gfh"/>
+                            <constraint firstItem="CGd-Wi-6gs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="giT-5r-DJN" secondAttribute="bottom" constant="1" id="rei-Li-n8i"/>
                             <constraint firstItem="0ln-jo-lMy" firstAttribute="top" secondItem="hUA-iv-klt" secondAttribute="bottom" constant="18" id="s54-G8-yqH"/>
                             <constraint firstItem="R1B-ce-TtX" firstAttribute="top" secondItem="4uU-Rq-dC0" secondAttribute="bottom" constant="10" id="svX-sP-Ov3"/>
                             <constraint firstItem="0ln-jo-lMy" firstAttribute="leading" secondItem="2Tu-7r-1Qt" secondAttribute="leadingMargin" constant="44" id="t6o-fY-M0V"/>
                             <constraint firstItem="10A-r0-vOF" firstAttribute="top" secondItem="4uU-Rq-dC0" secondAttribute="bottom" constant="10" id="uBa-DF-s4f"/>
                             <constraint firstItem="exv-y3-vaA" firstAttribute="top" secondItem="4uU-Rq-dC0" secondAttribute="bottom" constant="10" id="upY-bJ-09a"/>
                             <constraint firstItem="Dwj-4Z-y5i" firstAttribute="top" secondItem="4uU-Rq-dC0" secondAttribute="bottom" constant="8" id="wLB-lk-sbF"/>
+                            <constraint firstItem="vEh-ns-DAJ" firstAttribute="top" secondItem="x6Z-uu-UlE" secondAttribute="bottom" constant="18" id="wNf-9q-anA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Xx-mM-bjl"/>
                     <connections>
                         <outlet property="answerLabel" destination="0wX-k4-fEj" id="Cia-t5-Xyq"/>
                         <outlet property="categoryLabel" destination="5wo-xZ-MvT" id="XIO-No-tx3"/>
-                        <outlet property="confirmNewPasswordTextField" destination="x6Z-uu-UlE" id="OOv-sS-Keo"/>
                         <outlet property="dummyAnswerLabel" destination="x6Z-uu-UlE" id="Nlo-Yh-Je4"/>
                         <outlet property="dummyAnswerLabel2" destination="vEh-ns-DAJ" id="jYW-xc-xBK"/>
-                        <outlet property="newPasswordTextField" destination="0wX-k4-fEj" id="g6h-6J-nSU"/>
-                        <outlet property="oldPasswordTextField" destination="0ln-jo-lMy" id="4Av-Pw-aG5"/>
                         <outlet property="questionLabel" destination="0ln-jo-lMy" id="1mS-Ec-Bjx"/>
                         <outlet property="subcategoryLabel" destination="giT-5r-DJN" id="gRl-RR-pCO"/>
                     </connections>
