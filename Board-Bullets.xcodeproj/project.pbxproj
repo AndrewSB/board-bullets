@@ -11,6 +11,7 @@
 		0EC32C351A732FDE007E5ACB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC32C341A732FDE007E5ACB /* API-Keys.plist */; };
 		460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460957771A74AB83004EDF45 /* MainNavigationController.swift */; };
 		461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */; };
+		461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */; };
 		461D82ED1A72008100B30AC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EC1A72008100B30AC6 /* Question.swift */; };
 		461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EE1A72013C00B30AC6 /* QuizHelper.swift */; };
 		467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */; };
@@ -72,6 +73,7 @@
 		0EC32C341A732FDE007E5ACB /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		460957771A74AB83004EDF45 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularEdgeTextField.swift; sourceTree = "<group>"; };
+		461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
 		461D82EC1A72008100B30AC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		461D82EE1A72013C00B30AC6 /* QuizHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizHelper.swift; sourceTree = "<group>"; };
 		467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDoneViewController.swift; sourceTree = "<group>"; };
@@ -224,8 +226,10 @@
 		46FBFE371A6999C000B53C4E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				469C65CF1A5FB70200758740 /* Main.storyboard */,
 				46CFB14E1A6786830091BCE9 /* Quiz */,
 				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
+				461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -253,8 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				46FCEB041A5A7116009E5171 /* AppDelegate.swift */,
-				46FCEB081A5A7116009E5171 /* Login.storyboard */,
-				469C65CF1A5FB70200758740 /* Main.storyboard */,
 				0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 				461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */,
@@ -263,7 +265,7 @@
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
 				469C65DA1A60479A00758740 /* Resources */,
-				46FCEB5B1A5A95E5009E5171 /* View Controllers */,
+				46FCEB5B1A5A95E5009E5171 /* Views */,
 				46FCEB501A5A8152009E5171 /* Transitions */,
 				46FCEB021A5A7116009E5171 /* Supporting Files */,
 			);
@@ -331,18 +333,19 @@
 			name = Transitions;
 			sourceTree = "<group>";
 		};
-		46FCEB5B1A5A95E5009E5171 /* View Controllers */ = {
+		46FCEB5B1A5A95E5009E5171 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				46FBFE371A6999C000B53C4E /* Main */,
 				46FCEB5C1A5A95F1009E5171 /* Onboarding */,
 			);
-			name = "View Controllers";
+			name = Views;
 			sourceTree = "<group>";
 		};
 		46FCEB5C1A5A95F1009E5171 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				46FCEB081A5A7116009E5171 /* Login.storyboard */,
 				46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */,
 				46FCEB571A5A95D2009E5171 /* LoginViewController.swift */,
 				467772B71A68CA3E00A5F386 /* SignupViewController.swift */,
@@ -481,6 +484,7 @@
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
 				461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */,
 				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
+				461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */,
 				461D82ED1A72008100B30AC6 /* Question.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
 				460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */,
