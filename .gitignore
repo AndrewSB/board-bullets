@@ -1,5 +1,6 @@
 Board-Bullets/API-Keys.plist
 
+*.DS_Store
 #####=== Swift ===#####
 
 # Xcode

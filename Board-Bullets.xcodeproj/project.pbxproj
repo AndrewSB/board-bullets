@@ -28,6 +28,7 @@
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
 		46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */; };
 		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
+		46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */; };
 		46FBFE361A6999B300B53C4E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFE351A6999B300B53C4E /* SettingsViewController.swift */; };
 		46FBFE391A69A1EA00B53C4E /* QuizPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFE381A69A1EA00B53C4E /* QuizPickerViewController.swift */; };
 		46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB041A5A7116009E5171 /* AppDelegate.swift */; };
@@ -90,6 +91,7 @@
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswerViewController.swift; sourceTree = "<group>"; };
 		46FBFE351A6999B300B53C4E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46FBFE381A69A1EA00B53C4E /* QuizPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizPickerViewController.swift; sourceTree = "<group>"; };
 		46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board-Bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +220,7 @@
 				461D82EE1A72013C00B30AC6 /* QuizHelper.swift */,
 				46FBFE381A69A1EA00B53C4E /* QuizPickerViewController.swift */,
 				46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */,
+				46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */,
 				467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */,
 			);
 			name = Quiz;
@@ -480,6 +483,7 @@
 			files = (
 				46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
+				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
 				461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */,

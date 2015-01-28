@@ -10,6 +10,7 @@ import UIKit
 
 class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     var questions = [Question]()
+    var answerIndex = Int()
     
     @IBOutlet weak var resultsCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -47,17 +48,24 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         
     }
 
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        answerIndex = indexPath.row
+        performSegueWithIdentifier("segueToAnswer", sender: self)
+    }
 
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let d = segue.destinationViewController as? QuizAnswerViewController {
+            d.question = questions[answerIndex]
+        }
     }
-    */
+
+    @IBAction func unwindToQuizDone(segue: UIStoryboardSegue) {
+    }
 
 }
