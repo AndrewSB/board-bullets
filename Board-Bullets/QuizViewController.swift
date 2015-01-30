@@ -172,6 +172,7 @@ class QuizViewController: UIViewController {
         if curQuestion == numberOfQuestions - 1 {
             nextButton.setBackgroundImage(nil, forState: .Normal)
             nextButton.setTitle("DONE", forState: .Normal)
+            nextButton.sizeToFit()
         } else {
             nextButton.setBackgroundImage(UIImage(named: "next-arrow"), forState: .Normal)
             nextButton.setTitle("", forState: .Normal)
@@ -192,16 +193,19 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func option1WasHit(sender: AnyObject) {
+        quizData[curQuestion].chosen = 1
         handleSelection(option1Button)
         //Sarode next button animation/loadDone
     }
     
     @IBAction func option2WasHit(sender: AnyObject) {
+        quizData[curQuestion].chosen = 2
         handleSelection(option2Button)
         //Sarode next button animation/loadDone
     }
     
     @IBAction func option3WasHit(sender: AnyObject) {
+        quizData[curQuestion].chosen = 3
         handleSelection(option3Button)
         //Sarode next button animation/loadDone
     }

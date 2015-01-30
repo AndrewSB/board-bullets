@@ -16,11 +16,18 @@ class QuizAnswerViewController: UIViewController {
     @IBOutlet weak var option2Label: UILabel!
     @IBOutlet weak var option3Label: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabel.text = question.question
-
-    
+        option1Label.text = question.optionOne
+        option2Label.text = question.optionTwo
+        option3Label.text = question.optionThree
+        
+        let dict = [option1Label, option2Label, option3Label]
+        
+        dict[question.chosen - 1].textColor = UIColor.redColor()
+        dict[question.answer - 1].textColor = UIColor.greenColor()    
     }
 
     override func didReceiveMemoryWarning() {
