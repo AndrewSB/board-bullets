@@ -171,7 +171,7 @@ class QuizViewController: UIViewController {
         
         if curQuestion == numberOfQuestions - 1 {
             nextButton.setBackgroundImage(nil, forState: .Normal)
-            nextButton.setTitle("DONE", forState: .Normal)
+            nextButton.setTitle("done", forState: .Normal)
             nextButton.sizeToFit()
         } else {
             nextButton.setBackgroundImage(UIImage(named: "next-arrow"), forState: .Normal)
