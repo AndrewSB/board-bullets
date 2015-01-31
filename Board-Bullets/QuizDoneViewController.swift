@@ -30,10 +30,13 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         let questionItem = questions[indexPath.item]
         
         cell.textLabel.text = questionItem.question
-        
+        cell.layer.backgroundColor = UIColor.whiteColor().CGColor
+
         cell.layer.borderWidth = 1
-        if questionItem.correct {
-            cell.layer.borderColor = UIColor.redColor().CGColor
+        cell.layer.cornerRadius = 2
+        
+        if questionItem.answer != questionItem.chosen {
+            cell.layer.borderColor = UIColor(red: 0.953, green: 0.129, blue: 0.047, alpha: 1).CGColor
         } else {
             cell.layer.borderColor = UIColor.blackColor().CGColor
         }
@@ -44,7 +47,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         let width = resultsCollectionView.frame.width
         let height = resultsCollectionView.frame.height
         
-        return CGSize(width: width/2 - 20, height: height/3 - 20)
+        return CGSize(width: width/2 - 5, height: width/2 - 5)
         
     }
 
