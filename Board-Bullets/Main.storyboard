@@ -590,6 +590,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="GUV-1s-A9q" firstAttribute="top" secondItem="kas-ks-cgN" secondAttribute="bottom" id="0uK-ni-ms7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="762-gh-PRO" secondAttribute="trailing" constant="22" id="2rE-xT-1He"/>
