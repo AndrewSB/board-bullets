@@ -414,6 +414,9 @@
                                     <color key="titleColor" red="0.065958879888057709" green="0.45246785879135132" blue="0.74314159154891968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xML-eL-4D5" kind="unwind" unwindAction="unwindToWelcome:" id="Csi-bp-CIQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="8/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqt-ck-fuZ">
                                 <rect key="frame" x="231" y="35" width="138" height="38.5"/>
@@ -478,6 +481,9 @@
                                     <color key="titleColor" red="0.065958879888057709" green="0.45246785879135132" blue="0.74314159154891968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xML-eL-4D5" kind="unwind" unwindAction="unwindToQuiz:" id="x2L-4c-H13"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -507,6 +513,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpC-as-IZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xML-eL-4D5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3269" y="-1221"/>
         </scene>
@@ -1326,7 +1333,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="logoutButtonHit:" destination="olI-DY-QFT" eventType="touchUpInside" id="4SH-Gf-Tar"/>
                                     <action selector="submitButtonWasHit:" destination="olI-DY-QFT" eventType="touchUpInside" id="NOc-Yi-xdo"/>
                                 </connections>
                             </button>
@@ -1365,7 +1371,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButtonHit:" destination="olI-DY-QFT" eventType="touchUpInside" id="Pr8-1s-oTc"/>
                                     <segue destination="2QW-bM-lGE" kind="unwind" unwindAction="unwindToWelcome:" id="H8j-VS-48z"/>
                                 </connections>
                             </button>
