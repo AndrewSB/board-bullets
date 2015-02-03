@@ -12,9 +12,18 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
     var questions = [Question]()
     var answerIndex = Int()
     
+    @IBOutlet weak var rightOutOfQuestionsLabel: UILabel!
     @IBOutlet weak var resultsCollectionView: UICollectionView!
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        var numberCorrect = 0
+        for question in questions {
+            if question.answer == question.chosen {
+                numberCorrect++
+            }
+        }
+        
+        rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
     }
     
     // ======================================
