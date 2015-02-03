@@ -482,7 +482,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xML-eL-4D5" kind="unwind" unwindAction="unwindToQuiz:" id="x2L-4c-H13"/>
+                                    <segue destination="xML-eL-4D5" kind="unwind" unwindAction="unwindToQuizPicker:" id="S4b-rt-zma"/>
                                 </connections>
                             </button>
                         </subviews>
