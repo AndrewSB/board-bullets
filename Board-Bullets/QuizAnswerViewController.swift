@@ -33,7 +33,14 @@ class QuizAnswerViewController: UIViewController {
         // red
         dict[question.chosen - 1].textColor = UIColor(red: 0.953, green: 0.129, blue: 0.047, alpha: 1)
         // green
+        dict[question.answer - 1].font = UIFont(name: "HelveticaNeue-Bold", size: 22)
         dict[question.answer - 1].textColor = UIColor(red: 0.157, green: 0.753, blue: 0.482, alpha: 1)
+        
+        for item in dict {
+            if item != dict[question.answer - 1] {
+                item.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
