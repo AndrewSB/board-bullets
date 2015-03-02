@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     var questions = [Question]()
@@ -14,6 +15,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
     
     @IBOutlet weak var rightOutOfQuestionsLabel: UILabel!
     @IBOutlet weak var resultsCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var numberCorrect = 0
@@ -24,6 +26,16 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         }
         
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
+        
+        configurePerformaceDict()
+    }
+    
+    func configurePerformaceDict() {
+        var arr = NSUserDefaults.standardUserDefaults().objectForKey("performance") as Array<String>?
+        if arr == nil {
+            arr = Array()
+        }
+        arr!.append(rightOutOfQuestionsLabel.text!)
     }
     
     // ======================================
