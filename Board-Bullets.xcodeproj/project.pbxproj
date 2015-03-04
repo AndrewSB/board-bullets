@@ -14,6 +14,7 @@
 		461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */; };
 		461D82ED1A72008100B30AC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EC1A72008100B30AC6 /* Question.swift */; };
 		461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EE1A72013C00B30AC6 /* QuizHelper.swift */; };
+		4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */; };
 		467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */; };
 		467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DA1A68866B00A5F386 /* Bolts.framework */; };
 		467771F61A68866C00A5F386 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DB1A68866B00A5F386 /* FacebookSDK.framework */; };
@@ -78,6 +79,7 @@
 		461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
 		461D82EC1A72008100B30AC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		461D82EE1A72013C00B30AC6 /* QuizHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizHelper.swift; sourceTree = "<group>"; };
+		4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDoneViewController.swift; sourceTree = "<group>"; };
 		467770DA1A68866B00A5F386 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		467770DB1A68866B00A5F386 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				469C65CF1A5FB70200758740 /* Main.storyboard */,
 				46CFB14E1A6786830091BCE9 /* Quiz */,
 				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
+				4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */,
 				461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */,
 			);
 			name = Main;
@@ -501,6 +504,7 @@
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,
 				46FBFE391A69A1EA00B53C4E /* QuizPickerViewController.swift in Sources */,
 				46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */,
+				4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */,
 				46FCEB4E1A5A814F009E5171 /* PopNoAnimationSegue.swift in Sources */,
 				46FCEB4F1A5A814F009E5171 /* PushNoAnimationSegue.swift in Sources */,
 				46FBFE361A6999B300B53C4E /* SettingsViewController.swift in Sources */,

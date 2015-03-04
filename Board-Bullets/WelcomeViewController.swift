@@ -46,6 +46,5 @@ class WelcomeViewController: UIViewController {
 
     }
     
-    @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {
-    }
+    @IBAction func unwindToWelcome(segue: UIStoryboardSegue) {}
 }
