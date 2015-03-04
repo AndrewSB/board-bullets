@@ -28,21 +28,21 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
         configurePerformaceDict(numberCorrect)
+        println("made it out")
     }
     
     func configurePerformaceDict(numCorrect: Int) {
-        let perf = Performance()
-        perf.date = NSDate()
-        perf.questionsAnswered = questions.count
-        perf.questionsAnsweredCorrect = numCorrect
+//        perf.questionsAnswered = questions.count
+//        perf.questionsAnsweredCorrect = numCorrect
         
-        var arr = NSUserDefaults.standardUserDefaults().objectForKey("performance") as [Performance]?
-        if arr == nil {
-            arr = [Performance]()
-        }
-        arr!.append(perf)
+        var a = PFUser.currentUser()["answered"] as Int?
+        var b: Int = a == nil ? questions.count : a! + questions.count
+        PFUser.currentUser()["answered"] = b
         
-        NSUserDefaults.standardUserDefaults().setObject(arr, forKey: "performance")
+        a = PFUser.currentUser()["correct"] as Int?
+        b = a == nil ? questions.count : a! + numCorrect
+        PFUser.currentUser()["correct"] = b
+
     }
     
     
