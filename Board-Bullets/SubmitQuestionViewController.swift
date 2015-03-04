@@ -16,6 +16,7 @@ class SubmitQuestionViewController: UIViewController {
     @IBOutlet weak var categoryLabel: CircularEdgeTextField!
     @IBOutlet weak var subcategoryLabel: CircularEdgeTextField!
     
+    @IBOutlet weak var backButton: UIButton!
     let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
 
     override func viewDidLoad() {
@@ -40,4 +41,11 @@ class SubmitQuestionViewController: UIViewController {
         })
     
     }
+
+
+    @IBAction func backButtonWasHit(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+        
+    }
+
 }
