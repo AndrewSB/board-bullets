@@ -40,7 +40,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         PFUser.currentUser()["answered"] = b
         
         a = PFUser.currentUser()["correct"] as Int?
-        b = a == nil ? questions.count : a! + numCorrect
+        b = a == nil ? numCorrect : a! + numCorrect
         PFUser.currentUser()["correct"] = b
 
     }

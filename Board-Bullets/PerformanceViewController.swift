@@ -21,7 +21,7 @@ class PerformanceViewController: UIViewController {
         
         if (c != nil) {
             
-            let percentage = Float(c!)/Float(n!)
+            let percentage = Float(c!)/Float(n!) * 100
             
             percentageLabel.text = "\(percentage)% correct"
             correctLabel.text = "\(c!) questions answered correctly"
