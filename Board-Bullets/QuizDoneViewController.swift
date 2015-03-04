@@ -27,16 +27,24 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
-        configurePerformaceDict()
+        configurePerformaceDict(numberCorrect)
     }
     
-    func configurePerformaceDict() {
-        var arr = NSUserDefaults.standardUserDefaults().objectForKey("performance") as Array<String>?
+    func configurePerformaceDict(numCorrect: Int) {
+        let perf = Performance()
+        perf.date = NSDate()
+        perf.questionsAnswered = questions.count
+        perf.questionsAnsweredCorrect = numCorrect
+        
+        var arr = NSUserDefaults.standardUserDefaults().objectForKey("performance") as [Performance]?
         if arr == nil {
-            arr = Array()
+            arr = [Performance]()
         }
-        arr!.append(rightOutOfQuestionsLabel.text!)
+        arr!.append(perf)
+        
+        NSUserDefaults.standardUserDefaults().setObject(arr, forKey: "performance")
     }
+    
     
     // ======================================
     // COLLECTION VIEW METHODS
@@ -87,7 +95,6 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         }
     }
 
-    @IBAction func unwindToQuizDone(segue: UIStoryboardSegue) {
-    }
+    @IBAction func unwindToQuizDone(segue: UIStoryboardSegue) {}
 
 }
