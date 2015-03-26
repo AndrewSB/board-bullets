@@ -18,17 +18,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         addTextDismiss()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func logInButtonHit(sender: AnyObject) {
         PFUser.logInWithUsernameInBackground(emailLabel.text, password:passwordLabel.text) {
@@ -37,6 +26,11 @@ class LoginViewController: UIViewController {
                 self.appDelegate.switchToMain()
             } else {
                 println(error.description)
+                let alert = UIAlertController(title: "Uh oh!", message: "Couldn't login, check your email and password", preferredStyle: UIAlertControllerStyle.Alert)
+                let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
+                alert.addAction(action)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         }
     }
