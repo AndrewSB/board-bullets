@@ -24,6 +24,7 @@
 		467771F91A68866C00A5F386 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 467770DE1A68866B00A5F386 /* LICENSE */; };
 		467771FA1A68866C00A5F386 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 467770DF1A68866B00A5F386 /* README.txt */; };
 		467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467772B71A68CA3E00A5F386 /* SignupViewController.swift */; };
+		46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46909EE21AC4A19600CBAD54 /* MainViewController.swift */; };
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
 		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
@@ -90,6 +91,7 @@
 		467770DE1A68866B00A5F386 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		467770DF1A68866B00A5F386 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		467772B71A68CA3E00A5F386 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		46909EE21AC4A19600CBAD54 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
 		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				469C65CF1A5FB70200758740 /* Main.storyboard */,
+				46909EE21AC4A19600CBAD54 /* MainViewController.swift */,
 				46CFB14E1A6786830091BCE9 /* Quiz */,
 				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
 				4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */,
@@ -491,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */,
+				46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,

@@ -45,6 +45,16 @@ class SignupViewController: UIViewController {
             if error == nil {
                 self.appDelegate.switchToMain()
             } else {
+                var errorMessage = error.userInfo!["error"] as String
+                
+                errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
+                
+                let alert = UIAlertController(title: "Uh oh!", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
+                let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
+                alert.addAction(action)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+
                 println(error)// Show the errorString somewhere and let the user try again.
             }
         }

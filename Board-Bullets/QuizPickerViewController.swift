@@ -38,7 +38,7 @@ class QuizPickerViewController: UIViewController {
             learnAsYouGoButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 24)
             timedButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
         } else {
-            learnAsYouGoButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
+//            learnAsYouGoButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
         }
     }
     @IBAction func timedButtonWasHit(sender: AnyObject) {
@@ -46,7 +46,7 @@ class QuizPickerViewController: UIViewController {
             timedButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 24)
             learnAsYouGoButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
         } else {
-            timedButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
+//            timedButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 24)
         }
     }
     @IBAction func startQuizButtonHit(sender: AnyObject) {
