@@ -115,5 +115,14 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     @IBAction func backButtonWasHit(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if let des = segue.destinationViewController as? SubmitQuestionPickerViewController {
+            des.title = cat ? "Category" : "Subcategory"
+            des.data = cat ? categories : subcategories
+            des.cat = cat
+        }
+    }
 }

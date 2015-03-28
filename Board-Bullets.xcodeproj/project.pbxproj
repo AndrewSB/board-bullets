@@ -28,6 +28,7 @@
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
 		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
+		46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
 		46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */; };
 		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
@@ -95,6 +96,7 @@
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
 		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
+		46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionPickerViewController.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -222,6 +224,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		46B061BB1AC64F3C00DA03BE /* Submit Question */ = {
+			isa = PBXGroup;
+			children = (
+				461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */,
+				46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */,
+			);
+			name = "Submit Question";
+			sourceTree = "<group>";
+		};
 		46CFB14E1A6786830091BCE9 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +253,7 @@
 				46CFB14E1A6786830091BCE9 /* Quiz */,
 				46FBFE351A6999B300B53C4E /* SettingsViewController.swift */,
 				4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */,
-				461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */,
+				46B061BB1AC64F3C00DA03BE /* Submit Question */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -497,6 +508,7 @@
 				46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,
+				46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
