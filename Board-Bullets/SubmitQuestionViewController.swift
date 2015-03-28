@@ -22,6 +22,7 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var dummyAnswerLabel: CircularEdgeTextField!
     @IBOutlet weak var dummyAnswerLabel2: CircularEdgeTextField!
 
+    @IBOutlet weak var categoryTableView: UITableView!
     
     
     @IBOutlet weak var backButton: UIButton!
@@ -33,6 +34,9 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
         addTextDismiss()
         super.viewDidLoad()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
+        
+        categoryTableView.delegate = self
+        categoryTableView.dataSource = self
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +45,8 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as UITableViewCell
+        
+//        cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         if indexPath.row == 0 {
             cell.textLabel?.text = "Category: \(categories[categoryIndex])"
@@ -52,6 +58,8 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
         
     }
 
