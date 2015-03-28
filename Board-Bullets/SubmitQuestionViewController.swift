@@ -8,51 +8,54 @@
 
 import UIKit
 
-class SubmitQuestionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology"]
     
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
     
     var cat = false
-    var category: String = ""
-    var subcategory: String = ""
+    var categoryIndex = 0
+    var subcategoryIndex = 0
     
     @IBOutlet weak var questionLabel: CircularEdgeTextField!
     @IBOutlet weak var answerLabel: CircularEdgeTextField!
     @IBOutlet weak var dummyAnswerLabel: CircularEdgeTextField!
     @IBOutlet weak var dummyAnswerLabel2: CircularEdgeTextField!
-    @IBOutlet weak var categoryButton: UIButton!
-    @IBOutlet weak var subcategoryButton: UIButton!
+
+    
     
     @IBOutlet weak var backButton: UIButton!
     
     let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
-
-    let pickerController = UIPickerView()
-    let pickerControllerView = UIView()
     
     
     override func viewDidLoad() {
         addTextDismiss()
         super.viewDidLoad()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
-        
-        category = categories[0]
-        subcategory = subcategories[0]
-        
-        
-        pickerController.frame = CGRectMake(22, 0, self.view.bounds.width - 44, 100)
-        pickerControllerView.frame = CGRectMake(0, self.view.bounds.height - 100, self.view.bounds.width, 100)
-        pickerControllerView.addSubview(pickerController)
-    }
-
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return cat ? categories.count : subcategories.count
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 1
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as UITableViewCell
+        
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Category: \(categories[categoryIndex])"
+        } else {
+            cell.textLabel?.text = "Subcategory: \(subcategories[subcategoryIndex])"
+        }
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+
+
     
     @IBAction func submitButtonWasHit(sender: AnyObject) {
         let alert = UIAlertController(title: "Uh oh", message: "", preferredStyle: .Alert)
@@ -73,8 +76,8 @@ class SubmitQuestionViewController: UIViewController, UIPickerViewDelegate, UIPi
             self.presentViewController(alert, animated: true, completion: nil)
         } else {
             let question = PFObject(className: "UserQuestions")
-            question["category"] = category
-            question["subcategory"] = subcategory
+            question["category"] = categories[categoryIndex]
+            question["subcategory"] = subcategories[subcategoryIndex]
             question["question"] = questionLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
             question["option1"] = dummyAnswerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
             question["option2"] = dummyAnswerLabel2.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
