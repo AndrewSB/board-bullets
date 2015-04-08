@@ -849,8 +849,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-FH-bbH">
-                                <rect key="frame" x="264" y="481" width="72" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-FH-bbH">
+                                <rect key="frame" x="264" y="463" width="72" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                 <state key="normal" title="logout">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -860,23 +860,23 @@
                                     <action selector="logoutButtonHit:" destination="8yz-Oy-S2v" eventType="touchUpInside" id="MCK-gC-avQ"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-87-nTg" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="60" y="206" width="480" height="30"/>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-87-nTg" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="60" y="223" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-4o-3Do" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="60" y="254" width="480" height="30"/>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-4o-3Do" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="60" y="271" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-Yp-ntc" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
-                                <rect key="frame" x="60" y="302" width="480" height="30"/>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-Yp-ntc" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                                <rect key="frame" x="60" y="319" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX3-td-vmH">
-                                <rect key="frame" x="212" y="350" width="150" height="36"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX3-td-vmH">
+                                <rect key="frame" x="212" y="367" width="150" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="change password">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -898,8 +898,8 @@
                                     <constraint firstAttribute="width" id="YZn-I8-Iil"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-MG-CX7">
-                                <rect key="frame" x="280" y="534" width="41" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="756" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-MG-CX7">
+                                <rect key="frame" x="280" y="516" width="41" height="74"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="back">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -916,8 +916,8 @@
                                     <constraint firstAttribute="height" constant="1" id="kLi-Xq-lUF"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8y-cs-GcX">
-                                <rect key="frame" x="427" y="170" width="173" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8y-cs-GcX">
+                                <rect key="frame" x="427" y="187" width="173" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="qDQ-eR-apw"/>
@@ -938,11 +938,11 @@
                             <constraint firstItem="AMM-Bf-dKX" firstAttribute="top" secondItem="osg-GU-cvf" secondAttribute="bottom" constant="8" id="9Mk-vI-zBQ"/>
                             <constraint firstAttribute="centerX" secondItem="w3L-MG-CX7" secondAttribute="centerX" id="As5-0s-DgO"/>
                             <constraint firstItem="AMM-Bf-dKX" firstAttribute="width" secondItem="MW0-Up-aNK" secondAttribute="width" id="Bil-mt-tTy"/>
-                            <constraint firstItem="1Oh-FH-bbH" firstAttribute="top" secondItem="DX3-td-vmH" secondAttribute="bottom" constant="95" id="FHE-8A-2Ei"/>
+                            <constraint firstItem="1Oh-FH-bbH" firstAttribute="top" secondItem="DX3-td-vmH" secondAttribute="bottom" constant="60" id="FHE-8A-2Ei"/>
                             <constraint firstItem="2KB-4o-3Do" firstAttribute="leading" secondItem="Z2o-T3-eb3" secondAttribute="leadingMargin" constant="44" id="HaJ-pv-mRj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ul5-87-nTg" secondAttribute="trailing" constant="44" id="Hrg-XY-N6t"/>
                             <constraint firstAttribute="centerX" secondItem="JsX-Ur-Anl" secondAttribute="centerX" id="IY5-DL-xNA"/>
-                            <constraint firstItem="CPO-eH-Iav" firstAttribute="top" secondItem="w3L-MG-CX7" secondAttribute="bottom" constant="30" id="Iuf-wE-FVc"/>
+                            <constraint firstItem="CPO-eH-Iav" firstAttribute="top" secondItem="w3L-MG-CX7" secondAttribute="bottom" constant="10" id="Iuf-wE-FVc"/>
                             <constraint firstItem="ygL-1B-e9A" firstAttribute="leading" secondItem="prs-A9-2pU" secondAttribute="trailing" constant="-2" id="Lmf-oZ-hh8"/>
                             <constraint firstItem="T8y-cs-GcX" firstAttribute="leading" secondItem="GlP-W6-6M6" secondAttribute="trailing" constant="22" id="NL4-fH-QJx"/>
                             <constraint firstItem="GlP-W6-6M6" firstAttribute="leading" secondItem="rnL-Jq-w2l" secondAttribute="trailing" constant="22" id="Pw6-eD-fU4"/>
@@ -950,6 +950,7 @@
                             <constraint firstItem="rnL-Jq-w2l" firstAttribute="leading" secondItem="Z2o-T3-eb3" secondAttribute="leadingMargin" constant="-16" id="Qeg-1P-B8Q"/>
                             <constraint firstItem="ygL-1B-e9A" firstAttribute="top" secondItem="osg-GU-cvf" secondAttribute="bottom" constant="10" id="VoP-rX-hUa"/>
                             <constraint firstItem="prs-A9-2pU" firstAttribute="top" secondItem="osg-GU-cvf" secondAttribute="bottom" constant="10" id="W3J-gA-rLM"/>
+                            <constraint firstItem="w3L-MG-CX7" firstAttribute="top" secondItem="1Oh-FH-bbH" secondAttribute="bottom" constant="7" id="Z0C-LG-IA4"/>
                             <constraint firstAttribute="centerX" secondItem="GlP-W6-6M6" secondAttribute="centerX" id="ZDT-yd-hCc"/>
                             <constraint firstItem="CPO-eH-Iav" firstAttribute="top" secondItem="JsX-Ur-Anl" secondAttribute="bottom" id="aCc-8U-Mai"/>
                             <constraint firstItem="GlP-W6-6M6" firstAttribute="centerY" secondItem="T8y-cs-GcX" secondAttribute="centerY" id="aIz-y6-sVr"/>
@@ -1282,13 +1283,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9T4-99-645">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9T4-99-645">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="eJU-sx-Hqx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-4Z-y5i">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-4Z-y5i">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="eYz-7w-TD5"/>
@@ -1332,7 +1333,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvn-4W-Y3t">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvn-4W-Y3t">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="RXZ-Pk-qn6"/>
