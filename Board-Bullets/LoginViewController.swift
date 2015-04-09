@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailLabel: CircularEdgeTextField!
     @IBOutlet weak var passwordLabel: CircularEdgeTextField!
     
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()

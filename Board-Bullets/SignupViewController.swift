@@ -14,7 +14,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordLabel: CircularEdgeTextField!
     @IBOutlet weak var medicalSchoolLabel: CircularEdgeTextField!
     
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
 
     override func viewDidLoad() {
@@ -40,12 +40,11 @@ class SignupViewController: UIViewController {
         user.password = passwordLabel.text
         user["medicalSchool"] = medicalSchoolLabel.text
         
-        user.signUpInBackgroundWithBlock {
-            (succeeded: Bool!, error: NSError!) -> Void in
+        user.signUpInBackgroundWithBlock { (succeeded: Bool, error: NSError!) -> Void in
             if error == nil {
                 self.appDelegate.switchToMain()
             } else {
-                var errorMessage = error.userInfo!["error"] as String
+                var errorMessage = error.userInfo!["error"] as! String
                 
                 errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
                 

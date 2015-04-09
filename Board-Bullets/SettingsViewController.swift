@@ -13,7 +13,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var newPasswordTextField: CircularEdgeTextField!
     @IBOutlet weak var confirmNewPasswordTextField: CircularEdgeTextField!
     
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -35,11 +35,11 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
 //        perf.questionsAnswered = questions.count
 //        perf.questionsAnsweredCorrect = numCorrect
         
-        var a = PFUser.currentUser()["answered"] as Int?
+        var a = PFUser.currentUser()["answered"] as! Int?
         var b: Int = a == nil ? questions.count : a! + questions.count
         PFUser.currentUser()["answered"] = b
         
-        a = PFUser.currentUser()["correct"] as Int?
+        a = PFUser.currentUser()["correct"] as! Int?
         b = a == nil ? numCorrect : a! + numCorrect
         PFUser.currentUser()["correct"] = b
 
@@ -54,7 +54,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
     }
     
     func collectionView(colorCollectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = resultsCollectionView.dequeueReusableCellWithReuseIdentifier("result", forIndexPath: indexPath) as resultViewCell
+        let cell = resultsCollectionView.dequeueReusableCellWithReuseIdentifier("result", forIndexPath: indexPath) as! resultViewCell
         
         let questionItem = questions[indexPath.item]
         
@@ -72,7 +72,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         return cell
     }
     
-    func collectionView(colorCollectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
+    func collectionView(colorCollectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let width = resultsCollectionView.frame.width
         let height = resultsCollectionView.frame.height
         

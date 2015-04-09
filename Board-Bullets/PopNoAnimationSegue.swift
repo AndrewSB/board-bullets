@@ -10,7 +10,7 @@ import UIKit
 
 class PopNoAnimationSegue: UIStoryboardSegue {
     override func perform() {
-        let source = sourceViewController as UIViewController
+        let source = sourceViewController as! UIViewController
         if let navigation = source.navigationController {
             navigation.popToRootViewControllerAnimated(false)
         } else {

@@ -9,7 +9,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class WelcomeViewController: UIViewController {
 
     @IBAction func signInWithFbHit(sender: AnyObject) {
         println("llol")
-        PFFacebookUtils.logInWithPermissions(["public_profile", "email", "user_friends"], {
+        PFFacebookUtils.logInWithPermissions(["public_profile", "email", "user_friends"], block: {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
                 NSLog("Uh oh. The user cancelled the Facebook login.")
