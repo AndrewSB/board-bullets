@@ -42,6 +42,7 @@ class SignupViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
+        view.endEditing(true)
         resignFirstResponder()
         deregisterForKeyboard()
     }
