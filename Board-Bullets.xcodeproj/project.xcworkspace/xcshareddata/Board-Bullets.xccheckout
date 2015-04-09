@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D296E443-1303-4FF3-B3F2-93A6C28BCF69</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Board-Bullets</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C2167FB1D1619F800828D6D01E7EA82F04571674</key>
 		<string>https://github.com/AndrewSB/board-bullets.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Board-Bullets.xcodeproj</string>
+	<string>Board-Bullets.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C2167FB1D1619F800828D6D01E7EA82F04571674</key>

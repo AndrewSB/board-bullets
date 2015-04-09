@@ -13,8 +13,10 @@ class CircularEdgeTextField: UITextField {
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.borderWidth = 2
-        let color = UIColor(red: 0.104, green: 0.457, blue: 0.734, alpha: 1)
-        self.layer.borderColor = color.CGColor
+        layer.borderColor = UIColor(red: 0.104, green: 0.457, blue: 0.734, alpha: 1).CGColor
+        layer.cornerRadius = frame.height / 2
+
+        backgroundColor = UIColor.clearColor()
 
         clipsToBounds = true
         

@@ -20,17 +20,31 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
+        registerForKeyboard()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func keyboardWasShown(id: AnyObject) {
+        super.keyboardWasShown(id)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 160, self.view.frame.width, self.view.frame.height)
+        })
     }
-    */
+    
+    override func keyboardWillBeHidden(id: AnyObject) {
+        super.keyboardWillBeHidden(id)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y + 160, self.view.frame.width, self.view.frame.height)
+        })
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        resignFirstResponder()
+        deregisterForKeyboard()
+    }
 
     @IBAction func signupButtonHit(sender: AnyObject) {
         let user = PFUser()
@@ -40,15 +54,24 @@ class SignupViewController: UIViewController {
         user.password = passwordLabel.text
         user["medicalSchool"] = medicalSchoolLabel.text
         
+        view.userInteractionEnabled = false
+        let activity = addLoadingView()
+        view.addSubview(activity)
+        
+        
         user.signUpInBackgroundWithBlock { (succeeded: Bool, error: NSError!) -> Void in
+            self.view.userInteractionEnabled = true
+            activity.removeFromSuperview()
+            
             if error == nil {
                 self.appDelegate.switchToMain()
             } else {
                 var errorMessage = error.userInfo!["error"] as! String
                 
                 errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
+
                 
-                let alert = UIAlertController(title: "Uh oh!", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Uh oh!", message: errorMessage.capitalizedString, preferredStyle: UIAlertControllerStyle.Alert)
                 let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
                 alert.addAction(action)
                 

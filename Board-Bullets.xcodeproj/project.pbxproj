@@ -288,7 +288,6 @@
 				46EDFFF51A954E750079C40C /* Performance.swift */,
 				460957771A74AB83004EDF45 /* MainNavigationController.swift */,
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
-				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
 				469C65DA1A60479A00758740 /* Resources */,
 				46FCEB5B1A5A95E5009E5171 /* Views */,
 				46FCEB501A5A8152009E5171 /* Transitions */,
@@ -300,6 +299,7 @@
 		46FCEB021A5A7116009E5171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
 				0EC32C341A732FDE007E5ACB /* API-Keys.plist */,
 				46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */,
 				46FCEB031A5A7116009E5171 /* Info.plist */,
