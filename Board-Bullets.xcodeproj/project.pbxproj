@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8EFCD01A74549B007E6914 /* resultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */; };
 		0EC32C351A732FDE007E5ACB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC32C341A732FDE007E5ACB /* API-Keys.plist */; };
 		460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460957771A74AB83004EDF45 /* MainNavigationController.swift */; };
-		461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */; };
 		461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */; };
-		461D82ED1A72008100B30AC6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EC1A72008100B30AC6 /* Question.swift */; };
 		461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EE1A72013C00B30AC6 /* QuizHelper.swift */; };
 		463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463226E41AC38153003063E8 /* ForgotPasswordViewController.swift */; };
 		4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */; };
+		4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176281ADB2C7D00E63BAE /* Crashlytics.framework */; };
+		4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176291ADB2C7D00E63BAE /* Fabric.framework */; };
+		467176321ADB2D1200E63BAE /* CircularEdgeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467176301ADB2D1200E63BAE /* CircularEdgeTextField.swift */; };
+		467176331ADB2D1200E63BAE /* resultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467176311ADB2D1200E63BAE /* resultViewCell.swift */; };
+		467176371ADB2D1B00E63BAE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467176351ADB2D1B00E63BAE /* Question.swift */; };
 		467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */; };
 		467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DA1A68866B00A5F386 /* Bolts.framework */; };
 		467771F61A68866C00A5F386 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467770DB1A68866B00A5F386 /* FacebookSDK.framework */; };
@@ -26,8 +28,6 @@
 		467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467772B71A68CA3E00A5F386 /* SignupViewController.swift */; };
 		46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46909EE21AC4A19600CBAD54 /* MainViewController.swift */; };
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
-		469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D21A5FBEBA00758740 /* Crashlytics.framework */; };
-		469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469C65D31A5FBEBA00758740 /* Fabric.framework */; };
 		46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
 		46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */; };
@@ -62,15 +62,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewCell.swift; sourceTree = "<group>"; };
 		0EC32C341A732FDE007E5ACB /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		460957771A74AB83004EDF45 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularEdgeTextField.swift; sourceTree = "<group>"; };
 		461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
-		461D82EC1A72008100B30AC6 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		461D82EE1A72013C00B30AC6 /* QuizHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizHelper.swift; sourceTree = "<group>"; };
 		463226E41AC38153003063E8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		467176281ADB2C7D00E63BAE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		467176291ADB2C7D00E63BAE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		467176301ADB2D1200E63BAE /* CircularEdgeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularEdgeTextField.swift; sourceTree = "<group>"; };
+		467176311ADB2D1200E63BAE /* resultViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultViewCell.swift; sourceTree = "<group>"; };
+		467176351ADB2D1B00E63BAE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDoneViewController.swift; sourceTree = "<group>"; };
 		467770DA1A68866B00A5F386 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		467770DB1A68866B00A5F386 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -81,8 +83,6 @@
 		467772B71A68CA3E00A5F386 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		46909EE21AC4A19600CBAD54 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		469C65D21A5FBEBA00758740 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Board-Bullets/Crashlytics.framework"; sourceTree = "<group>"; };
-		469C65D31A5FBEBA00758740 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Board-Bullets/Fabric.framework"; sourceTree = "<group>"; };
 		46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionPickerViewController.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -124,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */,
 				46FCEB391A5A7489009E5171 /* libsqlite3.dylib in Frameworks */,
 				467771F61A68866C00A5F386 /* FacebookSDK.framework in Frameworks */,
 				467771F51A68866C00A5F386 /* Bolts.framework in Frameworks */,
@@ -131,11 +132,10 @@
 				46FCEB301A5A7476009E5171 /* CFNetwork.framework in Frameworks */,
 				46FCEB401A5A74BD009E5171 /* Bolts.framework in Frameworks */,
 				46FCEB311A5A7476009E5171 /* CoreGraphics.framework in Frameworks */,
-				469C65D51A5FBEBA00758740 /* Fabric.framework in Frameworks */,
 				46FCEB421A5A74BD009E5171 /* ParseCrashReporting.framework in Frameworks */,
 				46FCEB441A5A74BD009E5171 /* ParseUI.framework in Frameworks */,
+				4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */,
 				46FCEB321A5A7476009E5171 /* CoreLocation.framework in Frameworks */,
-				469C65D41A5FBEBA00758740 /* Crashlytics.framework in Frameworks */,
 				467771F71A68866C00A5F386 /* FBAudienceNetwork.framework in Frameworks */,
 				46FCEB411A5A74BD009E5171 /* Parse.framework in Frameworks */,
 				46FCEB431A5A74BD009E5171 /* ParseFacebookUtils.framework in Frameworks */,
@@ -154,7 +154,7 @@
 		467176241ADB2BE000E63BAE /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				461D82EC1A72008100B30AC6 /* Question.swift */,
+				467176351ADB2D1B00E63BAE /* Question.swift */,
 				46EDFFF51A954E750079C40C /* Performance.swift */,
 			);
 			name = Entities;
@@ -164,8 +164,8 @@
 		467176251ADB2BF100E63BAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0E8EFCCF1A74549B007E6914 /* resultViewCell.swift */,
-				461686A21A620B0700BC69A9 /* CircularEdgeTextField.swift */,
+				467176301ADB2D1200E63BAE /* CircularEdgeTextField.swift */,
+				467176311ADB2D1200E63BAE /* resultViewCell.swift */,
 			);
 			name = UI;
 			path = "Board-Bullets";
@@ -185,8 +185,8 @@
 			children = (
 				467770D91A68866B00A5F386 /* FacebookSDK */,
 				46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */,
-				469C65D21A5FBEBA00758740 /* Crashlytics.framework */,
-				469C65D31A5FBEBA00758740 /* Fabric.framework */,
+				467176281ADB2C7D00E63BAE /* Crashlytics.framework */,
+				467176291ADB2C7D00E63BAE /* Fabric.framework */,
 				469C65D71A5FBF2A00758740 /* Parse */,
 			);
 			name = External;
@@ -238,7 +238,7 @@
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
 				46CFB1531A678A090091BCE9 /* data.json */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		46B061BB1AC64F3C00DA03BE /* Submit Question */ = {
@@ -247,7 +247,7 @@
 				461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */,
 				46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */,
 			);
-			name = "Submit Question";
+			path = "Submit Question";
 			sourceTree = "<group>";
 		};
 		46CFB14E1A6786830091BCE9 /* Quiz */ = {
@@ -259,7 +259,7 @@
 				46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */,
 				467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */,
 			);
-			name = Quiz;
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 		46FBFE371A6999C000B53C4E /* Main */ = {
@@ -272,7 +272,7 @@
 				4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */,
 				46B061BB1AC64F3C00DA03BE /* Submit Question */,
 			);
-			name = Main;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		46FCEAF61A5A7116009E5171 = {
@@ -311,7 +311,7 @@
 				46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */,
 				46FCEB031A5A7116009E5171 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		46FCEB3A1A5A74BD009E5171 /* parse-library-1.6.1 */ = {
@@ -345,7 +345,7 @@
 				46FBFE371A6999C000B53C4E /* Main */,
 				46FCEB5C1A5A95F1009E5171 /* Onboarding */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		46FCEB5C1A5A95F1009E5171 /* Onboarding */ = {
@@ -357,7 +357,7 @@
 				463226E41AC38153003063E8 /* ForgotPasswordViewController.swift */,
 				467772B71A68CA3E00A5F386 /* SignupViewController.swift */,
 			);
-			name = Onboarding;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,16 +462,16 @@
 				46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
+				467176321ADB2D1200E63BAE /* CircularEdgeTextField.swift in Sources */,
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
-				461686A31A620B0700BC69A9 /* CircularEdgeTextField.swift in Sources */,
+				467176371ADB2D1B00E63BAE /* Question.swift in Sources */,
 				46EDFFF61A954E750079C40C /* Performance.swift in Sources */,
 				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
 				461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */,
-				461D82ED1A72008100B30AC6 /* Question.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
 				460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */,
+				467176331ADB2D1200E63BAE /* resultViewCell.swift in Sources */,
 				46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */,
-				0E8EFCD01A74549B007E6914 /* resultViewCell.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,
 				46FBFE391A69A1EA00B53C4E /* QuizPickerViewController.swift in Sources */,
 				46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */,
@@ -489,6 +489,7 @@
 				46FCEB091A5A7116009E5171 /* Base */,
 			);
 			name = Login.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */ = {
@@ -497,6 +498,7 @@
 				46FCEB0E1A5A7116009E5171 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -591,8 +593,9 @@
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
 					"$(PROJECT_DIR)/Board-Bullets",
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Board-Bullets/Info.plist";
+				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Board-Bullets";
@@ -614,8 +617,9 @@
 					"$(PROJECT_DIR)/Board-Bullets/parse-library-1.6.1",
 					"$(PROJECT_DIR)/Board-Bullets",
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Board-Bullets/Info.plist";
+				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Board-Bullets";
