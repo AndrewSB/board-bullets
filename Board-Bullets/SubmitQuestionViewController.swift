@@ -32,6 +32,7 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         addTextDismiss()
+        registerForKeyboard()
         super.viewDidLoad()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
         
@@ -48,6 +49,18 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
         let g = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
         g.delegate = self
         view.addGestureRecognizer(g)
+    }
+    
+    override func keyboardWasShown(id: AnyObject) {
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 90, self.view.frame.width, self.view.frame.height)
+        })
+    }
+    
+    override func keyboardWillBeHidden(id: AnyObject) {
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y + 90, self.view.frame.width, self.view.frame.height)
+        })
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,11 +119,13 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
             view.addSubview(activityIndicator)
             question.saveInBackgroundWithBlock({(PFBooleanResultBlock) in
                 alert.title = "Added question"
-                alert.message = "Your questions have been added for review. Check back in a couple hours to see if it's been added!"
+                alert.message = "Your questions have been added for review."
                 
                 self.activityIndicator.removeFromSuperview()
             
-                self.presentViewController(alert, animated: true, completion: nil)
+                self.presentViewController(alert, animated: true, completion: {
+                    self.performSegueWithIdentifier("unwindToMain", sender: self)
+                })
             })
         }
     

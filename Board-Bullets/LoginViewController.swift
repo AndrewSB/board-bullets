@@ -17,6 +17,19 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
+        registerForKeyboard()
+    }
+    
+    override func keyboardWasShown(id: AnyObject) {
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 150, self.view.frame.width, self.view.frame.height)
+        })
+    }
+    
+    override func keyboardWillBeHidden(id: AnyObject) {
+        UIView.animateWithDuration(0.5, animations: {
+            self.view.frame = CGRectMake(0, self.view.frame.origin.y + 150, self.view.frame.width, self.view.frame.height)
+        })
     }
 
     @IBAction func logInButtonHit(sender: AnyObject) {
