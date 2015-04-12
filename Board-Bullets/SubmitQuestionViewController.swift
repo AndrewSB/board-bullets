@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology"]
     
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
@@ -31,12 +31,23 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     
     override func viewDidLoad() {
-//        addTextDismiss()
+        addTextDismiss()
         super.viewDidLoad()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
         
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        categoryTableView.reloadData()
+    }
+    
+    override func addTextDismiss() {
+        let g = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
+        g.delegate = self
+        view.addGestureRecognizer(g)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,13 +56,10 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
-        
-//        cell.selectionStyle = UITableViewCellSelectionStyle.None
-        
         if indexPath.row == 0 {
-            cell.textLabel?.text = "Category: \(categories[categoryIndex])"
+            cell.textLabel?.text = "\(categories[categoryIndex])"
         } else {
-            cell.textLabel?.text = "Subcategory: \(subcategories[subcategoryIndex])"
+            cell.textLabel?.text = "\(subcategories[subcategoryIndex])"
         }
         
         return cell
@@ -60,9 +68,13 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        
+        self.cat = indexPath.row == 0
+        performSegueWithIdentifier("segueToPicker", sender: self)
     }
 
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        return !touch.view.isDescendantOfView(categoryTableView)
+    }
 
     
     @IBAction func submitButtonWasHit(sender: AnyObject) {
@@ -104,14 +116,6 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     }
 
-    @IBAction func categoryButtonWasHit(sender: AnyObject) {
-        cat = true
-    }
-    
-    @IBAction func subcategoryButtonWasHit(sender: AnyObject) {
-        cat = false
-    }
-
     @IBAction func backButtonWasHit(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
@@ -120,9 +124,13 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
         super.prepareForSegue(segue, sender: sender)
         
         if let des = segue.destinationViewController as? SubmitQuestionPickerViewController {
+            
             des.title = cat ? "Category" : "Subcategory"
             des.data = cat ? categories : subcategories
             des.cat = cat
         }
     }
+    
+    @IBAction func unwindToSubmitScreen(segue: UIStoryboardSegue) {}
+
 }

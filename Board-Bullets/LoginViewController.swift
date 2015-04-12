@@ -20,8 +20,15 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func logInButtonHit(sender: AnyObject) {
+        view.userInteractionEnabled = false
+        let activity = addLoadingView()
+        view.addSubview(activity)
+        
         PFUser.logInWithUsernameInBackground(emailLabel.text, password:passwordLabel.text) {
             (user: PFUser!, error: NSError!) -> Void in
+            activity.removeFromSuperview()
+            self.view.userInteractionEnabled = true
+            
             if user != nil {
                 self.appDelegate.switchToMain()
             } else {
