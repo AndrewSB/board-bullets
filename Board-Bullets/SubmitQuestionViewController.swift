@@ -9,7 +9,7 @@
 import UIKit
 
 class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
-    let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology"]
+    let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology", "Other"]
     
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
     
@@ -129,10 +129,6 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
             })
         }
     
-    }
-
-    @IBAction func backButtonWasHit(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

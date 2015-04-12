@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         addTextDismiss()
+        view.endEditing(true)
     }
 
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {}
