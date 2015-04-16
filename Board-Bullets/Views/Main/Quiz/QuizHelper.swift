@@ -23,20 +23,26 @@ func genRandom(count: Int, limit: Int) -> [Int] {
 
 func genQuiz(numberOfQuestions: Int) -> [Question] {
     var questions = [Question]()
-    let indices = genRandom(numberOfQuestions, data.count)
     
-    for (index, element) in enumerate(indices) {
+    let questionQuery = PFQuery(className: "Questions")
+    questionQuery.whereKey("approved", equalTo: true)
+    questionQuery.cachePolicy = kPFCachePolicyCacheThenNetwork
+    questionQuery.maxCacheAge = 60*60*60*24*3
+    
+    let objects = questionQuery.findObjects()
+    
+    for (index, element) in enumerate(genRandom(numberOfQuestions, objects.count)) {
         let question = Question()
         let r = genRandom(3,3)
         
-        question.question = data[element]["Question"].string!
-        question.optionOne = data[element][String(r[0]+1)].string!
-        question.optionTwo = data[element][String(r[1]+1)].string!
-        question.optionThree = data[element][String(r[2]+1)].string!
+        question.question = objects[element]["question"] as! String
+        question.optionOne = objects[element]["optionOne"] as! String
+        question.optionTwo = objects[element]["optionTwo"] as! String
+        question.optionThree = objects[element]["optionThree"] as! String
         
-        if question.optionOne == data[element]["4"].string {
+        if question.optionOne == objects[element]["answer"] as! String {
             question.answer = 1
-        } else if question.optionTwo == data[element]["4"].string {
+        } else if question.optionTwo == objects[element]["answer"] as! String {
             question.answer = 2
         } else {
             question.answer = 3

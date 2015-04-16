@@ -9,38 +9,23 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
     }
 
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        println("welcome appeared")
-    }
-    
-    @IBAction func logInHit(sender: AnyObject) {
-        
-    }
-
-    @IBAction func signUpHit(sender: AnyObject) {
-    
-    }
-
     @IBAction func signInWithFbHit(sender: AnyObject) {
-        println("llol")
+        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
         PFFacebookUtils.logInWithPermissions(["public_profile", "email", "user_friends"], block: {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
                 NSLog("Uh oh. The user cancelled the Facebook login.")
             } else if user.isNew {
                 NSLog("User signed up and logged in through Facebook!")
-                self.appDelegate.switchToMain()
+                appDel.switchToMain()
             } else {
                 NSLog("User logged in through Facebook!")
-                self.appDelegate.switchToMain()
+                appDel.switchToMain()
             }
         })
 

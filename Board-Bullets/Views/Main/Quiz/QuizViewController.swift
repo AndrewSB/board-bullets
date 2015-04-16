@@ -31,6 +31,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         quizData = genQuiz(numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
@@ -39,8 +40,6 @@ class QuizViewController: UIViewController {
         configureSwipeGestures()
         
         originalNextButtonWidth = nextButton.frame.size.width
-        
-        
     }
     
     func configureTimer() {
