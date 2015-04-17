@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
@@ -16,11 +17,10 @@ class WelcomeViewController: UIViewController {
 
     @IBAction func signInWithFbHit(sender: AnyObject) {
         let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-        PFFacebookUtils.logInWithPermissions(["public_profile", "email", "user_friends"], block: {
-            (user: PFUser!, error: NSError!) -> Void in
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(["public_profile", "email", "user_friends"], block: { (user, error) in
             if user == nil {
                 NSLog("Uh oh. The user cancelled the Facebook login.")
-            } else if user.isNew {
+            } else if user!.isNew {
                 NSLog("User signed up and logged in through Facebook!")
                 appDel.switchToMain()
             } else {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var oldPasswordTextField: CircularEdgeTextField!
@@ -31,10 +32,10 @@ class SettingsViewController: UIViewController {
 
     @IBAction func changePasswordButtonHit(sender: AnyObject) {
         var alert = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)
-        if PFUser.currentUser().password == oldPasswordTextField.text {
+        if PFUser.currentUser()!.password == oldPasswordTextField.text {
             if newPasswordTextField.text == confirmNewPasswordTextField.text {
-                PFUser.currentUser().password = newPasswordTextField.text
-                PFUser.currentUser().save()
+                PFUser.currentUser()!.password = newPasswordTextField.text
+                PFUser.currentUser()!.save()
                 alert.title = "Your password was changed!"
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {

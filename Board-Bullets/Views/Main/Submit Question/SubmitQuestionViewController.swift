@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology", "Other"]

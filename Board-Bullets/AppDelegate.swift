@@ -39,24 +39,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let keys = NSBundle.mainBundle().pathForResource("API-Keys", ofType: "plist") {
             let rootDict = NSDictionary(contentsOfFile: keys)
             let p = rootDict!["Parse"] as! Dictionary<String, String>
-            Parse.setApplicationId(p["ApplicationID"], clientKey: p["ClientKey"])
+            Parse.setApplicationId(p["ApplicationID"]!, clientKey: p["ClientKey"]!)
         } else {
             fatalError("You don't have access to the API Keys")
         }
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
         
-        PFFacebookUtils.initializeFacebook()
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(lo!)
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-            return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, withSession:PFFacebookUtils.session())
+            return FBSDKApplicationDelegate.sharedInstance().application(application,
+                openURL: url,
+                sourceApplication: sourceApplication,
+                annotation: annotation)
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
-        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+        FBSDKAppEvents.activateApp()
     }
-    
     func switchToMain() {
         window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
     }

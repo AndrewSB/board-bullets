@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignupViewController: UIViewController {
     @IBOutlet weak var nameLabel: CircularEdgeTextField!
@@ -60,14 +61,14 @@ class SignupViewController: UIViewController {
         view.addSubview(activity)
         
         
-        user.signUpInBackgroundWithBlock { (succeeded: Bool, error: NSError!) -> Void in
+        user.signUpInBackgroundWithBlock { (user, error) in
             self.view.userInteractionEnabled = true
             activity.removeFromSuperview()
             
             if error == nil {
                 self.appDelegate.switchToMain()
             } else {
-                var errorMessage = error.userInfo!["error"] as! String
+                var errorMessage = error!.userInfo!["error"] as! String
                 
                 errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
 

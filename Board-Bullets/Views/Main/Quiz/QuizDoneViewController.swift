@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Parse
 
 class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     var questions = [Question]()
@@ -32,17 +33,13 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
     }
     
     func configurePerformaceDict(numCorrect: Int) {
-//        perf.questionsAnswered = questions.count
-//        perf.questionsAnsweredCorrect = numCorrect
-        
-        var a = PFUser.currentUser()["answered"] as! Int?
+        var a = PFUser.currentUser()!["answered"] as? Int
         var b: Int = a == nil ? questions.count : a! + questions.count
-        PFUser.currentUser()["answered"] = b
+        PFUser.currentUser()!["answered"] = b as AnyObject?
         
-        a = PFUser.currentUser()["correct"] as! Int?
+        a = PFUser.currentUser()!["correct"] as! Int?
         b = a == nil ? numCorrect : a! + numCorrect
-        PFUser.currentUser()["correct"] = b
-
+        PFUser.currentUser()!["correct"] = b
     }
     
     
