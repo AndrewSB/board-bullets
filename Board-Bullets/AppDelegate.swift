@@ -12,7 +12,6 @@ import Crashlytics
 import Parse
 import Bolts
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        addParse(launchOptions)
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("ABXWdr3QElQxJ6JXPZ2kbLGe3RmPculkoMF2oA6x", clientKey: "TWIk4FCSGc1HXexXDxr7QaadCSZ0U66W5jlVkPg8")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions!)
+        
         Fabric.with([Crashlytics()])
         
         let loggedIn = PFUser.currentUser() != nil
@@ -31,22 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         return true
-    }
-    
-    func addParse(lo: [NSObject: AnyObject]?) {
-        Parse.enableLocalDatastore()
-        
-        if let keys = NSBundle.mainBundle().pathForResource("API-Keys", ofType: "plist") {
-            let rootDict = NSDictionary(contentsOfFile: keys)
-            let p = rootDict!["Parse"] as! Dictionary<String, String>
-            Parse.setApplicationId(p["ApplicationID"]!, clientKey: p["ClientKey"]!)
-        } else {
-            fatalError("You don't have access to the API Keys")
-        }
-        
-        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
-        
-//        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(lo!)
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {

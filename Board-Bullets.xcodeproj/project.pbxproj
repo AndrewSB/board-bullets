@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EC32C351A732FDE007E5ACB /* API-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC32C341A732FDE007E5ACB /* API-Keys.plist */; };
 		460957781A74AB83004EDF45 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460957771A74AB83004EDF45 /* MainNavigationController.swift */; };
 		461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */; };
 		461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D82EE1A72013C00B30AC6 /* QuizHelper.swift */; };
@@ -66,7 +65,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EC32C341A732FDE007E5ACB /* API-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "API-Keys.plist"; sourceTree = "<group>"; };
 		460957771A74AB83004EDF45 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		461D2DA61A75E4E000FF9A7D /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
 		461D82EE1A72013C00B30AC6 /* QuizHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizHelper.swift; sourceTree = "<group>"; };
@@ -334,7 +332,6 @@
 			isa = PBXGroup;
 			children = (
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
-				0EC32C341A732FDE007E5ACB /* API-Keys.plist */,
 				46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */,
 				46FCEB031A5A7116009E5171 /* Info.plist */,
 			);
@@ -439,7 +436,6 @@
 				469C65D01A5FB70200758740 /* Main.storyboard in Resources */,
 				46FCEB0F1A5A7116009E5171 /* LaunchScreen.xib in Resources */,
 				4621277D1AE0B82D006C950E /* README.txt in Resources */,
-				0EC32C351A732FDE007E5ACB /* API-Keys.plist in Resources */,
 				462127751AE0B82D006C950E /* FacebookSDK.strings in Resources */,
 				4621277C1AE0B82D006C950E /* LICENSE in Resources */,
 				462127771AE0B82D006C950E /* FBAudienceNetwork.README.txt in Resources */,
