@@ -109,18 +109,21 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
             alert.message = "Please enter the second dummy question"
             self.presentViewController(alert, animated: true, completion: nil)
         } else {
-            let question = PFObject(className: "UserQuestions")
-            question["category"] = categories[categoryIndex]
-            question["subcategory"] = subcategories[subcategoryIndex]
+            let question = PFObject(className: "Questions")
+            question["field"] = categories[categoryIndex]
+            question["subfield"] = subcategories[subcategoryIndex]
             question["question"] = questionLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["option1"] = dummyAnswerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["option2"] = dummyAnswerLabel2.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["option3"] = answerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionOne"] = dummyAnswerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionTwo"] = dummyAnswerLabel2.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionThree"] = answerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["answer"] = answerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["approved"] = false
+            
             
             view.addSubview(activityIndicator)
             question.saveInBackgroundWithBlock({(PFBooleanResultBlock) in
                 alert.title = "Added question"
-                alert.message = "Your questions have been added for review."
+                alert.message = "Your question has been added for review. You should see it in the question bank within the next couple hours"
                 
                 self.activityIndicator.removeFromSuperview()
             
