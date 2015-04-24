@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(lo, block: nil)
         
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(lo!)
+//        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(lo!)
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {

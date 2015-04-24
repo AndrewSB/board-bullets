@@ -25,7 +25,6 @@
 		465869151ADF63740095544F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658690F1ADF63740095544F /* Bolts.framework */; };
 		465869161ADF63740095544F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869101ADF63740095544F /* Parse.framework */; };
 		465869171ADF63740095544F /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869111ADF63740095544F /* ParseCrashReporting.framework */; };
-		465869181ADF63740095544F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869121ADF63740095544F /* ParseFacebookUtils.framework */; };
 		465869191ADF63740095544F /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */; };
 		4658691A1ADF63740095544F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869141ADF63740095544F /* ParseUI.framework */; };
 		4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */; };
@@ -85,7 +84,6 @@
 		4658690F1ADF63740095544F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		465869101ADF63740095544F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		465869111ADF63740095544F /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		465869121ADF63740095544F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		465869141ADF63740095544F /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				46FCEB301A5A7476009E5171 /* CFNetwork.framework in Frameworks */,
 				462127791AE0B82D006C950E /* FBSDKLoginKit.framework in Frameworks */,
 				465869161ADF63740095544F /* Parse.framework in Frameworks */,
-				465869181ADF63740095544F /* ParseFacebookUtils.framework in Frameworks */,
 				46FCEB311A5A7476009E5171 /* CoreGraphics.framework in Frameworks */,
 				4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */,
 				46FCEB321A5A7476009E5171 /* CoreLocation.framework in Frameworks */,
@@ -188,7 +185,6 @@
 				4658690F1ADF63740095544F /* Bolts.framework */,
 				465869101ADF63740095544F /* Parse.framework */,
 				465869111ADF63740095544F /* ParseCrashReporting.framework */,
-				465869121ADF63740095544F /* ParseFacebookUtils.framework */,
 				465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */,
 				465869141ADF63740095544F /* ParseUI.framework */,
 			);
