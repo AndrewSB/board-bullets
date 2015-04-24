@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         Parse.setApplicationId("ABXWdr3QElQxJ6JXPZ2kbLGe3RmPculkoMF2oA6x", clientKey: "TWIk4FCSGc1HXexXDxr7QaadCSZ0U66W5jlVkPg8")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions!)
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions == nil ? [NSObject: AnyObject]() : launchOptions!)
         
         Fabric.with([Crashlytics()])
         

@@ -31,8 +31,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        quizData = genQuiz(numberOfQuestions)
+        self.quizData = genQuiz(self.numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
         configureQuestionNav()

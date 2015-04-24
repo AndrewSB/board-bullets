@@ -27,13 +27,14 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
     
     let questionQuery = PFQuery(className: "Questions")
     questionQuery.whereKey("approved", equalTo: true)
-    questionQuery.cachePolicy = .CacheThenNetwork
     questionQuery.maxCacheAge = 60*60*60*24*3
     
     let objects = questionQuery.findObjects()
     
     if let objects = objects {
-        for (index, element) in enumerate(genRandom(numberOfQuestions, objects.count)) {
+        let randomlyChosenQuestions = genRandom(numberOfQuestions, objects.count)
+        
+        for (index, element) in enumerate(randomlyChosenQuestions) {
             let question = Question()
             let r = genRandom(3,3)
             
