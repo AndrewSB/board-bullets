@@ -196,7 +196,6 @@
 				46EDFFF51A954E750079C40C /* Performance.swift */,
 			);
 			name = Entities;
-			path = "Board-Bullets";
 			sourceTree = "<group>";
 		};
 		467176251ADB2BF100E63BAE /* UI */ = {
@@ -206,12 +205,13 @@
 				467176311ADB2D1200E63BAE /* resultViewCell.swift */,
 			);
 			name = UI;
-			path = "Board-Bullets";
 			sourceTree = "<group>";
 		};
 		467176261ADB2C1000E63BAE /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				467176251ADB2BF100E63BAE /* UI */,
+				467176241ADB2BE000E63BAE /* Entities */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 			);
 			name = Internal;
@@ -341,8 +341,6 @@
 		46FCEB451A5A74CA009E5171 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				467176251ADB2BF100E63BAE /* UI */,
-				467176241ADB2BE000E63BAE /* Entities */,
 				467176261ADB2C1000E63BAE /* Internal */,
 				467176271ADB2C2E00E63BAE /* External */,
 			);
