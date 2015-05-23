@@ -10,7 +10,7 @@ import UIKit
 import IQKeyboardManager
 import Parse
 
-class SubmitQuestionViewController: UIViewController, UIGestureRecognizerDelegate {
+class SubmitQuestionViewController: UIViewController {
     let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology", "Other"]
     
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
@@ -43,11 +43,13 @@ class SubmitQuestionViewController: UIViewController, UIGestureRecognizerDelegat
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
     }
- 
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
-        return !touch.view.isKindOfClass(UITableViewCell)
+    
+    override func addTextDismiss() {
+        let gestureRecog = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
+        self.view.addGestureRecognizer(gestureRecog)
+        gestureRecog.cancelsTouchesInView = false
     }
-
+ 
     
     @IBAction func submitButtonWasHit(sender: AnyObject) {
         let alert = UIAlertController(title: "Uh oh", message: "", preferredStyle: .Alert)
