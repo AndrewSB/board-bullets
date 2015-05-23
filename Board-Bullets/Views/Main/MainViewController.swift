@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import IQKeyboardManager
 
 class MainViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        IQKeyboardManager.sharedManager().enable = true
         
         addTextDismiss()
         view.endEditing(true)

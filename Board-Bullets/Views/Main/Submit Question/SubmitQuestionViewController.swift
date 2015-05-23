@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import IQKeyboardManager
 import Parse
 
-class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
+class SubmitQuestionViewController: UIViewController, UIGestureRecognizerDelegate {
     let categories = ["Behavioral Science", "Biochemistry", "Embryology", "Microbiology", "Immunology", "Pathology", "Pharmacology", "Other"]
     
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
@@ -32,61 +33,19 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     
     override func viewDidLoad() {
-        addTextDismiss()
         super.viewDidLoad()
+        
+        addTextDismiss()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
+        
+        [questionLabel, answerLabel, dummyAnswerLabel, dummyAnswerLabel2].map({ $0.delegate = self })
         
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        categoryTableView.reloadData()
-    }
-    
-    override func addTextDismiss() {
-        let g = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
-        g.delegate = self
-        view.addGestureRecognizer(g)
-    }
-    
-    override func keyboardWasShown(id: AnyObject) {
-        UIView.animateWithDuration(0.5, animations: {
-            self.view.frame = CGRectMake(0, self.view.frame.origin.y - 90, self.view.frame.width, self.view.frame.height)
-        })
-    }
-    
-    override func keyboardWillBeHidden(id: AnyObject) {
-        UIView.animateWithDuration(0.5, animations: {
-            self.view.frame = CGRectMake(0, self.view.frame.origin.y + 90, self.view.frame.width, self.view.frame.height)
-        })
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
-        if indexPath.row == 0 {
-            cell.textLabel?.text = "\(categories[categoryIndex])"
-        } else {
-            cell.textLabel?.text = "\(subcategories[subcategoryIndex])"
-        }
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-        self.cat = indexPath.row == 0
-        performSegueWithIdentifier("segueToPicker", sender: self)
-    }
-
+ 
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
-        return !touch.view.isDescendantOfView(categoryTableView)
+        return !touch.view.isKindOfClass(UITableViewCell)
     }
 
     
@@ -146,5 +105,51 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     @IBAction func unwindToSubmitScreen(segue: UIStoryboardSegue) {}
+}
 
+extension SubmitQuestionViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "\(categories[categoryIndex])"
+        } else {
+            cell.textLabel?.text = "\(subcategories[subcategoryIndex])"
+        }
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        self.cat = indexPath.row == 0
+        performSegueWithIdentifier("segueToPicker", sender: self)
+    }
+
+}
+
+extension SubmitQuestionViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        switch textField {
+        case questionLabel:
+            questionLabel.resignFirstResponder()
+            answerLabel.becomeFirstResponder()
+        case answerLabel:
+            answerLabel.resignFirstResponder()
+            dummyAnswerLabel.becomeFirstResponder()
+        case dummyAnswerLabel:
+            dummyAnswerLabel.resignFirstResponder()
+            dummyAnswerLabel2.becomeFirstResponder()
+        case dummyAnswerLabel2:
+            dummyAnswerLabel2.resignFirstResponder()
+            categoryTableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: .None)
+        default:()
+        }
+        
+        return true
+    }
 }
