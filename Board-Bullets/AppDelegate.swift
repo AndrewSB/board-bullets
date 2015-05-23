@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 15
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
         
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Main" : "Login"

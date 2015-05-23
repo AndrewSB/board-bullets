@@ -21,6 +21,10 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
+        
+        [nameLabel, emailLabel, passwordLabel, medicalSchoolLabel].map({
+            $0.delegate = self
+        })
     }
 
     override func keyboardWasShown(id: AnyObject) {
@@ -46,7 +50,8 @@ class SignupViewController: UIViewController {
         resignFirstResponder()
     }
 
-    @IBAction func signupButtonHit(sender: AnyObject) {
+
+    @IBAction func signupButtonHit() {
         let user = PFUser()
         user["name"] = nameLabel.text
         user.username = emailLabel.text
@@ -69,16 +74,38 @@ class SignupViewController: UIViewController {
                 var errorMessage = error!.userInfo!["error"] as! String
                 
                 errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
-
+                
                 
                 let alert = UIAlertController(title: "Uh oh!", message: errorMessage.capitalizedString, preferredStyle: UIAlertControllerStyle.Alert)
                 let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
                 alert.addAction(action)
                 
                 self.presentViewController(alert, animated: true, completion: nil)
-
+                
                 println(error)// Show the errorString somewhere and let the user try again.
             }
         }
+    }
+}
+
+extension SignupViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        switch textField {
+        case nameLabel:
+            nameLabel.resignFirstResponder()
+            emailLabel.becomeFirstResponder()
+        case emailLabel:
+            emailLabel.resignFirstResponder()
+            passwordLabel.becomeFirstResponder()
+        case passwordLabel:
+            passwordLabel.resignFirstResponder()
+            medicalSchoolLabel.becomeFirstResponder()
+        case medicalSchoolLabel:
+            medicalSchoolLabel.resignFirstResponder()
+            signupButtonHit()
+        default:()
+        }
+        
+        return true
     }
 }

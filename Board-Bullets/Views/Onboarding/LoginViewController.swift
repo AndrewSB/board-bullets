@@ -67,11 +67,11 @@ extension LoginViewController: UITextFieldDelegate {
             emailLabel.resignFirstResponder()
             passwordLabel.becomeFirstResponder()
         case passwordLabel:
+            passwordLabel.resignFirstResponder()
             logInButtonHit()
-        default:
-            ()
+        default: ()
         }
         
-        return false
+        return true
     }
 }
