@@ -21,7 +21,6 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
-        registerForKeyboard()
     }
 
     override func keyboardWasShown(id: AnyObject) {
@@ -45,7 +44,6 @@ class SignupViewController: UIViewController {
         
         view.endEditing(true)
         resignFirstResponder()
-        deregisterForKeyboard()
     }
 
     @IBAction func signupButtonHit(sender: AnyObject) {

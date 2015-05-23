@@ -11,6 +11,7 @@ import Fabric
 import Crashlytics
 import Parse
 import Bolts
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions == nil ? [NSObject: AnyObject]() : launchOptions!)
         
         Fabric.with([Crashlytics()])
+        
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 15
         
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Main" : "Login"

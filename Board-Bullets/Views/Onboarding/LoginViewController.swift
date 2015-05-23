@@ -18,7 +18,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTextDismiss()
-        registerForKeyboard()
+        
+        emailLabel.delegate = self
+        passwordLabel.delegate = self
     }
     
     override func keyboardWasShown(id: AnyObject) {
@@ -33,7 +35,7 @@ class LoginViewController: UIViewController {
         })
     }
 
-    @IBAction func logInButtonHit(sender: AnyObject) {
+    @IBAction func logInButtonHit() {
         view.userInteractionEnabled = false
         let activity = addLoadingView()
         view.addSubview(activity)
@@ -55,5 +57,21 @@ class LoginViewController: UIViewController {
 
         })
         
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        switch textField {
+        case emailLabel:
+            emailLabel.resignFirstResponder()
+            passwordLabel.becomeFirstResponder()
+        case passwordLabel:
+            logInButtonHit()
+        default:
+            ()
+        }
+        
+        return false
     }
 }

@@ -33,7 +33,6 @@ class SubmitQuestionViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         addTextDismiss()
-        registerForKeyboard()
         super.viewDidLoad()
         activityIndicator.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2)
         
