@@ -37,6 +37,7 @@
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */; };
 		46BC3F4E1B48A7A0004BC352 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */; };
+		46BC3F501B48AB7D004BC352 /* InAppPurchaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
 		46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */; };
 		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
@@ -96,6 +97,7 @@
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionPickerViewController.swift; sourceTree = "<group>"; };
 		46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
+		46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseHelper.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				467176251ADB2BF100E63BAE /* UI */,
 				467176241ADB2BE000E63BAE /* Entities */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
+				46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */,
 			);
 			name = Internal;
 			path = "Board-Bullets";
@@ -319,7 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				46FCEB011A5A7116009E5171 /* Board-Bullets */,
-				46FCEB451A5A74CA009E5171 /* Frameworks */,
+				46FCEB451A5A74CA009E5171 /* Library */,
 				46FCEB001A5A7116009E5171 /* Products */,
 				0E8848DF951E83BA67FF56B4 /* Pods */,
 			);
@@ -354,14 +357,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		46FCEB451A5A74CA009E5171 /* Frameworks */ = {
+		46FCEB451A5A74CA009E5171 /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				467176261ADB2C1000E63BAE /* Internal */,
 				467176271ADB2C2E00E63BAE /* External */,
 				65C842937340E41A5C988189 /* Pods.framework */,
 			);
-			name = Frameworks;
+			name = Library;
 			sourceTree = "<group>";
 		};
 		46FCEB5B1A5A95E5009E5171 /* Views */ = {
@@ -535,6 +538,7 @@
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,
 				46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */,
+				46BC3F501B48AB7D004BC352 /* InAppPurchaseHelper.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
 				467176321ADB2D1200E63BAE /* CircularEdgeTextField.swift in Sources */,
