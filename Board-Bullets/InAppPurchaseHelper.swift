@@ -32,21 +32,17 @@ class InAppPurchaseHelper: NSObject {
     
     class var boughtFromParse: Bool {
         get {
-        if PFUser.currentUser() != nil {
-            if let remoteBought = PFUser.currentUser()!["bought"] as? Bool {
+        if let parseUser = PFUser.currentUser() {
+            if let remoteBought = parseUser["bought"] as? Bool {
                 return remoteBought
             }
         }
         return false
         }
         set {
-        
-        }
-    }
-    
-    class var boughtProdut: SKProduct {
-        get {
-            let product = SKProduct()
+            if let parseUser = PFUser.currentUser() {
+                parseUser["bought"] = newValue as AnyObject
+            }
         }
     }
     
@@ -57,7 +53,7 @@ class InAppPurchaseHelper: NSObject {
     }
 }
 
-extension InAppPurchaseHelper: SKRequestDelegate, SKRequestDelegate {
+extension InAppPurchaseHelper: SKRequestDelegate {
     func requestDidFinish(request: SKRequest!) {
         println("request did finish")
     }
@@ -65,6 +61,4 @@ extension InAppPurchaseHelper: SKRequestDelegate, SKRequestDelegate {
     func request(request: SKRequest!, didFailWithError error: NSError!) {
         println("failed to request")
     }
-    
-    
 }
