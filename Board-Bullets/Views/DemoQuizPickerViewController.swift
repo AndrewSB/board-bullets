@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Parse
+
 class DemoQuizPickerViewController: UIViewController {
 
     @IBOutlet weak var learnAsYouGoButton: UIButton!
@@ -18,6 +20,15 @@ class DemoQuizPickerViewController: UIViewController {
         super.viewDidLoad()
         
         view.userInteractionEnabled = false
+        
+        let quizData: [Question] = {
+            let query = PFQuery(className: "Questions")
+            query.limit = self.numberOfQuestions
+            query.findObjectsInBackgroundWithBlock() {
+                println($0.0)
+            }
+            return [Question()]
+            }()
     }
     
     override func viewDidAppear(animated: Bool) {

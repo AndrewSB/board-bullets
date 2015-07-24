@@ -8,12 +8,17 @@
 
 import Foundation
 
+import Parse
+
 class Question {
     var question = String()
     var answer = Int()
     var optionOne = String()
     var optionTwo = String()
     var optionThree = String()
+    var wikipediaLink = NSURL()
+    var approved = Bool()
+    
     
     var chosen = Int()
     var correct = Bool()
@@ -22,5 +27,25 @@ class Question {
     
     func isCorrect() {
         correct = answer == chosen
+    }
+    
+    init(parseObject: PFObject) {
+        self.question = parseObject["question"]
+        self.optionOne = parseObject["optionOne"] as! String
+        self.optionTwo = parseObject["optionTwo"] as! String
+        self.optionThree = parseObject["optionThree"] as! String
+        
+        self.wikipediaLink = NSURL(string: parseObject["Wikipedia"])
+        
+        self.approved = parseObject["approved"] as! Int == 1 ? true : false
+        
+        if self.optionOne == parseObject["answer"] as! String {
+            self.answer = 1
+        } else if self.optionTwo == parseObject["answer"] as! String {
+            self.answer = 2
+        } else {
+            self.answer = 3
+        }
+        
     }
 }

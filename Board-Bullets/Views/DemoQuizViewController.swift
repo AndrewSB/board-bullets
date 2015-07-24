@@ -8,6 +8,7 @@
 
 import UIKit
 
+import Parse
 
 class DemoQuizViewController: UIViewController {
 
@@ -32,8 +33,8 @@ class DemoQuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        self.quizData = genQuiz(self.numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
         configureQuestionNav()

@@ -27,7 +27,7 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
     
     let questionQuery = PFQuery(className: "Questions")
     questionQuery.whereKey("approved", equalTo: true)
-    questionQuery.maxCacheAge = 60*60*60*24*3
+    questionQuery.maxCacheAge = 60*60*60*24
     
     let objects = questionQuery.findObjects()
     
