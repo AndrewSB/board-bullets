@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-               BuildableName = "Board-Bullets.app"
-               BlueprintName = "Board-Bullets"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               BuildableName = "BoardBullets.app"
+               BlueprintName = "BoardBullets"
+               ReferencedContainer = "container:BoardBullets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "46FCEB131A5A7116009E5171"
                BuildableName = "Board-BulletsTests.xctest"
                BlueprintName = "Board-BulletsTests"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               ReferencedContainer = "container:BoardBullets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "46FCEB131A5A7116009E5171"
                BuildableName = "Board-BulletsTests.xctest"
                BlueprintName = "Board-BulletsTests"
-               ReferencedContainer = "container:Board-Bullets.xcodeproj">
+               ReferencedContainer = "container:BoardBullets.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "BoardBullets.app"
+            BlueprintName = "BoardBullets"
+            ReferencedContainer = "container:BoardBullets.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,13 +72,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "BoardBullets.app"
+            BlueprintName = "BoardBullets"
+            ReferencedContainer = "container:BoardBullets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -90,13 +91,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FCEAFE1A5A7116009E5171"
-            BuildableName = "Board-Bullets.app"
-            BlueprintName = "Board-Bullets"
-            ReferencedContainer = "container:Board-Bullets.xcodeproj">
+            BuildableName = "BoardBullets.app"
+            BlueprintName = "BoardBullets"
+            ReferencedContainer = "container:BoardBullets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

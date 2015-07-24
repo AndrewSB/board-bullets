@@ -147,7 +147,7 @@
 		46EDFFF51A954E750079C40C /* Performance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
 		46FBFE351A6999B300B53C4E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46FBFE381A69A1EA00B53C4E /* QuizPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizPickerViewController.swift; sourceTree = "<group>"; };
-		46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board-Bullets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FCEAFF1A5A7116009E5171 /* BoardBullets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardBullets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FCEB031A5A7116009E5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FCEB041A5A7116009E5171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FCEB091A5A7116009E5171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		46FCEB2D1A5A7476009E5171 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		46FCEB2E1A5A7476009E5171 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		46FCEB381A5A7489009E5171 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Board-Bullets-Bridging-Header.h"; sourceTree = "<group>"; };
+		46FCEB461A5A7515009E5171 /* BoardBullets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BoardBullets-Bridging-Header.h"; sourceTree = "<group>"; };
 		46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 				4644B5551B6212BA00BF5794 /* UIStoryboardExtension.swift */,
 			);
 			name = Internal;
-			path = "Board-Bullets";
+			path = "BoardBullets";
 			sourceTree = "<group>";
 		};
 		467176271ADB2C2E00E63BAE /* External */ = {
@@ -449,7 +449,7 @@
 		46FCEAF61A5A7116009E5171 = {
 			isa = PBXGroup;
 			children = (
-				46FCEB011A5A7116009E5171 /* Board-Bullets */,
+				46FCEB011A5A7116009E5171 /* BoardBullets */,
 				46FCEB451A5A74CA009E5171 /* Library */,
 				46FCEB001A5A7116009E5171 /* Products */,
 				0E8848DF951E83BA67FF56B4 /* Pods */,
@@ -459,12 +459,12 @@
 		46FCEB001A5A7116009E5171 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */,
+				46FCEAFF1A5A7116009E5171 /* BoardBullets.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46FCEB011A5A7116009E5171 /* Board-Bullets */ = {
+		46FCEB011A5A7116009E5171 /* BoardBullets */ = {
 			isa = PBXGroup;
 			children = (
 				46FCEB041A5A7116009E5171 /* AppDelegate.swift */,
@@ -472,14 +472,14 @@
 				46FCEB5B1A5A95E5009E5171 /* Views */,
 				46FCEB021A5A7116009E5171 /* Supporting Files */,
 			);
-			path = "Board-Bullets";
+			path = "BoardBullets";
 			sourceTree = "<group>";
 		};
 		46FCEB021A5A7116009E5171 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				46FCEB0D1A5A7116009E5171 /* LaunchScreen.xib */,
-				46FCEB461A5A7515009E5171 /* Board-Bullets-Bridging-Header.h */,
+				46FCEB461A5A7515009E5171 /* BoardBullets-Bridging-Header.h */,
 				46FCEB031A5A7116009E5171 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -519,9 +519,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46FCEAFE1A5A7116009E5171 /* Board-Bullets */ = {
+		46FCEAFE1A5A7116009E5171 /* BoardBullets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */;
+			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "BoardBullets" */;
 			buildPhases = (
 				46FCEAFB1A5A7116009E5171 /* Sources */,
 				46FCEAFC1A5A7116009E5171 /* Frameworks */,
@@ -532,9 +532,9 @@
 			);
 			dependencies = (
 			);
-			name = "Board-Bullets";
-			productName = "Board-Bullets";
-			productReference = 46FCEAFF1A5A7116009E5171 /* Board-Bullets.app */;
+			name = BoardBullets;
+			productName = "BoardBullets";
+			productReference = 46FCEAFF1A5A7116009E5171 /* BoardBullets.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -553,7 +553,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board-Bullets" */;
+			buildConfigurationList = 46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "BoardBullets" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -567,7 +567,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46FCEAFE1A5A7116009E5171 /* Board-Bullets */,
+				46FCEAFE1A5A7116009E5171 /* BoardBullets */,
 			);
 		};
 /* End PBXProject section */
@@ -728,25 +728,25 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Board-Bullets",
+					"$(PROJECT_DIR)/BoardBullets",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/FacebookSDK",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
-				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "BoardBullets/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Board-Bullets";
+				PRODUCT_NAME = BoardBullets;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Supporting Files/Board-Bullets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BoardBullets/Supporting Files/BoardBullets-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board-Bullets" */ = {
+		46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "BoardBullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FCEB1D1A5A7116009E5171 /* Release */,
@@ -754,7 +754,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */ = {
+		46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "BoardBullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46FCEB201A5A7116009E5171 /* Release */,
