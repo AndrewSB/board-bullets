@@ -1,5 +1,5 @@
 //
-//  InAppPurchaseHelper.swift
+//  InAppPurchase.swift
 //  Board-Bullets
 //
 //  Created by Andrew Breckenridge on 7/4/15.
@@ -14,9 +14,9 @@ import Bolts
 
 
 // Look at all these observers. I LOVE Swift #nogettersorsetters
-class InAppPurchaseHelper: NSObject {
+class InAppPurchase: NSObject {
     static let productIdentifier = "AllContentQuestions"
-    static let userStoreKey = "holmesboughttheapp" // lol
+    static let userStoreKey = "boughttheapp"
     
     class var bought: Bool {
         get {
@@ -53,7 +53,7 @@ class InAppPurchaseHelper: NSObject {
     }
 }
 
-extension InAppPurchaseHelper: SKRequestDelegate {
+extension InAppPurchase: SKRequestDelegate {
     func requestDidFinish(request: SKRequest!) {
         println("request did finish")
     }
@@ -61,4 +61,5 @@ extension InAppPurchaseHelper: SKRequestDelegate {
     func request(request: SKRequest!, didFailWithError error: NSError!) {
         println("failed to request")
     }
+    
 }

@@ -13,7 +13,7 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -30,10 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().enableAutoToolbar = false
         
         let loggedIn = PFUser.currentUser() != nil
-        let storyboard = loggedIn ? "Main" : "Login"
+        let boughtFullVersion = InAppPurchase.bought
+        
+        let storyboard = loggedIn ?
+                                    boughtFullVersion ? UIStoryboard.Named.Main : UIStoryboard.Named.Demo
+                                    : UIStoryboard.Named.Login
     
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
+        window?.rootViewController = (UIStoryboard(name: storyboard.rawValue, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
         window?.makeKeyAndVisible()
         
         return true

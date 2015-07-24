@@ -1,14 +1,16 @@
 //
-//  QuizViewController.swift
+//  DemoQuizViewController.swift
 //  Board-Bullets
 //
-//  Created by Andrew Breckenridge on 1/14/15.
+//  Created by Andrew Breckenridge on 7/23/15.
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
 import UIKit
 
-class QuizViewController: UIViewController {
+
+class DemoQuizViewController: UIViewController {
+
     @IBOutlet weak var reviewLabel: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
@@ -17,7 +19,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var option3Button: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
-
+    
     @IBOutlet weak var swipeHintView: UIView!
     
     var answers = [Int]()
@@ -108,47 +110,47 @@ class QuizViewController: UIViewController {
                 self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 50
             }
             
-        }, completion: { animationFinished in
-            for b in [self.option1Button, self.option2Button, self.option3Button] {
-                b.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 18)
-            }
-            self.questionLabel.text = self.quizData[i].question
-            self.option1Button.setTitle(self.quizData[i].optionOne, forState: .Normal)
-            self.option2Button.setTitle(self.quizData[i].optionTwo, forState: .Normal)
-            self.option3Button.setTitle(self.quizData[i].optionThree, forState: .Normal)
-            
-            if isMovingForward {
-                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 100
-                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 100
-                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 100
-                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 100
-            } else {
-                self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 100
-                self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 100
-                self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 100
-                self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 100
-            }
-
-            
-            UIView.animateWithDuration(0.25, animations: {
-                self.questionLabel.layer.opacity = 1
-                self.option1Button.layer.opacity = 1
-                self.option2Button.layer.opacity = 1
-                self.option3Button.layer.opacity = 1
+            }, completion: { animationFinished in
+                for b in [self.option1Button, self.option2Button, self.option3Button] {
+                    b.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 18)
+                }
+                self.questionLabel.text = self.quizData[i].question
+                self.option1Button.setTitle(self.quizData[i].optionOne, forState: .Normal)
+                self.option2Button.setTitle(self.quizData[i].optionTwo, forState: .Normal)
+                self.option3Button.setTitle(self.quizData[i].optionThree, forState: .Normal)
                 
                 if isMovingForward {
-                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
-                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 50
-                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 50
-                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 50
+                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 100
+                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 100
+                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 100
+                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 100
                 } else {
-                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 50
-                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 50
-                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 50
-                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 50
+                    self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 100
+                    self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 100
+                    self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 100
+                    self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 100
                 }
                 
-            })
+                
+                UIView.animateWithDuration(0.25, animations: {
+                    self.questionLabel.layer.opacity = 1
+                    self.option1Button.layer.opacity = 1
+                    self.option2Button.layer.opacity = 1
+                    self.option3Button.layer.opacity = 1
+                    
+                    if isMovingForward {
+                        self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x - 50
+                        self.option1Button.frame.origin.x = self.option1Button.frame.origin.x - 50
+                        self.option2Button.frame.origin.x = self.option2Button.frame.origin.x - 50
+                        self.option3Button.frame.origin.x = self.option3Button.frame.origin.x - 50
+                    } else {
+                        self.questionLabel.frame.origin.x = self.questionLabel.frame.origin.x + 50
+                        self.option1Button.frame.origin.x = self.option1Button.frame.origin.x + 50
+                        self.option2Button.frame.origin.x = self.option2Button.frame.origin.x + 50
+                        self.option3Button.frame.origin.x = self.option3Button.frame.origin.x + 50
+                    }
+                    
+                })
                 
         })
         
@@ -227,7 +229,7 @@ class QuizViewController: UIViewController {
     func configureQuestionNav() {
         backButton.layer.opacity = 0
         nextButton.layer.opacity = 0
- 
+        
     }
     
     func configureSwipeGestures() {
@@ -265,7 +267,7 @@ class QuizViewController: UIViewController {
         UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseInOut, animations: {
             self.swipeHintView.layer.opacity = 0
             self.swipeHintView.frame.origin.x = self.swipeHintView.frame.origin.x - 88
-        }, completion: nil)
+            }, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -274,5 +276,6 @@ class QuizViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindToQuiz(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToDemoQuiz(segue: UIStoryboardSegue) {}
+
 }
