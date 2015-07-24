@@ -20,11 +20,28 @@
 		4621277C1AE0B82D006C950E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4621268F1AE0B82D006C950E /* LICENSE */; };
 		4621277D1AE0B82D006C950E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 462126901AE0B82D006C950E /* README.txt */; };
 		463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463226E41AC38153003063E8 /* ForgotPasswordViewController.swift */; };
-		465869151ADF63740095544F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658690F1ADF63740095544F /* Bolts.framework */; };
-		465869161ADF63740095544F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869101ADF63740095544F /* Parse.framework */; };
-		465869171ADF63740095544F /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869111ADF63740095544F /* ParseCrashReporting.framework */; };
-		465869191ADF63740095544F /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */; };
-		4658691A1ADF63740095544F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869141ADF63740095544F /* ParseUI.framework */; };
+		4644B52E1B620BCE00BF5794 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B51D1B620BCE00BF5794 /* IQNSArray+Sort.swift */; };
+		4644B52F1B620BCE00BF5794 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B51E1B620BCE00BF5794 /* IQUIView+Hierarchy.swift */; };
+		4644B5301B620BCE00BF5794 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B51F1B620BCE00BF5794 /* IQUIWindow+Hierarchy.swift */; };
+		4644B5311B620BCE00BF5794 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5211B620BCE00BF5794 /* IQKeyboardManagerConstants.swift */; };
+		4644B5321B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5221B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift */; };
+		4644B5331B620BCE00BF5794 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5231B620BCE00BF5794 /* IQKeyboardManager.swift */; };
+		4644B5341B620BCE00BF5794 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5241B620BCE00BF5794 /* IQKeyboardReturnKeyHandler.swift */; };
+		4644B5351B620BCE00BF5794 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5261B620BCE00BF5794 /* IQTextView.swift */; };
+		4644B5361B620BCE00BF5794 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5281B620BCE00BF5794 /* IQBarButtonItem.swift */; };
+		4644B5371B620BCE00BF5794 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B5291B620BCE00BF5794 /* IQTitleBarButtonItem.swift */; };
+		4644B5381B620BCE00BF5794 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B52A1B620BCE00BF5794 /* IQToolbar.swift */; };
+		4644B5391B620BCE00BF5794 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B52B1B620BCE00BF5794 /* IQUIView+IQKeyboardToolbar.swift */; };
+		4644B53A1B620BCE00BF5794 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4644B52D1B620BCE00BF5794 /* IQKeyboardManager.bundle */; };
+		4644B5401B620CB000BF5794 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4644B53C1B620CB000BF5794 /* Info-iOS.plist */; };
+		4644B5411B620CB000BF5794 /* Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4644B53D1B620CB000BF5794 /* Info-OSX.plist */; };
+		4644B5421B620CB000BF5794 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B53F1B620CB000BF5794 /* SwiftyJSON.swift */; };
+		4644B54B1B620CD100BF5794 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5451B620CD100BF5794 /* Parse.framework */; };
+		4644B54C1B620CD100BF5794 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5461B620CD100BF5794 /* ParseCrashReporting.framework */; };
+		4644B54E1B620CD100BF5794 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5481B620CD100BF5794 /* ParseFacebookUtilsV4.framework */; };
+		4644B54F1B620CD100BF5794 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5491B620CD100BF5794 /* ParseUI.framework */; };
+		4644B5511B620E2D00BF5794 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5501B620E2D00BF5794 /* Social.framework */; };
+		4644B5531B620E5B00BF5794 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4644B5521B620E5B00BF5794 /* libstdc++.6.0.9.dylib */; };
 		4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */; };
 		4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176281ADB2C7D00E63BAE /* Crashlytics.framework */; };
 		4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176291ADB2C7D00E63BAE /* Fabric.framework */; };
@@ -39,7 +56,6 @@
 		46BC3F4E1B48A7A0004BC352 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */; };
 		46BC3F501B48AB7D004BC352 /* InAppPurchaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
-		46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */; };
 		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
 		46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */; };
 		46EDFFF61A954E750079C40C /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF51A954E750079C40C /* Performance.swift */; };
@@ -63,7 +79,6 @@
 		46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */; };
 		46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB571A5A95D2009E5171 /* LoginViewController.swift */; };
 		46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */; };
-		BC616649F83C6893C3F59626 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C842937340E41A5C988189 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,11 +95,29 @@
 		4621268F1AE0B82D006C950E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		462126901AE0B82D006C950E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		463226E41AC38153003063E8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		4658690F1ADF63740095544F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		465869101ADF63740095544F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		465869111ADF63740095544F /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
-		465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		465869141ADF63740095544F /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		4644B51D1B620BCE00BF5794 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		4644B51E1B620BCE00BF5794 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		4644B51F1B620BCE00BF5794 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		4644B5211B620BCE00BF5794 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		4644B5221B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		4644B5231B620BCE00BF5794 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		4644B5241B620BCE00BF5794 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		4644B5261B620BCE00BF5794 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		4644B5281B620BCE00BF5794 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		4644B5291B620BCE00BF5794 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		4644B52A1B620BCE00BF5794 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		4644B52B1B620BCE00BF5794 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		4644B52D1B620BCE00BF5794 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		4644B53C1B620CB000BF5794 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		4644B53D1B620CB000BF5794 /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		4644B53E1B620CB000BF5794 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		4644B53F1B620CB000BF5794 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		4644B5451B620CD100BF5794 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4644B5461B620CD100BF5794 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		4644B5481B620CD100BF5794 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		4644B5491B620CD100BF5794 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		4644B5501B620E2D00BF5794 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4644B5521B620E5B00BF5794 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		467176281ADB2C7D00E63BAE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467176291ADB2C7D00E63BAE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -99,7 +132,6 @@
 		46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseHelper.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswerViewController.swift; sourceTree = "<group>"; };
 		46EDFFF51A954E750079C40C /* Performance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
@@ -127,7 +159,6 @@
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		58098806D543D771524F1BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		65C842937340E41A5C988189 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29A1113DD8FC9DABB97254B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,31 +167,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4644B5531B620E5B00BF5794 /* libstdc++.6.0.9.dylib in Frameworks */,
+				4644B5511B620E2D00BF5794 /* Social.framework in Frameworks */,
 				4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */,
+				4644B54F1B620CD100BF5794 /* ParseUI.framework in Frameworks */,
+				4644B54E1B620CD100BF5794 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				46FCEB391A5A7489009E5171 /* libsqlite3.dylib in Frameworks */,
 				46FCEB2F1A5A7476009E5171 /* AudioToolbox.framework in Frameworks */,
 				462127781AE0B82D006C950E /* FBSDKCoreKit.framework in Frameworks */,
 				4621277A1AE0B82D006C950E /* FBSDKMessengerShareKit.framework in Frameworks */,
 				46FCEB301A5A7476009E5171 /* CFNetwork.framework in Frameworks */,
 				462127791AE0B82D006C950E /* FBSDKLoginKit.framework in Frameworks */,
-				465869161ADF63740095544F /* Parse.framework in Frameworks */,
 				46FCEB311A5A7476009E5171 /* CoreGraphics.framework in Frameworks */,
 				4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */,
+				4644B54C1B620CD100BF5794 /* ParseCrashReporting.framework in Frameworks */,
 				46FCEB321A5A7476009E5171 /* CoreLocation.framework in Frameworks */,
+				4644B54B1B620CD100BF5794 /* Parse.framework in Frameworks */,
 				4621277B1AE0B82D006C950E /* FBSDKShareKit.framework in Frameworks */,
 				46FCEB331A5A7476009E5171 /* MobileCoreServices.framework in Frameworks */,
-				4658691A1ADF63740095544F /* ParseUI.framework in Frameworks */,
 				46FCEB341A5A7476009E5171 /* QuartzCore.framework in Frameworks */,
 				462127761AE0B82D006C950E /* FBAudienceNetwork.framework in Frameworks */,
 				46FCEB351A5A7476009E5171 /* Security.framework in Frameworks */,
 				46FCEB361A5A7476009E5171 /* StoreKit.framework in Frameworks */,
 				46FCEB371A5A7476009E5171 /* SystemConfiguration.framework in Frameworks */,
 				462127741AE0B82D006C950E /* Bolts.framework in Frameworks */,
-				465869191ADF63740095544F /* ParseFacebookUtilsV4.framework in Frameworks */,
 				46FCEB251A5A744A009E5171 /* libz.dylib in Frameworks */,
-				465869151ADF63740095544F /* Bolts.framework in Frameworks */,
-				465869171ADF63740095544F /* ParseCrashReporting.framework in Frameworks */,
-				BC616649F83C6893C3F59626 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,16 +224,88 @@
 			path = FacebookSDK;
 			sourceTree = "<group>";
 		};
-		4658690E1ADF63740095544F /* parse-library-1.7.1 */ = {
+		4644B51B1B620BCE00BF5794 /* IQKeybordManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				4658690F1ADF63740095544F /* Bolts.framework */,
-				465869101ADF63740095544F /* Parse.framework */,
-				465869111ADF63740095544F /* ParseCrashReporting.framework */,
-				465869131ADF63740095544F /* ParseFacebookUtilsV4.framework */,
-				465869141ADF63740095544F /* ParseUI.framework */,
+				4644B51C1B620BCE00BF5794 /* Categories */,
+				4644B5201B620BCE00BF5794 /* Constants */,
+				4644B5231B620BCE00BF5794 /* IQKeyboardManager.swift */,
+				4644B5241B620BCE00BF5794 /* IQKeyboardReturnKeyHandler.swift */,
+				4644B5251B620BCE00BF5794 /* IQTextView */,
+				4644B5271B620BCE00BF5794 /* IQToolbar */,
+				4644B52C1B620BCE00BF5794 /* Resources */,
 			);
-			path = "parse-library-1.7.1";
+			name = IQKeybordManagerSwift;
+			path = Carthage/Checkouts/IQKeyboardManager/IQKeybordManagerSwift;
+			sourceTree = "<group>";
+		};
+		4644B51C1B620BCE00BF5794 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4644B51D1B620BCE00BF5794 /* IQNSArray+Sort.swift */,
+				4644B51E1B620BCE00BF5794 /* IQUIView+Hierarchy.swift */,
+				4644B51F1B620BCE00BF5794 /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4644B5201B620BCE00BF5794 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4644B5211B620BCE00BF5794 /* IQKeyboardManagerConstants.swift */,
+				4644B5221B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4644B5251B620BCE00BF5794 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				4644B5261B620BCE00BF5794 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		4644B5271B620BCE00BF5794 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				4644B5281B620BCE00BF5794 /* IQBarButtonItem.swift */,
+				4644B5291B620BCE00BF5794 /* IQTitleBarButtonItem.swift */,
+				4644B52A1B620BCE00BF5794 /* IQToolbar.swift */,
+				4644B52B1B620BCE00BF5794 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		4644B52C1B620BCE00BF5794 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4644B52D1B620BCE00BF5794 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4644B53B1B620CB000BF5794 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				4644B53C1B620CB000BF5794 /* Info-iOS.plist */,
+				4644B53D1B620CB000BF5794 /* Info-OSX.plist */,
+				4644B53E1B620CB000BF5794 /* SwiftyJSON.h */,
+				4644B53F1B620CB000BF5794 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			path = Carthage/Checkouts/SwiftyJSON/Source;
+			sourceTree = "<group>";
+		};
+		4644B5431B620CD100BF5794 /* parse-library-1.7.5 */ = {
+			isa = PBXGroup;
+			children = (
+				4644B5451B620CD100BF5794 /* Parse.framework */,
+				4644B5461B620CD100BF5794 /* ParseCrashReporting.framework */,
+				4644B5481B620CD100BF5794 /* ParseFacebookUtilsV4.framework */,
+				4644B5491B620CD100BF5794 /* ParseUI.framework */,
+			);
+			path = "parse-library-1.7.5";
 			sourceTree = "<group>";
 		};
 		467176241ADB2BE000E63BAE /* Entities */ = {
@@ -238,8 +341,9 @@
 		467176271ADB2C2E00E63BAE /* External */ = {
 			isa = PBXGroup;
 			children = (
+				4644B53B1B620CB000BF5794 /* SwiftyJSON */,
+				4644B51B1B620BCE00BF5794 /* IQKeybordManagerSwift */,
 				462126861AE0B82D006C950E /* FacebookSDK */,
-				46CFB1511A6789F60091BCE9 /* SwiftyJSON.swift */,
 				467176281ADB2C7D00E63BAE /* Crashlytics.framework */,
 				467176291ADB2C7D00E63BAE /* Fabric.framework */,
 				469C65D71A5FBF2A00758740 /* Parse */,
@@ -250,6 +354,7 @@
 		469C65D61A5FBF2100758740 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				4644B5501B620E2D00BF5794 /* Social.framework */,
 				46FCEB381A5A7489009E5171 /* libsqlite3.dylib */,
 				46FCEB261A5A7476009E5171 /* AudioToolbox.framework */,
 				46FCEB271A5A7476009E5171 /* CFNetwork.framework */,
@@ -268,7 +373,7 @@
 		469C65D71A5FBF2A00758740 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				4658690E1ADF63740095544F /* parse-library-1.7.1 */,
+				4644B5431B620CD100BF5794 /* parse-library-1.7.5 */,
 				469C65D61A5FBF2100758740 /* Dependencies */,
 			);
 			name = Parse;
@@ -321,6 +426,7 @@
 		46FCEAF61A5A7116009E5171 = {
 			isa = PBXGroup;
 			children = (
+				4644B5521B620E5B00BF5794 /* libstdc++.6.0.9.dylib */,
 				46FCEB011A5A7116009E5171 /* Board-Bullets */,
 				46FCEB451A5A74CA009E5171 /* Library */,
 				46FCEB001A5A7116009E5171 /* Products */,
@@ -362,7 +468,6 @@
 			children = (
 				467176261ADB2C1000E63BAE /* Internal */,
 				467176271ADB2C2E00E63BAE /* External */,
-				65C842937340E41A5C988189 /* Pods.framework */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -395,13 +500,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */;
 			buildPhases = (
-				2686E1F7B379C274700DA226 /* Check Pods Manifest.lock */,
 				46FCEAFB1A5A7116009E5171 /* Sources */,
 				46FCEAFC1A5A7116009E5171 /* Frameworks */,
 				46FCEAFD1A5A7116009E5171 /* Resources */,
 				469C65D11A5FBE9100758740 /* ShellScript */,
-				EEA2B8A398908026BAF6BFC8 /* Embed Pods Frameworks */,
-				CC3A54A5C039E12E572DF9F8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,7 +554,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4644B5411B620CB000BF5794 /* Info-OSX.plist in Resources */,
+				4644B5401B620CB000BF5794 /* Info-iOS.plist in Resources */,
 				46FCEB0A1A5A7116009E5171 /* Login.storyboard in Resources */,
+				4644B53A1B620BCE00BF5794 /* IQKeyboardManager.bundle in Resources */,
 				46CFB1541A678A090091BCE9 /* data.json in Resources */,
 				469C65D01A5FB70200758740 /* Main.storyboard in Resources */,
 				46FCEB0F1A5A7116009E5171 /* LaunchScreen.xib in Resources */,
@@ -468,21 +573,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2686E1F7B379C274700DA226 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		469C65D11A5FBE9100758740 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,36 +586,6 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run cf31bd871fb35d3e3e94b3732cd654bbde1f5b0c 33804315ff66b7966281403539d1d005fcf98139ee03282942a67832a10b0f8e";
 		};
-		CC3A54A5C039E12E572DF9F8 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEA2B8A398908026BAF6BFC8 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,24 +595,36 @@
 			files = (
 				46FCEB581A5A95D2009E5171 /* LoginViewController.swift in Sources */,
 				46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */,
+				4644B5341B620BCE00BF5794 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
+				4644B5311B620BCE00BF5794 /* IQKeyboardManagerConstants.swift in Sources */,
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,
 				46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */,
 				46BC3F501B48AB7D004BC352 /* InAppPurchaseHelper.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
+				4644B52F1B620BCE00BF5794 /* IQUIView+Hierarchy.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
 				467176321ADB2D1200E63BAE /* CircularEdgeTextField.swift in Sources */,
+				4644B5321B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
 				467176371ADB2D1B00E63BAE /* Question.swift in Sources */,
 				46EDFFF61A954E750079C40C /* Performance.swift in Sources */,
-				46CFB1521A6789F60091BCE9 /* SwiftyJSON.swift in Sources */,
+				4644B5331B620BCE00BF5794 /* IQKeyboardManager.swift in Sources */,
 				461D2DA71A75E4E000FF9A7D /* SubmitQuestionViewController.swift in Sources */,
+				4644B5371B620BCE00BF5794 /* IQTitleBarButtonItem.swift in Sources */,
 				46FCEB601A5A9B7E009E5171 /* UIViewControllerExtension.swift in Sources */,
+				4644B5301B620BCE00BF5794 /* IQUIWindow+Hierarchy.swift in Sources */,
 				467176331ADB2D1200E63BAE /* resultViewCell.swift in Sources */,
 				46FCEB541A5A81DE009E5171 /* WelcomeViewController.swift in Sources */,
+				4644B5381B620BCE00BF5794 /* IQToolbar.swift in Sources */,
+				4644B52E1B620BCE00BF5794 /* IQNSArray+Sort.swift in Sources */,
+				4644B5351B620BCE00BF5794 /* IQTextView.swift in Sources */,
+				4644B5361B620BCE00BF5794 /* IQBarButtonItem.swift in Sources */,
 				46FCEB051A5A7116009E5171 /* AppDelegate.swift in Sources */,
 				46FBFE391A69A1EA00B53C4E /* QuizPickerViewController.swift in Sources */,
 				46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */,
+				4644B5391B620BCE00BF5794 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				4644B5421B620CB000BF5794 /* SwiftyJSON.swift in Sources */,
 				4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */,
 				46FBFE361A6999B300B53C4E /* SettingsViewController.swift in Sources */,
 			);
@@ -672,13 +744,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/parse-library-1.7.1",
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Board-Bullets";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Supporting Files/Board-Bullets-Bridging-Header.h";
@@ -699,13 +771,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Board-Bullets",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/parse-library-1.7.1",
 					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
 				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Board-Bullets";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Supporting Files/Board-Bullets-Bridging-Header.h";

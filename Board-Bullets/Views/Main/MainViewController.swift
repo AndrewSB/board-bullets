@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import IQKeyboardManager
 
 class MainViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!

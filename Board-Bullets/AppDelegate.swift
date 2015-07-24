@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import Fabric
+
 import Crashlytics
 import Parse
-import Bolts
-import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

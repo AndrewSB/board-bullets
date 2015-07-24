@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import IQKeyboardManager
 import Parse
 
 class SubmitQuestionViewController: UIViewController {

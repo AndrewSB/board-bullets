@@ -4,5 +4,3 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
-
-#import "IQKeyboardManager/KeyboardManager.h"
