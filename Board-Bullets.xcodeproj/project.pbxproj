@@ -62,7 +62,6 @@
 		46BC3F4E1B48A7A0004BC352 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */; };
 		46BC3F501B48AB7D004BC352 /* InAppPurchaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
-		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
 		46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */; };
 		46EDFFF61A954E750079C40C /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF51A954E750079C40C /* Performance.swift */; };
 		46FBFE361A6999B300B53C4E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFE351A6999B300B53C4E /* SettingsViewController.swift */; };
@@ -144,7 +143,6 @@
 		46BC3F4D1B48A7A0004BC352 /* Demo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Demo.storyboard; path = Main/Demo.storyboard; sourceTree = "<group>"; };
 		46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseHelper.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswerViewController.swift; sourceTree = "<group>"; };
 		46EDFFF51A954E750079C40C /* Performance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
 		46FBFE351A6999B300B53C4E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -410,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
-				46CFB1531A678A090091BCE9 /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -584,7 +581,6 @@
 				4644B5401B620CB000BF5794 /* Info-iOS.plist in Resources */,
 				46FCEB0A1A5A7116009E5171 /* Login.storyboard in Resources */,
 				4644B53A1B620BCE00BF5794 /* IQKeyboardManager.bundle in Resources */,
-				46CFB1541A678A090091BCE9 /* data.json in Resources */,
 				469C65D01A5FB70200758740 /* Main.storyboard in Resources */,
 				46FCEB0F1A5A7116009E5171 /* LaunchScreen.xib in Resources */,
 				4621277D1AE0B82D006C950E /* README.txt in Resources */,
@@ -686,48 +682,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		46FCEB1C1A5A7116009E5171 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
 		46FCEB1D1A5A7116009E5171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,33 +717,6 @@
 			};
 			name = Release;
 		};
-		46FCEB1F1A5A7116009E5171 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58098806D543D771524F1BF0 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Board-Bullets",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/FacebookSDK",
-					"$(PROJECT_DIR)/parse-library-1.7.5",
-				);
-				INFOPLIST_FILE = "Board-Bullets/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Board-Bullets";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Board-Bullets/Supporting Files/Board-Bullets-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
 		46FCEB201A5A7116009E5171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A29A1113DD8FC9DABB97254B /* Pods.release.xcconfig */;
@@ -822,7 +749,6 @@
 		46FCEAFA1A5A7116009E5171 /* Build configuration list for PBXProject "Board-Bullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46FCEB1C1A5A7116009E5171 /* Debug */,
 				46FCEB1D1A5A7116009E5171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -831,7 +757,6 @@
 		46FCEB1E1A5A7116009E5171 /* Build configuration list for PBXNativeTarget "Board-Bullets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46FCEB1F1A5A7116009E5171 /* Debug */,
 				46FCEB201A5A7116009E5171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
