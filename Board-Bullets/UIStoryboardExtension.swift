@@ -18,10 +18,14 @@ extension UIStoryboard {
         case Login = "Login"
     }
     
+    class func initialIn(storyboard storyboardEnum: Named) -> UIViewController {
+        let storyboardName = storyboardEnum.rawValue
+        return UIStoryboard.initialIn(storyboard: storyboardName)
+    }
+    
     class func initialIn(storyboard storyboardNamed: String) -> UIViewController {
         let storyboard = UIStoryboard(name: storyboardNamed, bundle: NSBundle.mainBundle())
         return storyboard.instantiateInitialViewController() as! UIViewController
     }
-    
     
 }

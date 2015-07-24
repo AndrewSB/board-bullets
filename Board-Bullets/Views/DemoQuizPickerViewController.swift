@@ -16,31 +16,45 @@ class DemoQuizPickerViewController: UIViewController {
     @IBOutlet weak var timedButton: UIButton!
     @IBOutlet weak var numberOfQuestionsSegmentedController: UISegmentedControl!
     
+    var quizData: [Question]? {
+        didSet {
+            go++
+        }
+    }
+    
+    var go: Int = 0 {
+        didSet {
+            if go == 2 {
+                self.performSegueWithIdentifier("segueToQuiz", sender: quizData!)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.userInteractionEnabled = false
         
-        let quizData: [Question] = {
-            let query = PFQuery(className: "Questions")
-            query.limit = self.numberOfQuestions
-            query.findObjectsInBackgroundWithBlock() {
-                println($0.0)
+        let query = PFQuery(className: "Questions")
+        query.limit = 10
+        query.findObjectsInBackgroundWithBlock() {
+            self.quizData = $0.0!.map { questionJSON -> Question in
+                return Question(parseObject: questionJSON as! PFObject)
             }
-            return [Question()]
-            }()
+        }
+
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        delay(0.6) {
-            self.performSegueWithIdentifier("segueToQuiz", sender: self)
+        delay(0.3) {
+            go++
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let destination = segue.destinationViewController as? QuizViewController {
+        if let destination = segue.destinationViewController as? DemoQuizViewController {
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
             case 1:
                 destination.numberOfQuestions = 10
@@ -52,6 +66,8 @@ class DemoQuizPickerViewController: UIViewController {
             if timedButton.titleLabel?.font == UIFont(name: "HelveticaNeue", size: 24) {
                 destination.timeTrail = true
             }
+            
+            destination.quizData = quizData!
         }
     }
     

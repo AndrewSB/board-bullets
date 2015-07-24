@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKAppEvents.activateApp()
     }
     func switchToMain() {
-        window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
+        window?.rootViewController = UIStoryboard.initialIn(storyboard: InAppPurchase.bought ? UIStoryboard.Named.Main : UIStoryboard.Named.Demo)
     }
     
     func switchToLogin() {

@@ -30,14 +30,14 @@ class Question {
     }
     
     init(parseObject: PFObject) {
-        self.question = parseObject["question"]
+        self.question = parseObject["question"] as! String
         self.optionOne = parseObject["optionOne"] as! String
         self.optionTwo = parseObject["optionTwo"] as! String
         self.optionThree = parseObject["optionThree"] as! String
         
-        self.wikipediaLink = NSURL(string: parseObject["Wikipedia"])
+        self.wikipediaLink = NSURL(string: parseObject["Wikipedia"] as! String)!
         
-        self.approved = parseObject["approved"] as! Int == 1 ? true : false
+        self.approved = parseObject["approved"] as! Bool// == 1 ? true : false
         
         if self.optionOne == parseObject["answer"] as! String {
             self.answer = 1

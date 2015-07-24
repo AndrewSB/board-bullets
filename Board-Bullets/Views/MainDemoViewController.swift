@@ -13,7 +13,10 @@ class MainDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addTextDismiss()
+        view.endEditing(true)
+        
+        println("On the demo")
     }
 
     @IBAction func didHitGetApp() {
