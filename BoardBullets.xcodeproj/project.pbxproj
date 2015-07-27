@@ -359,7 +359,7 @@
 				4644B5551B6212BA00BF5794 /* UIStoryboardExtension.swift */,
 			);
 			name = Internal;
-			path = "BoardBullets";
+			path = BoardBullets;
 			sourceTree = "<group>";
 		};
 		467176271ADB2C2E00E63BAE /* External */ = {
@@ -472,7 +472,7 @@
 				46FCEB5B1A5A95E5009E5171 /* Views */,
 				46FCEB021A5A7116009E5171 /* Supporting Files */,
 			);
-			path = "BoardBullets";
+			path = BoardBullets;
 			sourceTree = "<group>";
 		};
 		46FCEB021A5A7116009E5171 /* Supporting Files */ = {
@@ -533,7 +533,7 @@
 			dependencies = (
 			);
 			name = BoardBullets;
-			productName = "BoardBullets";
+			productName = BoardBullets;
 			productReference = 46FCEAFF1A5A7116009E5171 /* BoardBullets.app */;
 			productType = "com.apple.product-type.application";
 		};

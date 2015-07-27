@@ -29,7 +29,7 @@
         <!--Main Demo View Controller-->
         <scene sceneID="6t8-YO-rvv">
             <objects>
-                <viewController id="fx0-Zq-O2A" customClass="MainDemoViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fx0-Zq-O2A" customClass="MainDemoViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cpw-X2-Hd8"/>
                         <viewControllerLayoutGuide type="bottom" id="hLF-8V-LwB"/>
@@ -178,7 +178,7 @@
         <!--Demo Quiz View Controller-->
         <scene sceneID="npx-c0-KLU">
             <objects>
-                <viewController id="ufg-gb-3sz" customClass="DemoQuizViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ufg-gb-3sz" customClass="DemoQuizViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HjK-P2-pkY"/>
                         <viewControllerLayoutGuide type="bottom" id="GKW-6o-osd"/>
@@ -391,7 +391,7 @@
         <!--Demo Quiz Done View Controller-->
         <scene sceneID="6rK-2T-jb2">
             <objects>
-                <viewController id="Apg-a5-FNx" customClass="DemoQuizDoneViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Apg-a5-FNx" customClass="DemoQuizDoneViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iaP-xf-MyC"/>
                         <viewControllerLayoutGuide type="bottom" id="e7b-YG-BbI"/>
@@ -419,7 +419,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="result" id="emo-VT-9TG" customClass="resultViewCell" customModule="Board_Bullets" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="result" id="emo-VT-9TG" customClass="resultViewCell" customModule="BoardBullets" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -513,7 +513,7 @@
         <!--Quiz Answer View Controller-->
         <scene sceneID="u2U-lI-W2d">
             <objects>
-                <viewController id="f40-7r-ze7" customClass="QuizAnswerViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f40-7r-ze7" customClass="QuizAnswerViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YRH-Ee-oAa"/>
                         <viewControllerLayoutGuide type="bottom" id="wv8-KB-UqE"/>
@@ -636,7 +636,7 @@
         <!--Settings View Controller-->
         <scene sceneID="fZx-8A-Mdz">
             <objects>
-                <viewController id="nh9-te-Unm" customClass="SettingsViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nh9-te-Unm" customClass="SettingsViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GS4-m8-GGJ"/>
                         <viewControllerLayoutGuide type="bottom" id="a3E-Dl-ZsO"/>
@@ -711,17 +711,17 @@
                                     <action selector="logoutButtonHit:" destination="nh9-te-Unm" eventType="touchUpInside" id="1l5-J0-r1d"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-2j-Uj6" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-2j-Uj6" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="237" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U8e-CS-GnL" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U8e-CS-GnL" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="285" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-fX-sJ7" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-fX-sJ7" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="333" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -834,7 +834,7 @@
         <!--Demo Quiz Picker View Controller-->
         <scene sceneID="h9g-WD-boL">
             <objects>
-                <viewController id="KX1-7K-87d" customClass="DemoQuizPickerViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KX1-7K-87d" customClass="DemoQuizPickerViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VcP-yy-CwR"/>
                         <viewControllerLayoutGuide type="bottom" id="uin-5m-FsK"/>
@@ -907,7 +907,7 @@
                                     <action selector="learnAsYouGoButtonWasHit:" destination="KX1-7K-87d" eventType="touchUpInside" id="aa4-TV-Kvh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7Z-80-gF9">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7Z-80-gF9">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1041,7 +1041,7 @@
                                     <constraint firstAttribute="width" id="zag-2M-JG1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-Ga-zwa">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-Ga-zwa">
                                 <rect key="frame" x="300" y="279" width="0.0" height="33"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1055,7 +1055,7 @@
                                     <constraint firstAttribute="width" id="MjG-1v-kdp"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-aY-jGT">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-aY-jGT">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

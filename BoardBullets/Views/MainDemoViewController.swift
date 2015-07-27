@@ -20,7 +20,8 @@ class MainDemoViewController: UIViewController {
     }
 
     @IBAction func didHitGetApp() {
-        
+        InAppPurchase.bought = true
+        (UIApplication.sharedApplication().delegate as! AppDelegate).switchToMain()
     }
     
     @IBAction func unwindToMainDemo(segue: UIStoryboardSegue) {}
