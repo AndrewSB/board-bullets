@@ -8,7 +8,9 @@
 
 import UIKit
 
+import Fabric
 import Crashlytics
+
 import Parse
 
 @UIApplicationMain

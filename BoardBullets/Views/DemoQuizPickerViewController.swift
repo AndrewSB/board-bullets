@@ -16,40 +16,18 @@ class DemoQuizPickerViewController: UIViewController {
     @IBOutlet weak var timedButton: UIButton!
     @IBOutlet weak var numberOfQuestionsSegmentedController: UISegmentedControl!
     
-    var quizData: [Question]? {
-        didSet {
-            go++
-        }
-    }
+    var quizData: [Question]?
     
-    var go: Int = 0 {
-        didSet {
-            if go == 2 {
-                self.performSegueWithIdentifier("segueToQuiz", sender: quizData!)
-            }
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.userInteractionEnabled = false
-        
+                
         let query = PFQuery(className: "Questions")
         query.limit = 10
         query.findObjectsInBackgroundWithBlock() {
             self.quizData = $0.0!.map { questionJSON -> Question in
                 return Question(parseObject: questionJSON as! PFObject)
             }
-        }
-
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        delay(0.3) {
-            go++
         }
     }
     
