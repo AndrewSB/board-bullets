@@ -11,6 +11,7 @@ import UIKit
 class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var data: [String]?
     var cat: Bool?
+    var index: Int?
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
@@ -21,6 +22,12 @@ class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate
         
         picker.delegate = self
         picker.dataSource = self
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        picker.selectRow(index!, inComponent: 0, animated: false)
     }
 
     

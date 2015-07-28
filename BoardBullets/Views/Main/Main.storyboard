@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVJ-Tq-f5G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVJ-Tq-f5G">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -29,7 +29,7 @@
         <!--Main View Controller-->
         <scene sceneID="unD-Rq-W7P">
             <objects>
-                <viewController id="v75-TS-esf" customClass="MainViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v75-TS-esf" customClass="MainViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPp-oE-TmA"/>
                         <viewControllerLayoutGuide type="bottom" id="KfZ-Rm-Of7"/>
@@ -194,7 +194,7 @@
         <!--Quiz View Controller-->
         <scene sceneID="Tb2-lw-5fh">
             <objects>
-                <viewController id="hm8-Rg-1D7" customClass="QuizViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hm8-Rg-1D7" customClass="QuizViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aF7-yX-2d8"/>
                         <viewControllerLayoutGuide type="bottom" id="lyf-eW-KzG"/>
@@ -407,7 +407,7 @@
         <!--Quiz Done View Controller-->
         <scene sceneID="sat-kR-10G">
             <objects>
-                <viewController id="gPK-em-6DW" customClass="QuizDoneViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gPK-em-6DW" customClass="QuizDoneViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Urr-b3-JUb"/>
                         <viewControllerLayoutGuide type="bottom" id="Lka-cG-8Bo"/>
@@ -435,7 +435,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="result" id="arh-Ra-BBS" customClass="resultViewCell" customModule="Board_Bullets" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="result" id="arh-Ra-BBS" customClass="resultViewCell" customModule="BoardBullets" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -529,7 +529,7 @@
         <!--Quiz Answer View Controller-->
         <scene sceneID="uQH-Ne-H0Y">
             <objects>
-                <viewController id="okD-3d-1XB" customClass="QuizAnswerViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="okD-3d-1XB" customClass="QuizAnswerViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CP6-e0-K9N"/>
                         <viewControllerLayoutGuide type="bottom" id="bjj-Gu-1yL"/>
@@ -652,7 +652,7 @@
         <!--Settings View Controller-->
         <scene sceneID="Hb5-FJ-Qj5">
             <objects>
-                <viewController id="8yz-Oy-S2v" customClass="SettingsViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8yz-Oy-S2v" customClass="SettingsViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="osg-GU-cvf"/>
                         <viewControllerLayoutGuide type="bottom" id="CPO-eH-Iav"/>
@@ -727,17 +727,17 @@
                                     <action selector="logoutButtonHit:" destination="8yz-Oy-S2v" eventType="touchUpInside" id="MCK-gC-avQ"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-87-nTg" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-87-nTg" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="237" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-4o-3Do" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-4o-3Do" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="285" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-Yp-ntc" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm new password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-Yp-ntc" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="333" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -850,7 +850,7 @@
         <!--Quiz Picker View Controller-->
         <scene sceneID="Rit-PX-xtS">
             <objects>
-                <viewController id="RLg-5O-Ckm" customClass="QuizPickerViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RLg-5O-Ckm" customClass="QuizPickerViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KdG-bq-B3Y"/>
                         <viewControllerLayoutGuide type="bottom" id="vuc-vb-dZo"/>
@@ -923,7 +923,7 @@
                                     <action selector="learnAsYouGoButtonWasHit:" destination="RLg-5O-Ckm" eventType="touchUpInside" id="wLq-SJ-UwX"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-2E-j7Z">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-2E-j7Z">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1057,7 +1057,7 @@
                                     <constraint firstAttribute="width" id="ljm-4s-066"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-Sv-6EP">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-Sv-6EP">
                                 <rect key="frame" x="300" y="279" width="0.0" height="33"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1071,7 +1071,7 @@
                                     <constraint firstAttribute="width" id="gXc-vB-xuh"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-GO-c7K">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-GO-c7K">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1181,7 +1181,7 @@
         <!--Submit Question View Controller-->
         <scene sceneID="o3O-Kb-HfP">
             <objects>
-                <viewController id="olI-DY-QFT" customClass="SubmitQuestionViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="olI-DY-QFT" customClass="SubmitQuestionViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4uU-Rq-dC0"/>
                         <viewControllerLayoutGuide type="bottom" id="j9I-y9-CcX"/>
@@ -1239,17 +1239,17 @@
                                     <action selector="submitButtonWasHit:" destination="olI-DY-QFT" eventType="touchUpInside" id="NOc-Yi-xdo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-jo-lMy" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-jo-lMy" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="170" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="correct answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-k4-fEj" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="correct answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-k4-fEj" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="218" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="incorrect answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-uu-UlE" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="incorrect answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-uu-UlE" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="266" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -1282,7 +1282,7 @@
                                     <constraint firstAttribute="height" constant="1" id="GoC-aM-3Ta"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="incorrect answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-ns-DAJ" customClass="CircularEdgeTextField" customModule="Board_Bullets" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="incorrect answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-ns-DAJ" customClass="CircularEdgeTextField" customModule="BoardBullets" customModuleProvider="target">
                                 <rect key="frame" x="60" y="314" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -1412,7 +1412,7 @@
         <!--Submit Question Picker View Controller-->
         <scene sceneID="Lxy-M0-e4K">
             <objects>
-                <viewController id="Tjn-UN-Qpb" customClass="SubmitQuestionPickerViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tjn-UN-Qpb" customClass="SubmitQuestionPickerViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YmH-N7-6F2"/>
                         <viewControllerLayoutGuide type="bottom" id="pC2-qY-fGj"/>
@@ -1489,7 +1489,7 @@
         <!--Performance View Controller-->
         <scene sceneID="DfP-rO-BfC">
             <objects>
-                <viewController id="38x-Bn-AdI" customClass="PerformanceViewController" customModule="Board_Bullets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="38x-Bn-AdI" customClass="PerformanceViewController" customModule="BoardBullets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kWV-Ki-jaH"/>
                         <viewControllerLayoutGuide type="bottom" id="U8n-2m-qq7"/>
@@ -1505,7 +1505,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-qX-lfl">
-                                <rect key="frame" x="298" y="30" width="24" height="50"/>
+                                <rect key="frame" x="298" y="30" width="23.5" height="50"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="42"/>
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1517,7 +1517,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icr-4w-Ca9">
-                                <rect key="frame" x="0.0" y="28" width="191" height="0.0"/>
+                                <rect key="frame" x="0.0" y="28" width="191.5" height="0.0"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="Zyd-Ll-TCb"/>
@@ -1548,19 +1548,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92% correct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-3B-IvP">
-                                <rect key="frame" x="49" y="144" width="502" height="30"/>
+                                <rect key="frame" x="49" y="144" width="502" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73 correct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCD-vK-ZXo">
-                                <rect key="frame" x="49" y="226" width="502" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73 correct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCD-vK-ZXo">
+                                <rect key="frame" x="49" y="225" width="502" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiS-RJ-IEP">
-                                <rect key="frame" x="210" y="278" width="180" height="1"/>
+                                <rect key="frame" x="210" y="277" width="180" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="ZHn-rQ-YeK"/>
@@ -1568,7 +1568,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 answered" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTS-iQ-Wex">
-                                <rect key="frame" x="49" y="295" width="502" height="30"/>
+                                <rect key="frame" x="49" y="294" width="502" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

@@ -43,6 +43,12 @@ class SubmitQuestionViewController: UIViewController {
         categoryTableView.dataSource = self
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        categoryTableView.reloadData()
+    }
+    
     override func addTextDismiss() {
         let gestureRecog = UITapGestureRecognizer(target: self, action: "hideKeyboard:")
         self.view.addGestureRecognizer(gestureRecog)
@@ -101,6 +107,7 @@ class SubmitQuestionViewController: UIViewController {
             
             des.title = cat ? "Category" : "Subcategory"
             des.data = cat ? categories : subcategories
+            des.index = cat ? categoryIndex : subcategoryIndex
             des.cat = cat
         }
     }
