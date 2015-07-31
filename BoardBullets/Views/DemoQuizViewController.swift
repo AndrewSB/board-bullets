@@ -272,7 +272,7 @@ class DemoQuizViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let destination = segue.destinationViewController as? QuizDoneViewController {
+        if let destination = segue.destinationViewController as? DemoQuizDoneViewController {
             destination.questions = quizData
         }
     }

@@ -10,13 +10,11 @@ import UIKit
 
 class QuizAnswerViewController: UIViewController {
     var question: Question!
-
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var option1Label: UILabel!
     @IBOutlet weak var option2Label: UILabel!
     @IBOutlet weak var option3Label: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +50,10 @@ class QuizAnswerViewController: UIViewController {
     
     func downSwiped() {
         unwindClicked(self)
+    }
+    
+    @IBAction func wikipediaButtonWasHit() {
+        UIApplication.sharedApplication().openURL(question.wikipediaLink)
     }
     
     @IBAction func unwindClicked(sender: AnyObject) {}
