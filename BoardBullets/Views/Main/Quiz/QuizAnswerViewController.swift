@@ -9,7 +9,7 @@
 import UIKit
 
 class QuizAnswerViewController: UIViewController {
-    var question = Question()
+    var question: Question!
 
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -42,15 +42,9 @@ class QuizAnswerViewController: UIViewController {
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     
     func configureSwipeGestures() {
-        //------------down  swipe gestures in view--------------//
         let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("downSwiped"))
         swipeDown.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipeDown)
@@ -58,20 +52,8 @@ class QuizAnswerViewController: UIViewController {
     
     func downSwiped() {
         unwindClicked(self)
-        println("swiped")
     }
     
-    @IBAction func unwindClicked(sender: AnyObject) {
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    @IBAction func unwindClicked(sender: AnyObject) {}
 
 }

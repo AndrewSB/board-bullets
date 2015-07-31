@@ -907,7 +907,7 @@
                                     <action selector="learnAsYouGoButtonWasHit:" destination="KX1-7K-87d" eventType="touchUpInside" id="aa4-TV-Kvh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7Z-80-gF9">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7Z-80-gF9">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -971,7 +971,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KG3-wj-EGo" kind="unwind" unwindAction="unwindToMain:" id="EMB-AO-geQ"/>
+                                    <segue destination="KG3-wj-EGo" kind="unwind" unwindAction="unwindToMainDemo:" id="1fe-ai-cUM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aI-08-uZe">
@@ -1041,7 +1041,7 @@
                                     <constraint firstAttribute="width" id="zag-2M-JG1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-Ga-zwa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-Ga-zwa">
                                 <rect key="frame" x="300" y="279" width="0.0" height="33"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1055,7 +1055,7 @@
                                     <constraint firstAttribute="width" id="MjG-1v-kdp"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-aY-jGT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-aY-jGT">
                                 <rect key="frame" x="300" y="346" width="0.0" height="32"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

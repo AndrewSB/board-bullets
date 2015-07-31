@@ -31,6 +31,14 @@ class DemoQuizPickerViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let twentyQuestionAlert = UIAlertController(title: "Twenty Demo Questions", message: "In this demo version of the app you get 20 demo questions to try out. The full version has over 500", preferredStyle: .Alert)
+        twentyQuestionAlert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+        presentViewController(twentyQuestionAlert, animated: true, completion: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? DemoQuizViewController {
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
