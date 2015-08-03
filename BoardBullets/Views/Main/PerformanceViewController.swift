@@ -17,22 +17,19 @@ class PerformanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let c = PFUser.currentUser()!["correct"] as? Int
-        let n = PFUser.currentUser()!["answered"] as? Int
+        let (c, n) = UserDefaults.performance
+        println("performance is \(UserDefaults.performance)")
         
-        if (c != nil) {
-            
-            let percentage = Float(c!)/Float(n!) * 100
-            
-            percentageLabel.text = "\(percentage)% correct"
-            correctLabel.text = "\(c!) answered correctly"
-            numQuestionsLabel.text = "\(n!) answered"
-            
+        var percentage: Float
+        if n != 0 {
+            percentage = Float(c)/Float(n) * 100
         } else {
-            percentageLabel.text = "100% correct"
-            correctLabel.text = "0 questions answered correctly"
-            numQuestionsLabel.text = "0 questions answered"
+            percentage = 100
         }
+        
+        percentageLabel.text = "\(percentage)% correct"
+        correctLabel.text = "\(c) answered correctly"
+        numQuestionsLabel.text = "\(n) answered"
         
     }
 

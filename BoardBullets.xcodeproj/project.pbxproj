@@ -48,6 +48,7 @@
 		4644B55C1B62148A00BF5794 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B55B1B62148A00BF5794 /* Delay.swift */; };
 		4644B55E1B6215EB00BF5794 /* DemoQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B55D1B6215EB00BF5794 /* DemoQuizViewController.swift */; };
 		4644B5601B62163200BF5794 /* DemoQuizDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4644B55F1B62163200BF5794 /* DemoQuizDoneViewController.swift */; };
+		4658169F1B702E0F0053722F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4658169E1B702E0F0053722F /* UserDefaults.swift */; };
 		4660B85E1AA6AED000F24799 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */; };
 		4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176281ADB2C7D00E63BAE /* Crashlytics.framework */; };
 		4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467176291ADB2C7D00E63BAE /* Fabric.framework */; };
@@ -129,6 +130,7 @@
 		4644B55B1B62148A00BF5794 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		4644B55D1B6215EB00BF5794 /* DemoQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoQuizViewController.swift; sourceTree = "<group>"; };
 		4644B55F1B62163200BF5794 /* DemoQuizDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoQuizDoneViewController.swift; sourceTree = "<group>"; };
+		4658169E1B702E0F0053722F /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		4660B85D1AA6AED000F24799 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		467176281ADB2C7D00E63BAE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		467176291ADB2C7D00E63BAE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -168,8 +170,6 @@
 		46FCEB531A5A81DE009E5171 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		46FCEB571A5A95D2009E5171 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		58098806D543D771524F1BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A29A1113DD8FC9DABB97254B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,15 +208,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E8848DF951E83BA67FF56B4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				58098806D543D771524F1BF0 /* Pods.debug.xcconfig */,
-				A29A1113DD8FC9DABB97254B /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		462126861AE0B82D006C950E /* FacebookSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +347,7 @@
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 				46BC3F4F1B48AB7D004BC352 /* InAppPurchaseHelper.swift */,
 				4644B55B1B62148A00BF5794 /* Delay.swift */,
+				4658169E1B702E0F0053722F /* UserDefaults.swift */,
 				4644B5551B6212BA00BF5794 /* UIStoryboardExtension.swift */,
 			);
 			name = Internal;
@@ -452,7 +444,6 @@
 				46FCEB011A5A7116009E5171 /* BoardBullets */,
 				46FCEB451A5A74CA009E5171 /* Library */,
 				46FCEB001A5A7116009E5171 /* Products */,
-				0E8848DF951E83BA67FF56B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -544,7 +535,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Andrew Breckenridge";
 				TargetAttributes = {
 					46FCEAFE1A5A7116009E5171 = {
@@ -560,7 +551,6 @@
 			knownRegions = (
 				en,
 				Base,
-				he,
 			);
 			mainGroup = 46FCEAF61A5A7116009E5171;
 			productRefGroup = 46FCEB001A5A7116009E5171 /* Products */;
@@ -631,6 +621,7 @@
 				467176321ADB2D1200E63BAE /* CircularEdgeTextField.swift in Sources */,
 				4644B5321B620BCE00BF5794 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				467772B81A68CA3E00A5F386 /* SignupViewController.swift in Sources */,
+				4658169F1B702E0F0053722F /* UserDefaults.swift in Sources */,
 				467176371ADB2D1B00E63BAE /* Question.swift in Sources */,
 				46EDFFF61A954E750079C40C /* Performance.swift in Sources */,
 				4644B5331B620BCE00BF5794 /* IQKeyboardManager.swift in Sources */,
@@ -719,7 +710,6 @@
 		};
 		46FCEB201A5A7116009E5171 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A29A1113DD8FC9DABB97254B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;

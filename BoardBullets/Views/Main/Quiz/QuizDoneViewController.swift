@@ -26,12 +26,16 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
             }
         }
         
+        UserDefaults.performance.answered += questions.count
+        UserDefaults.performance.correct += numberCorrect
+        
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
         configurePerformaceDict(numberCorrect)
-        println("made it out")
+        println("made it out, performance is \(UserDefaults.performance)")
     }
     
+    // Isn't really used rn. Switched to a local model
     func configurePerformaceDict(numCorrect: Int) {
         var a = PFUser.currentUser()!["answered"] as? Int
         var b: Int = a == nil ? questions.count : a! + questions.count
