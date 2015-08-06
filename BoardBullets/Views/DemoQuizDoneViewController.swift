@@ -18,6 +18,9 @@ class DemoQuizDoneViewController: UIViewController, UICollectionViewDelegateFlow
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        println("questions \(questions.count)")
+        
         var numberCorrect = 0
         for question in questions {
             if question.answer == question.chosen {

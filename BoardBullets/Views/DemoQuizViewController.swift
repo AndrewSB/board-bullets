@@ -27,7 +27,7 @@ class DemoQuizViewController: UIViewController {
     var timeTrail = false
     var numberOfQuestions = 10
     var allotedTime = Int()
-    var quizData = [Question]()
+    var quizData: [Question]!
     var curQuestion = 0
     var originalNextButtonWidth : CGFloat?
     

@@ -23,7 +23,7 @@ class DemoQuizPickerViewController: UIViewController {
         super.viewDidLoad()
                 
         let query = PFQuery(className: "Questions")
-        query.limit = 10
+        query.limit = 20
         query.findObjectsInBackgroundWithBlock() {
             self.quizData = $0.0!.map { questionJSON -> Question in
                 return Question(parseObject: questionJSON as! PFObject)
@@ -42,19 +42,23 @@ class DemoQuizPickerViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? DemoQuizViewController {
             
+            println(self.numberOfQuestionsSegmentedController.selectedSegmentIndex)
+            
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
+            case 0:
+                destination.numberOfQuestions = 5
             case 1:
                 destination.numberOfQuestions = 10
             case 2:
                 destination.numberOfQuestions = 20
             default:
-                destination.numberOfQuestions = 5
+                fatalError("wut")
             }
             if timedButton.titleLabel?.font == UIFont(name: "HelveticaNeue", size: 24) {
                 destination.timeTrail = true
             }
             
-            destination.quizData = quizData!
+            destination.quizData = Array(quizData![0..<destination.numberOfQuestions])
         }
     }
     
