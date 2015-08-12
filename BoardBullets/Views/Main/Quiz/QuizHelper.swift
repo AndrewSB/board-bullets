@@ -35,23 +35,7 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
         let randomlyChosenQuestions = genRandom(numberOfQuestions, objects.count)
         
         for (index, element) in enumerate(randomlyChosenQuestions) {
-            let question = Question()
-            let r = genRandom(3,3)
-            
-            question.question = objects[element]["question"] as! String
-            question.optionOne = objects[element]["optionOne"] as! String
-            question.optionTwo = objects[element]["optionTwo"] as! String
-            question.optionThree = objects[element]["optionThree"] as! String
-            
-            if question.optionOne == objects[element]["answer"] as! String {
-                question.answer = 1
-            } else if question.optionTwo == objects[element]["answer"] as! String {
-                question.answer = 2
-            } else {
-                question.answer = 3
-            }
-            
-            questions.append(question)
+            questions.append(Question(parseObject: objects[element] as! PFObject))
         }
     }
     

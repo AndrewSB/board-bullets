@@ -24,6 +24,8 @@ class QuizAnswerViewController: UIViewController {
         option3Label.text = question.optionThree
         
         configureSwipeGestures()
+        
+        print(question.wikipediaLink)
 
         
         let dict = [option1Label, option2Label, option3Label]
@@ -53,6 +55,7 @@ class QuizAnswerViewController: UIViewController {
     }
     
     @IBAction func wikipediaButtonWasHit() {
+        print(question.wikipediaLink)
         UIApplication.sharedApplication().openURL(question.wikipediaLink)
     }
     

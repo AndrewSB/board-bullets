@@ -419,8 +419,8 @@
 				461D82EE1A72013C00B30AC6 /* QuizHelper.swift */,
 				46FBFE381A69A1EA00B53C4E /* QuizPickerViewController.swift */,
 				46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */,
-				46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */,
 				467770D71A687E0A00A5F386 /* QuizDoneViewController.swift */,
+				46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
