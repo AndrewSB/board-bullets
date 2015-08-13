@@ -74,10 +74,9 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
     }
     
     func collectionView(colorCollectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width = resultsCollectionView.frame.width
-        let height = resultsCollectionView.frame.height
+        let unit = resultsCollectionView.frame.width
         
-        return CGSize(width: width/2 - 5, height: width/2 - 5)
+        return CGSize(width: unit/2 - 5, height: unit/2 - 5)
         
     }
 

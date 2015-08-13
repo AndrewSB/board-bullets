@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class MainDemoViewController: UIViewController {
 
@@ -20,8 +21,24 @@ class MainDemoViewController: UIViewController {
     }
 
     @IBAction func didHitGetApp() {
-        InAppPurchase.bought = true
-        (UIApplication.sharedApplication().delegate as! AppDelegate).switchToMain()
+        if !SKPaymentQueue.canMakePayments() {
+            let failedPurchaseAlert = UIAlertController(title: "Uh oh!", message: "This device is unable to make purchases, take a look at your payment settings", preferredStyle: .Alert)
+            failedPurchaseAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+            self.presentViewController(failedPurchaseAlert, animated: true, completion: nil)
+
+        } else {
+            InAppPurchase.sharedInstance.requestPurchase() {
+                if $0 {
+                    InAppPurchase.bought = true
+                    InAppPurchase.boughtFromParse = true
+                    (UIApplication.sharedApplication().delegate as! AppDelegate).switchToMain()
+                } else {
+                    let failedPurchaseAlert = UIAlertController(title: "Uh oh!", message: "Failed to make that purchase, are you sure you're connected to the internet?", preferredStyle: .Alert)
+                    failedPurchaseAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+                    self.presentViewController(failedPurchaseAlert, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     @IBAction func unwindToMainDemo(segue: UIStoryboardSegue) {}

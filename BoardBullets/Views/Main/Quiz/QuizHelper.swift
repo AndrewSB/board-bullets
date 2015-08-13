@@ -32,9 +32,7 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
     if let objects = objects {
         let randomlyChosenQuestions = genRandom(numberOfQuestions, limit: objects.count)
         
-        for (index, element) in randomlyChosenQuestions.enumerate() {
-            questions.append(Question(parseObject: objects[element] as! PFObject))
-        }
+        questions = randomlyChosenQuestions.map { Question(parseObject: objects[$0] as! PFObject) }
     }
     
     return questions

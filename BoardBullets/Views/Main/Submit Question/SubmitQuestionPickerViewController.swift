@@ -39,7 +39,7 @@ class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return data![row]
     }
 

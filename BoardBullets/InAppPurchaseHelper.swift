@@ -54,6 +54,8 @@ class InAppPurchase: NSObject {
     }
     
     func requestPurchase(completion: ((Bool) -> Void)) {
+        completionCallback = completion
+        
         let productRequest = SKProductsRequest(productIdentifiers: [InAppPurchase.productIdentifier])
         productRequest.delegate = self
         completedPurchase = false
@@ -69,6 +71,7 @@ extension InAppPurchase: SKProductsRequestDelegate {
             SKPaymentQueue.defaultQueue().addPayment(payment)
         } else {
             completedPurchase = true
+            print("no products were returned")
             completionCallback(false)
         }
     }
@@ -79,6 +82,7 @@ extension InAppPurchase: SKPaymentTransactionObserver {
         for transaction in transactions {
             switch transaction.transactionState {
             case .Failed, .Deferred:
+                print("transaction was \(transaction.transactionState)")
                 completionCallback(false)
             case .Purchased, .Purchasing, .Restored:
                 completionCallback(true)
@@ -87,6 +91,7 @@ extension InAppPurchase: SKPaymentTransactionObserver {
         }
         
         if !completedPurchase {
+            print("transaction queue returned no transactions")
             completedPurchase = true
             completionCallback(false)
         }
