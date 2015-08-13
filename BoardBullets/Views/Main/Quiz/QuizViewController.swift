@@ -49,13 +49,13 @@ class QuizViewController: UIViewController {
     }
     
     func secondPassed(sender: AnyObject!) {
-        if let t = Int(reviewLabel.titleLabel?.text?) {
+        if let t = Int(reviewLabel.titleLabel!.text ?? "") {
             self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
-            if Int(reviewLabel.titleLabel?.text?)! == 0 {
+            if t == 0 {
                 loadDone()
             }
             

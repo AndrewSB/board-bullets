@@ -77,11 +77,11 @@ class SubmitQuestionViewController: UIViewController {
             let question = PFObject(className: "Questions")
             question["field"] = categories[categoryIndex]
             question["subfield"] = subcategories[subcategoryIndex]
-            question["question"] = questionLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["optionOne"] = dummyAnswerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["optionTwo"] = dummyAnswerLabel2.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["optionThree"] = answerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
-            question["answer"] = answerLabel.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["question"] = (questionLabel.text ?? "").stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionOne"] = (dummyAnswerLabel.text ?? "").stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionTwo"] = (dummyAnswerLabel2.text ?? "").stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["optionThree"] = (answerLabel.text ?? "").stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+            question["answer"] = (answerLabel.text ?? "").stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
             question["approved"] = false
             
             
@@ -121,7 +121,7 @@ extension SubmitQuestionViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellID") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID")!
         if indexPath.row == 0 {
             cell.textLabel?.text = "\(categories[categoryIndex])"
         } else {

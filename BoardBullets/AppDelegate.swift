@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                     : UIStoryboard.Named.Login
     
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = (UIStoryboard(name: storyboard.rawValue, bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
+        window?.rootViewController = (UIStoryboard(name: storyboard.rawValue, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
         window?.makeKeyAndVisible()
         
         return true
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func switchToLogin() {
-        window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as! UIViewController)
+        window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
     }
 
 }

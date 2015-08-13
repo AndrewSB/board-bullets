@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
         let activity = addLoadingView()
         view.addSubview(activity)
         
-        PFUser.logInWithUsernameInBackground(emailLabel.text, password: passwordLabel.text, block: { (user, error) in
+        PFUser.logInWithUsernameInBackground(emailLabel.text ?? "", password: passwordLabel.text ?? "", block: { (user, error) in
             activity.removeFromSuperview()
             self.view.userInteractionEnabled = true
             

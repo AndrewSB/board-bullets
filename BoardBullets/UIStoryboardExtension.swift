@@ -25,7 +25,7 @@ extension UIStoryboard {
     
     class func initialIn(storyboard storyboardNamed: String) -> UIViewController {
         let storyboard = UIStoryboard(name: storyboardNamed, bundle: NSBundle.mainBundle())
-        return storyboard.instantiateInitialViewController() as! UIViewController
+        return storyboard.instantiateInitialViewController()!
     }
     
 }
