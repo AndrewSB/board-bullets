@@ -15,8 +15,13 @@ import Bolts
 
 // Look at all these observers. I LOVE Swift #nogettersorsetters
 class InAppPurchase: NSObject {
-    static let productIdentifier = "AllContentQuestions"
+    static let sharedInstance = InAppPurchase()
+    
+    static let productIdentifier = "com.boardbullets.allcontent"
     static let userStoreKey = "boughttheapp"
+    
+    var completionCallback: ((Bool) -> Void)!
+    var completedPurchase = true
     
     class var bought: Bool {
         get {
@@ -48,20 +53,42 @@ class InAppPurchase: NSObject {
         }
     }
     
-    class var boughtProductRequest: SKRequest {
-        get {
-            return SKRequest()
+    func requestPurchase(completion: ((Bool) -> Void)) {
+        let productRequest = SKProductsRequest(productIdentifiers: [InAppPurchase.productIdentifier])
+        productRequest.delegate = self
+        completedPurchase = false
+        productRequest.start()
+    }
+}
+
+extension InAppPurchase: SKProductsRequestDelegate {
+    func productsRequest(request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
+        if response.products.count > 0 {
+            let product = response.products[0]
+            let payment = SKPayment(product: product)
+            SKPaymentQueue.defaultQueue().addPayment(payment)
+        } else {
+            completedPurchase = true
+            completionCallback(false)
         }
     }
 }
 
-extension InAppPurchase: SKRequestDelegate {
-    func requestDidFinish(request: SKRequest) {
-        print("request did finish")
+extension InAppPurchase: SKPaymentTransactionObserver {
+    func paymentQueue(queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        for transaction in transactions {
+            switch transaction.transactionState {
+            case .Failed, .Deferred:
+                completionCallback(false)
+            case .Purchased, .Purchasing, .Restored:
+                completionCallback(true)
+            }
+            completedPurchase = true
+        }
+        
+        if !completedPurchase {
+            completedPurchase = true
+            completionCallback(false)
+        }
     }
-    
-    func request(request: SKRequest, didFailWithError error: NSError) {
-        print("failed to request")
-    }
-    
 }

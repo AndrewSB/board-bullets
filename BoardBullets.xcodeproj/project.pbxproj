@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4605AF061B7C7776009BCB19 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4605AF041B7C7769009BCB19 /* IQKeyboardManager.framework */; };
 		4605AF4F1B7C790F009BCB19 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605AF3E1B7C790F009BCB19 /* IQNSArray+Sort.swift */; };
 		4605AF501B7C790F009BCB19 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605AF3F1B7C790F009BCB19 /* IQUIView+Hierarchy.swift */; };
 		4605AF511B7C790F009BCB19 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605AF401B7C790F009BCB19 /* IQUIWindow+Hierarchy.swift */; };
@@ -99,7 +98,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4605AF041B7C7769009BCB19 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = "/Users/asb/Developer/Board-Bullets/Carthage/Build/iOS/IQKeyboardManager.framework"; sourceTree = "<absolute>"; };
 		4605AF3E1B7C790F009BCB19 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		4605AF3F1B7C790F009BCB19 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		4605AF401B7C790F009BCB19 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 				46FCEB311A5A7476009E5171 /* CoreGraphics.framework in Frameworks */,
 				4671762A1ADB2C7D00E63BAE /* Crashlytics.framework in Frameworks */,
 				4644B54C1B620CD100BF5794 /* ParseCrashReporting.framework in Frameworks */,
-				4605AF061B7C7776009BCB19 /* IQKeyboardManager.framework in Frameworks */,
 				46FCEB321A5A7476009E5171 /* CoreLocation.framework in Frameworks */,
 				4644B54B1B620CD100BF5794 /* Parse.framework in Frameworks */,
 				4621277B1AE0B82D006C950E /* FBSDKShareKit.framework in Frameworks */,
