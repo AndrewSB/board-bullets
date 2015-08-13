@@ -15,7 +15,7 @@ func genRandom(count: Int, limit: Int) -> [Int] {
     var a = [Int]()
     while a.count != count {
         let i = Int(arc4random_uniform(UInt32(limit)))
-        if !contains(a, i) {
+        if !a.contains(i) {
             a.append(i)
         }
     }
@@ -32,9 +32,9 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
     let objects = questionQuery.findObjects()
     
     if let objects = objects {
-        let randomlyChosenQuestions = genRandom(numberOfQuestions, objects.count)
+        let randomlyChosenQuestions = genRandom(numberOfQuestions, limit: objects.count)
         
-        for (index, element) in enumerate(randomlyChosenQuestions) {
+        for (index, element) in randomlyChosenQuestions.enumerate() {
             questions.append(Question(parseObject: objects[element] as! PFObject))
         }
     }

@@ -52,13 +52,13 @@ class DemoQuizViewController: UIViewController {
     }
     
     func secondPassed(sender: AnyObject!) {
-        if let t = reviewLabel.titleLabel?.text?.toInt() {
+        if let t = Int(reviewLabel.titleLabel?.text?) {
             self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
-            if reviewLabel.titleLabel?.text?.toInt()! == 0 {
+            if Int(reviewLabel.titleLabel?.text?)! == 0 {
                 loadDone()
             }
             
@@ -158,7 +158,7 @@ class DemoQuizViewController: UIViewController {
     }
     
     func loadDone() {
-        println("answer were \(answers)")
+        print("answer were \(answers)")
         performSegueWithIdentifier("segueToDone", sender: self)
     }
     

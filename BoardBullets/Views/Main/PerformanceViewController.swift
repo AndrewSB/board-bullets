@@ -18,7 +18,7 @@ class PerformanceViewController: UIViewController {
         super.viewDidLoad()
 
         let (c, n) = UserDefaults.performance
-        println("performance is \(UserDefaults.performance)")
+        print("performance is \(UserDefaults.performance)")
         
         var percentage: Float
         if n != 0 {

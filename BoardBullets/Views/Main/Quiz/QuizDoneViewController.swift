@@ -32,7 +32,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
         configurePerformaceDict(numberCorrect)
-        println("made it out, performance is \(UserDefaults.performance)")
+        print("made it out, performance is \(UserDefaults.performance)")
     }
     
     // Isn't really used rn. Switched to a local model

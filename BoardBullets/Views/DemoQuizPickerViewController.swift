@@ -42,7 +42,7 @@ class DemoQuizPickerViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? DemoQuizViewController {
             
-            println(self.numberOfQuestionsSegmentedController.selectedSegmentIndex)
+            print(self.numberOfQuestionsSegmentedController.selectedSegmentIndex)
             
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
             case 0:

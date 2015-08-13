@@ -19,7 +19,7 @@ class DemoQuizDoneViewController: UIViewController, UICollectionViewDelegateFlow
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("questions \(questions.count)")
+        print("questions \(questions.count)")
         
         var numberCorrect = 0
         for question in questions {
@@ -31,7 +31,7 @@ class DemoQuizDoneViewController: UIViewController, UICollectionViewDelegateFlow
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
         configurePerformaceDict(numberCorrect)
-        println("made it out")
+        print("made it out")
     }
     
     func configurePerformaceDict(numCorrect: Int) {

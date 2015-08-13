@@ -21,8 +21,10 @@ class InAppPurchase: NSObject {
     class var bought: Bool {
         get {
             if let boughtBool = NSUserDefaults.standardUserDefaults().objectForKey(self.userStoreKey) as? Bool {
+                print(boughtBool ? "bought" : "not bought", appendNewline: false)
                 return boughtBool
             }
+            print("not bought", appendNewline: false)
             return false
         }
         set {
@@ -54,12 +56,12 @@ class InAppPurchase: NSObject {
 }
 
 extension InAppPurchase: SKRequestDelegate {
-    func requestDidFinish(request: SKRequest!) {
-        println("request did finish")
+    func requestDidFinish(request: SKRequest) {
+        print("request did finish")
     }
     
-    func request(request: SKRequest!, didFailWithError error: NSError!) {
-        println("failed to request")
+    func request(request: SKRequest, didFailWithError error: NSError) {
+        print("failed to request")
     }
     
 }

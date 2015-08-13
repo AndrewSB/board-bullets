@@ -16,7 +16,7 @@ class MainDemoViewController: UIViewController {
         addTextDismiss()
         view.endEditing(true)
         
-        println("On the demo")
+        print("On the demo")
     }
 
     @IBAction func didHitGetApp() {

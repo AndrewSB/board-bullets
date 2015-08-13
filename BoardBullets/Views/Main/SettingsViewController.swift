@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
     */
 
     @IBAction func changePasswordButtonHit(sender: AnyObject) {
-        var alert = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .Alert)
         if PFUser.currentUser()!.password == oldPasswordTextField.text {
             if newPasswordTextField.text == confirmNewPasswordTextField.text {
                 PFUser.currentUser()!.password = newPasswordTextField.text

@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
         addTextDismiss()
         view.endEditing(true)
         
-        println("On the main")
+        print("On the main")
     }
 
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {}

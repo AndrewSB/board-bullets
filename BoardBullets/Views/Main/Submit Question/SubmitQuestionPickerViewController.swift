@@ -54,7 +54,7 @@ class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate
                 des.subcategoryIndex = picker.selectedRowInComponent(0)
             }
             
-            println("indices \(des.categoryIndex) \(des.subcategoryIndex)")
+            print("indices \(des.categoryIndex) \(des.subcategoryIndex)")
         }
     }
 }

@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 self.appDelegate.switchToMain()
             } else {
-                println(error!.description)
+                print(error!.description)
                 let alert = UIAlertController(title: "Uh oh!", message: "Couldn't login, check your email and password", preferredStyle: UIAlertControllerStyle.Alert)
                 let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
                 alert.addAction(action)
