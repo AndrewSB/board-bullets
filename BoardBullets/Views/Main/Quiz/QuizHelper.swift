@@ -9,8 +9,6 @@
 import Foundation
 import Parse
 
-let data: JSON = JSON(data: NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("data", ofType: "json")!)!)
-
 func genRandom(count: Int, limit: Int) -> [Int] {
     var a = [Int]()
     while a.count != count {
