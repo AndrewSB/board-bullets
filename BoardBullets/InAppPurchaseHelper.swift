@@ -26,10 +26,10 @@ class InAppPurchase: NSObject {
     class var bought: Bool {
         get {
             if let boughtBool = NSUserDefaults.standardUserDefaults().objectForKey(self.userStoreKey) as? Bool {
-                print(boughtBool ? "bought" : "not bought", appendNewline: false)
+                print(boughtBool ? "bought" : "not bought", terminator: "")
                 return boughtBool
             }
-            print("not bought", appendNewline: false)
+            print("not bought")
             return false
         }
         set {
