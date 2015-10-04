@@ -28,6 +28,7 @@ class MainDemoViewController: UIViewController {
 
         } else {
             InAppPurchase.sharedInstance.requestPurchase() {
+                print("request Purchase callback called")
                 if $0 {
                     InAppPurchase.bought = true
                     InAppPurchase.boughtFromParse = true
