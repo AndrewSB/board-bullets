@@ -30,6 +30,7 @@ class DemoQuizViewController: UIViewController {
     var quizData: [Question]!
     var curQuestion = 0
     var originalNextButtonWidth : CGFloat?
+    var timer: NSTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,23 +47,28 @@ class DemoQuizViewController: UIViewController {
     
     func configureTimer() {
         allotedTime = numberOfQuestions * 12
-        let timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
+        timer = NSTimer(timeInterval: 1.0, target: self, selector: "secondPassed:", userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
         reviewLabel.setTitle("\(self.timeTrail ? allotedTime : 0)", forState: .Normal)
     }
     
     func secondPassed(sender: AnyObject!) {
         if let t = Int(reviewLabel.titleLabel!.text ?? "") {
-            self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
+            
+            print(t)
+            
+            let newTime = self.timeTrail ? t-1 : t+1
+            
+            self.reviewLabel.setTitle("\(newTime)", forState: .Normal)
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
-            if t == 0 {
+            if newTime == 0 {
                 loadDone()
             }
             
-            if t > allotedTime {
+            if newTime > allotedTime {
                 reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
@@ -159,6 +165,7 @@ class DemoQuizViewController: UIViewController {
     
     func loadDone() {
         print("answer were \(answers)")
+        timer.invalidate()
         performSegueWithIdentifier("segueToDone", sender: self)
     }
     
@@ -218,9 +225,8 @@ class DemoQuizViewController: UIViewController {
     
     @IBAction func nextButtonWasHit(sender: AnyObject) {
         
-        
         if curQuestion == numberOfQuestions - 1 {
-            performSegueWithIdentifier("segueToDone", sender: nil)
+            loadDone()
         } else {
             curQuestion++
             loadQuestion(curQuestion, isMovingForward: true)
