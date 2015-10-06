@@ -30,9 +30,12 @@ class MainDemoViewController: UIViewController {
             InAppPurchase.sharedInstance.requestPurchase() {
                 print("request Purchase callback called")
                 if $0 {
-                    InAppPurchase.bought = true
-                    InAppPurchase.boughtFromParse = true
-                    (UIApplication.sharedApplication().delegate as! AppDelegate).switchToMain()
+                    let succedeedAlert = UIAlertController(title: "yay!", message: "you bought it. Should go to full version", preferredStyle: .Alert)
+                    succedeedAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+                    self.presentViewController(succedeedAlert, animated: true, completion: {
+                    
+                    })
+    
                 } else {
                     let failedPurchaseAlert = UIAlertController(title: "Uh oh!", message: "Failed to make that purchase, are you sure you're connected to the internet?", preferredStyle: .Alert)
                     failedPurchaseAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))

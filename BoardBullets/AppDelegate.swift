@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableLocalDatastore()
         Parse.setApplicationId("ABXWdr3QElQxJ6JXPZ2kbLGe3RmPculkoMF2oA6x", clientKey: "TWIk4FCSGc1HXexXDxr7QaadCSZ0U66W5jlVkPg8")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions == nil ? [NSObject: AnyObject]() : launchOptions!)
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         
         Fabric.with([Crashlytics()])
         
@@ -56,11 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKAppEvents.activateApp()
     }
     func switchToMain() {
-        window?.rootViewController = UIStoryboard.initialIn(storyboard: InAppPurchase.bought ? UIStoryboard.Named.Main : UIStoryboard.Named.Demo)
+        window?.rootViewController = UIStoryboard.initialIn(storyboard: UIStoryboard.Named.Main)
     }
     
     func switchToLogin() {
-        window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
+        window?.rootViewController = UIStoryboard.initialIn(storyboard: UIStoryboard.Named.Login)
     }
 
 }
