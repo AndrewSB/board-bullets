@@ -52,7 +52,6 @@
 		469C65D01A5FB70200758740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469C65CF1A5FB70200758740 /* Main.storyboard */; };
 		46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */; };
 		46CFB14D1A67867C0091BCE9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */; };
-		46CFB1541A678A090091BCE9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CFB1531A678A090091BCE9 /* data.json */; };
 		46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */; };
 		46EDFFF61A954E750079C40C /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDFFF51A954E750079C40C /* Performance.swift */; };
 		46FBFE361A6999B300B53C4E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFE351A6999B300B53C4E /* SettingsViewController.swift */; };
@@ -123,7 +122,6 @@
 		469C65CF1A5FB70200758740 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46B061B91AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitQuestionPickerViewController.swift; sourceTree = "<group>"; };
 		46CFB14C1A67867C0091BCE9 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		46CFB1531A678A090091BCE9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		46D09CA91A787F3A00E88618 /* QuizAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswerViewController.swift; sourceTree = "<group>"; };
 		46EDFFF51A954E750079C40C /* Performance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
 		46FBFE351A6999B300B53C4E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -304,7 +302,7 @@
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
 			);
 			name = Internal;
-			path = "BoardBullets";
+			path = BoardBullets;
 			sourceTree = "<group>";
 		};
 		467176271ADB2C2E00E63BAE /* External */ = {
@@ -350,7 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				46FCEB0B1A5A7116009E5171 /* Images.xcassets */,
-				46CFB1531A678A090091BCE9 /* data.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -414,7 +411,7 @@
 				46FCEB5B1A5A95E5009E5171 /* Views */,
 				46FCEB021A5A7116009E5171 /* Supporting Files */,
 			);
-			path = "BoardBullets";
+			path = BoardBullets;
 			sourceTree = "<group>";
 		};
 		46FCEB021A5A7116009E5171 /* Supporting Files */ = {
@@ -474,7 +471,7 @@
 			dependencies = (
 			);
 			name = BoardBullets;
-			productName = "BoardBullets";
+			productName = BoardBullets;
 			productReference = 46FCEAFF1A5A7116009E5171 /* BoardBullets.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -520,7 +517,6 @@
 			files = (
 				46349A6D1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle in Resources */,
 				46FCEB0A1A5A7116009E5171 /* Login.storyboard in Resources */,
-				46CFB1541A678A090091BCE9 /* data.json in Resources */,
 				469C65D01A5FB70200758740 /* Main.storyboard in Resources */,
 				46FCEB0F1A5A7116009E5171 /* LaunchScreen.xib in Resources */,
 				4621277D1AE0B82D006C950E /* README.txt in Resources */,
