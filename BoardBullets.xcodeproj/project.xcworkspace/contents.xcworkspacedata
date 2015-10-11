@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Board-Bullets.xcodeproj">
+      location = "self:/Users/asb/Developer/board-bullets/BoardBullets.xcodeproj">
    </FileRef>
 </Workspace>
