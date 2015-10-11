@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import StoreKit
+
 import IQKeyboardManager
 
 class MainViewController: UIViewController {
@@ -35,6 +37,28 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didHitGetFullVersion() {
+        if !SKPaymentQueue.canMakePayments() {
+            let failedPurchaseAlert = UIAlertController(title: "Uh oh!", message: "This device is unable to make purchases, take a look at your payment settings", preferredStyle: .Alert)
+            failedPurchaseAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+            self.presentViewController(failedPurchaseAlert, animated: true, completion: nil)
+            
+        } else {
+            InAppPurchase.sharedInstance.requestPurchase() {
+                print("request Purchase callback called")
+                if $0 {
+                    let succedeedAlert = UIAlertController(title: "yay!", message: "you bought it. Should go to full version", preferredStyle: .Alert)
+                    succedeedAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+                    self.presentViewController(succedeedAlert, animated: true, completion: {
+                        
+                    })
+                    
+                } else {
+                    let failedPurchaseAlert = UIAlertController(title: "Uh oh!", message: "Failed to make that purchase, are you sure you're connected to the internet?", preferredStyle: .Alert)
+                    failedPurchaseAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
+                    self.presentViewController(failedPurchaseAlert, animated: true, completion: nil)
+                }
+            }
+        }
     }
 
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {}

@@ -12,6 +12,8 @@ import StoreKit
 import Parse
 
 class InAppPurchase: NSObject {
+    static let sharedInstance = InAppPurchase()
+    
     static let productIdentifier = "com.boardbullets.allcontent"
     static let userStoreKey = "boughttheapp"
     
