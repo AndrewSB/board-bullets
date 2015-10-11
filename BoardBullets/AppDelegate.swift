@@ -12,6 +12,7 @@ import Crashlytics
 import Parse
 import Bolts
 import IQKeyboardManager
+import Async
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -38,6 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
         window?.makeKeyAndVisible()
         
+        Async.background {
+            let _ = genQuiz(0) // cache questions asap
+        }
+        
+        
         return true
     }
     
@@ -58,6 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func switchToLogin() {
         window?.rootViewController = (UIStoryboard(name: "Login", bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
     }
-
+    
 }
 

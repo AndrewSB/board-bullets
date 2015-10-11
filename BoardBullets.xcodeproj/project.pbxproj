@@ -36,6 +36,8 @@
 		46349A6C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A5C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift */; };
 		46349A6D1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46349A5E1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle */; };
 		46349A6F1BCB236E00F5CF51 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A6E1BCB236E00F5CF51 /* InAppPurchase.swift */; };
+		46349A771BCB2B0E00F5CF51 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A751BCB2B0E00F5CF51 /* Async.swift */; };
+		46349A781BCB2B0E00F5CF51 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46349A761BCB2B0E00F5CF51 /* Info.plist */; };
 		465869151ADF63740095544F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658690F1ADF63740095544F /* Bolts.framework */; };
 		465869161ADF63740095544F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869101ADF63740095544F /* Parse.framework */; };
 		465869171ADF63740095544F /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869111ADF63740095544F /* ParseCrashReporting.framework */; };
@@ -107,6 +109,8 @@
 		46349A5C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		46349A5E1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		46349A6E1BCB236E00F5CF51 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
+		46349A751BCB2B0E00F5CF51 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		46349A761BCB2B0E00F5CF51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4658690F1ADF63740095544F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		465869101ADF63740095544F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		465869111ADF63740095544F /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -266,6 +270,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		46349A741BCB2B0E00F5CF51 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				46349A751BCB2B0E00F5CF51 /* Async.swift */,
+				46349A761BCB2B0E00F5CF51 /* Info.plist */,
+			);
+			name = Async;
+			path = Carthage/Checkouts/Async/Source;
+			sourceTree = "<group>";
+		};
 		4658690E1ADF63740095544F /* parse-library-1.7.1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +325,7 @@
 		467176271ADB2C2E00E63BAE /* External */ = {
 			isa = PBXGroup;
 			children = (
+				46349A741BCB2B0E00F5CF51 /* Async */,
 				46349A4A1BCB1E1A00F5CF51 /* IQKeybordManagerSwift */,
 				462126861AE0B82D006C950E /* FacebookSDK */,
 				467176281ADB2C7D00E63BAE /* Crashlytics.framework */,
@@ -526,6 +541,7 @@
 				462127751AE0B82D006C950E /* FacebookSDK.strings in Resources */,
 				4621277C1AE0B82D006C950E /* LICENSE in Resources */,
 				462127771AE0B82D006C950E /* FBAudienceNetwork.README.txt in Resources */,
+				46349A781BCB2B0E00F5CF51 /* Info.plist in Resources */,
 				46FCEB0C1A5A7116009E5171 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +573,7 @@
 				46909EE31AC4A19600CBAD54 /* MainViewController.swift in Sources */,
 				46349A641BCB1E1A00F5CF51 /* IQKeyboardManagerConstants.swift in Sources */,
 				467770D81A687E0A00A5F386 /* QuizDoneViewController.swift in Sources */,
+				46349A771BCB2B0E00F5CF51 /* Async.swift in Sources */,
 				46349A671BCB1E1A00F5CF51 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				46349A681BCB1E1A00F5CF51 /* IQTextView.swift in Sources */,
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,

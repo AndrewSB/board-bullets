@@ -1,1 +1,2 @@
 github "AndrewSB/IQKeyboardManager" "Swift2"
+github "duemunk/Async" "feature/Swift_2.1"

@@ -24,14 +24,19 @@ func genQuiz(numberOfQuestions: Int) -> [Question] {
     
     let questionQuery = PFQuery(className: "Questions")
     questionQuery.whereKey("approved", equalTo: true)
-    questionQuery.maxCacheAge = 60*60*60*24
+    
+    questionQuery.maxCacheAge = 60*60*60*24*3 // 3 days
     
     let objects = questionQuery.findObjects()
     
     if let objects = objects {
         let randomlyChosenQuestions = genRandom(numberOfQuestions, limit: objects.count)
         
-        questions = randomlyChosenQuestions.map { Question(parseObject: objects[$0] as! PFObject) }
+        if InAppPurchase.bought {
+            questions = randomlyChosenQuestions.map { Question(parseObject: objects[$0] as! PFObject) }
+        } else {
+            questions = (0...20).map { $0 }.map { Question(parseObject: objects[$0] as! PFObject) }
+        }
     }
     
     return questions
