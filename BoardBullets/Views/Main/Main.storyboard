@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bC-K7-S1e">
-                                <rect key="frame" x="298" y="30" width="24" height="50"/>
+                                <rect key="frame" x="298" y="30" width="23.5" height="50"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="42"/>
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agi-LP-So5">
-                                <rect key="frame" x="293" y="125" width="84" height="177"/>
+                                <rect key="frame" x="293" y="125" width="83.5" height="177"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                 <color key="textColor" red="0.094117647060000004" green="0.37254901959999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-pV-aKK">
-                                <rect key="frame" x="0.0" y="28" width="191" height="0.0"/>
+                                <rect key="frame" x="0.0" y="28" width="191.5" height="0.0"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -92,7 +92,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b18-XE-GAM">
-                                <rect key="frame" x="260" y="352" width="79" height="41"/>
+                                <rect key="frame" x="260" y="351" width="79" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="quiz me">
@@ -104,7 +104,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-VT-9xe">
-                                <rect key="frame" x="211" y="398" width="178" height="41"/>
+                                <rect key="frame" x="211" y="397" width="178" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="submit a question">
@@ -116,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAA-RT-oQC">
-                                <rect key="frame" x="218" y="444" width="164" height="41"/>
+                                <rect key="frame" x="218" y="443" width="164" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="my performance">
@@ -135,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDn-MJ-oDJ">
-                                <rect key="frame" x="300" y="531" width="0.0" height="69"/>
+                                <rect key="frame" x="300" y="530" width="0.0" height="69.5"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -143,7 +143,7 @@
                                 </constraints>
                             </view>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMe-ac-hWU">
-                                <rect key="frame" x="300" y="282" width="0.0" height="70"/>
+                                <rect key="frame" x="300" y="282" width="0.0" height="69.5"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -151,7 +151,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb6-wQ-unI">
-                                <rect key="frame" x="261" y="490" width="78" height="41"/>
+                                <rect key="frame" x="261" y="489" width="78" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="settings">
@@ -160,6 +160,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="8yz-Oy-S2v" kind="show" id="JlJ-SL-kTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="164-4W-bD5">
+                                <rect key="frame" x="229" y="420.5" width="142" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="get full version">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didHitGetFullVersion" destination="v75-TS-esf" eventType="touchUpInside" id="M67-WY-uP0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,9 +193,11 @@
                             <constraint firstItem="6iU-tU-VGu" firstAttribute="leading" secondItem="Dkc-pV-aKK" secondAttribute="trailing" id="MPZ-o3-LYp"/>
                             <constraint firstItem="2bC-K7-S1e" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="10" id="OAM-Qa-4He"/>
                             <constraint firstItem="lR3-AF-JMO" firstAttribute="leading" secondItem="6iU-tU-VGu" secondAttribute="trailing" constant="-2" id="RZZ-Ix-Mku"/>
+                            <constraint firstItem="Vb6-wQ-unI" firstAttribute="top" secondItem="164-4W-bD5" secondAttribute="bottom" constant="28" id="UQ1-rz-Q1x"/>
                             <constraint firstItem="PMe-ac-hWU" firstAttribute="height" secondItem="gDn-MJ-oDJ" secondAttribute="height" id="buc-gM-Xgk"/>
                             <constraint firstItem="Dkc-pV-aKK" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="8" id="cHK-Pq-gdi"/>
                             <constraint firstItem="PMe-ac-hWU" firstAttribute="top" secondItem="Agi-LP-So5" secondAttribute="bottom" constant="-20" id="gu9-ES-uNj"/>
+                            <constraint firstItem="164-4W-bD5" firstAttribute="centerX" secondItem="7qb-a3-gcp" secondAttribute="centerX" id="j40-RB-KNd"/>
                             <constraint firstAttribute="centerX" secondItem="PMe-ac-hWU" secondAttribute="centerX" id="kce-rw-qgA"/>
                             <constraint firstItem="dYe-MT-yKv" firstAttribute="leading" secondItem="2bC-K7-S1e" secondAttribute="trailing" constant="-2" id="mwO-9z-hQl"/>
                             <constraint firstItem="dYe-MT-yKv" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="10" id="q8W-Yx-rL9"/>
@@ -196,13 +210,17 @@
                             <constraint firstItem="3Fk-VT-9xe" firstAttribute="top" secondItem="b18-XE-GAM" secondAttribute="bottom" constant="5" id="wOa-RF-8fL"/>
                             <constraint firstItem="Vb6-wQ-unI" firstAttribute="top" secondItem="YAA-RT-oQC" secondAttribute="bottom" constant="5" id="wjq-02-wgq"/>
                             <constraint firstItem="Agi-LP-So5" firstAttribute="leading" secondItem="7qb-a3-gcp" secondAttribute="centerXWithinMargins" constant="-7" id="xRd-Qe-JAc"/>
+                            <constraint firstItem="164-4W-bD5" firstAttribute="top" secondItem="b18-XE-GAM" secondAttribute="bottom" constant="28" id="yJL-85-udA"/>
                             <constraint firstItem="fVA-uf-wYo" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="105" id="ysf-EN-8Ue"/>
                             <constraint firstItem="lR3-AF-JMO" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="10" id="zjY-lh-MC9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N0g-e5-LCh"/>
                     <connections>
+                        <outlet property="getFullVersionButton" destination="164-4W-bD5" id="Gsi-PH-W5i"/>
+                        <outlet property="myPerformanceButton" destination="YAA-RT-oQC" id="BzF-pV-BUD"/>
                         <outlet property="settingsButton" destination="Vb6-wQ-unI" id="j4Z-Fn-tgk"/>
+                        <outlet property="submitAQuestionButton" destination="3Fk-VT-9xe" id="4Nv-HL-L5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC3-Wd-LS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
