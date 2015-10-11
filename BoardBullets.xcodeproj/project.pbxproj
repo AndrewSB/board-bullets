@@ -35,6 +35,7 @@
 		46349A6B1BCB1E1A00F5CF51 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A5B1BCB1E1A00F5CF51 /* IQToolbar.swift */; };
 		46349A6C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A5C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift */; };
 		46349A6D1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46349A5E1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle */; };
+		46349A6F1BCB236E00F5CF51 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46349A6E1BCB236E00F5CF51 /* InAppPurchase.swift */; };
 		465869151ADF63740095544F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658690F1ADF63740095544F /* Bolts.framework */; };
 		465869161ADF63740095544F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869101ADF63740095544F /* Parse.framework */; };
 		465869171ADF63740095544F /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465869111ADF63740095544F /* ParseCrashReporting.framework */; };
@@ -105,6 +106,7 @@
 		46349A5B1BCB1E1A00F5CF51 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		46349A5C1BCB1E1A00F5CF51 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		46349A5E1BCB1E1A00F5CF51 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		46349A6E1BCB236E00F5CF51 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
 		4658690F1ADF63740095544F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		465869101ADF63740095544F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		465869111ADF63740095544F /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FCEB361A5A7476009E5171 /* StoreKit.framework in Frameworks */,
 				4671762B1ADB2C7D00E63BAE /* Fabric.framework in Frameworks */,
 				46FCEB391A5A7489009E5171 /* libsqlite3.dylib in Frameworks */,
 				46FCEB2F1A5A7476009E5171 /* AudioToolbox.framework in Frameworks */,
@@ -171,7 +174,6 @@
 				46FCEB341A5A7476009E5171 /* QuartzCore.framework in Frameworks */,
 				462127761AE0B82D006C950E /* FBAudienceNetwork.framework in Frameworks */,
 				46FCEB351A5A7476009E5171 /* Security.framework in Frameworks */,
-				46FCEB361A5A7476009E5171 /* StoreKit.framework in Frameworks */,
 				46FCEB371A5A7476009E5171 /* SystemConfiguration.framework in Frameworks */,
 				462127741AE0B82D006C950E /* Bolts.framework in Frameworks */,
 				465869191ADF63740095544F /* ParseFacebookUtilsV4.framework in Frameworks */,
@@ -300,6 +302,7 @@
 				467176251ADB2BF100E63BAE /* UI */,
 				467176241ADB2BE000E63BAE /* Entities */,
 				46FCEB5F1A5A9B7E009E5171 /* UIViewControllerExtension.swift */,
+				46349A6E1BCB236E00F5CF51 /* InAppPurchase.swift */,
 			);
 			name = Internal;
 			path = BoardBullets;
@@ -559,6 +562,7 @@
 				463226E51AC38153003063E8 /* ForgotPasswordViewController.swift in Sources */,
 				46B061BA1AC64F3800DA03BE /* SubmitQuestionPickerViewController.swift in Sources */,
 				46349A691BCB1E1A00F5CF51 /* IQBarButtonItem.swift in Sources */,
+				46349A6F1BCB236E00F5CF51 /* InAppPurchase.swift in Sources */,
 				46D09CAA1A787F3A00E88618 /* QuizAnswerViewController.swift in Sources */,
 				46349A621BCB1E1A00F5CF51 /* IQUIViewController+Additions.swift in Sources */,
 				461D82EF1A72013C00B30AC6 /* QuizHelper.swift in Sources */,
