@@ -29,11 +29,11 @@ extension UIViewController {
     }
     
     func keyboardWasShown(id: AnyObject) {
-        println("s")
+        print("s")
     }
     
     func keyboardWillBeHidden(id: AnyObject) {
-        println("sasd")
+        print("sasd")
     }
     
     func addLoadingView() -> UIActivityIndicatorView {

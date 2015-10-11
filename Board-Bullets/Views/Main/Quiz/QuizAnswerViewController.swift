@@ -58,7 +58,7 @@ class QuizAnswerViewController: UIViewController {
     
     func downSwiped() {
         unwindClicked(self)
-        println("swiped")
+        print("swiped")
     }
     
     @IBAction func unwindClicked(sender: AnyObject) {

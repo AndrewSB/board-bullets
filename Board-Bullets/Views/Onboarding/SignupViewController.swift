@@ -22,9 +22,9 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
         addTextDismiss()
         
-        [nameLabel, emailLabel, passwordLabel, medicalSchoolLabel].map({
+        [nameLabel, emailLabel, passwordLabel, medicalSchoolLabel].forEach {
             $0.delegate = self
-        })
+        }
     }
 
     override func keyboardWasShown(id: AnyObject) {
@@ -71,9 +71,9 @@ class SignupViewController: UIViewController {
             if error == nil {
                 self.appDelegate.switchToMain()
             } else {
-                var errorMessage = error!.userInfo!["error"] as! String
+                var errorMessage = error!.userInfo["error"] as! String
                 
-                errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: nil, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
+                errorMessage = errorMessage.stringByReplacingOccurrencesOfString("username", withString: "email", options: .CaseInsensitiveSearch, range: Range(start: errorMessage.startIndex, end: errorMessage.endIndex))
                 
                 
                 let alert = UIAlertController(title: "Uh oh!", message: errorMessage.capitalizedString, preferredStyle: UIAlertControllerStyle.Alert)
@@ -82,7 +82,7 @@ class SignupViewController: UIViewController {
                 
                 self.presentViewController(alert, animated: true, completion: nil)
                 
-                println(error)// Show the errorString somewhere and let the user try again.
+                print(error)// Show the errorString somewhere and let the user try again.
             }
         }
     }

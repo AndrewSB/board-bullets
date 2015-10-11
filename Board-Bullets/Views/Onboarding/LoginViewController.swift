@@ -40,14 +40,14 @@ class LoginViewController: UIViewController {
         let activity = addLoadingView()
         view.addSubview(activity)
         
-        PFUser.logInWithUsernameInBackground(emailLabel.text, password: passwordLabel.text, block: { (user, error) in
+        PFUser.logInWithUsernameInBackground(emailLabel.text ?? "", password: passwordLabel.text ?? "", block: { (user, error) in
             activity.removeFromSuperview()
             self.view.userInteractionEnabled = true
             
             if user != nil {
                 self.appDelegate.switchToMain()
             } else {
-                println(error!.description)
+                print(error!.description)
                 let alert = UIAlertController(title: "Uh oh!", message: "Couldn't login, check your email and password", preferredStyle: UIAlertControllerStyle.Alert)
                 let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil)
                 alert.addAction(action)

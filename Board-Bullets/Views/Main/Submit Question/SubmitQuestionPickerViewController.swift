@@ -32,7 +32,7 @@ class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return data![row]
     }
 
@@ -47,7 +47,7 @@ class SubmitQuestionPickerViewController: UIViewController, UIPickerViewDelegate
                 des.subcategoryIndex = picker.selectedRowInComponent(0)
             }
             
-            println("indices \(des.categoryIndex) \(des.subcategoryIndex)")
+            print("indices \(des.categoryIndex) \(des.subcategoryIndex)")
         }
     }
 }

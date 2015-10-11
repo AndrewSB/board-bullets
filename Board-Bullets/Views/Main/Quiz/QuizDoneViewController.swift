@@ -29,7 +29,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         rightOutOfQuestionsLabel.text = "\(numberCorrect)/\(questions.count)"
         
         configurePerformaceDict(numberCorrect)
-        println("made it out")
+        print("made it out")
     }
     
     func configurePerformaceDict(numCorrect: Int) {

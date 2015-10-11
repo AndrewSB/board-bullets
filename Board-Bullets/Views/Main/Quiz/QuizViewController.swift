@@ -31,7 +31,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.quizData = genQuiz(self.numberOfQuestions)
+//        self.quizData = genQuiz(self.numberOfQuestions)
         loadQuestionInitial()
         configureTimer()
         configureQuestionNav()
@@ -49,13 +49,14 @@ class QuizViewController: UIViewController {
     }
     
     func secondPassed(sender: AnyObject!) {
-        if let t = reviewLabel.titleLabel?.text?.toInt() {
+        if let s = reviewLabel.titleLabel?.text {
+            let t = Int(s)!
             self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
-            if reviewLabel.titleLabel?.text?.toInt()! == 0 {
+            if t == 0 {
                 loadDone()
             }
             
@@ -155,7 +156,7 @@ class QuizViewController: UIViewController {
     }
     
     func loadDone() {
-        println("answer were \(answers)")
+        print("answer were \(answers)")
         performSegueWithIdentifier("segueToDone", sender: self)
     }
     
