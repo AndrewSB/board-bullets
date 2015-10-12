@@ -24,14 +24,13 @@ class QuizViewController: UIViewController {
     var timeTrail = false
     var numberOfQuestions = 10
     var allotedTime = Int()
-    var quizData = [Question]()
+    var quizData: [Question]!
     var curQuestion = 0
     var originalNextButtonWidth : CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.quizData = QuizHelper.genQuiz(self.numberOfQuestions, vc: self)
         loadQuestionInitial()
         configureTimer()
         configureQuestionNav()
@@ -51,16 +50,17 @@ class QuizViewController: UIViewController {
     func secondPassed(sender: AnyObject!) {
         if let s = reviewLabel.titleLabel?.text {
             let t = Int(s)!
-            self.reviewLabel.setTitle("\(self.timeTrail ? t-1 : t+1)", forState: .Normal)
+            let newTime = self.timeTrail ? t-1 : t+1
+            self.reviewLabel.setTitle("\(newTime)", forState: .Normal)
             if self.reviewLabel.titleLabel?.text == "\(allotedTime)" {
                 self.reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             
-            if t == 0 {
+            if newTime == 0 {
                 loadDone()
             }
             
-            if (t > allotedTime) {
+            if (newTime > allotedTime) {
                 reviewLabel.titleLabel?.textColor = UIColor.redColor()
             }
             

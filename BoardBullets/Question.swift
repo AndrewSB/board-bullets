@@ -18,6 +18,7 @@ class Question {
     var optionThree = String()
     var wikipediaLink = NSURL()
     var approved = Bool()
+    var index = Int()
     
     
     var chosen = Int()
@@ -36,6 +37,8 @@ class Question {
         self.optionThree = parseObject["optionThree"] as! String
         
         self.wikipediaLink = NSURL(string: parseObject["Wikipedia"] as! String)!
+        
+        self.index = parseObject["index"] as! Int
         
         self.approved = parseObject["approved"] as! Bool// == 1 ? true : false
         

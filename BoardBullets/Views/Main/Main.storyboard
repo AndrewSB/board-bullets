@@ -1277,6 +1277,7 @@
                     <connections>
                         <outlet property="learnAsYouGoButton" destination="9ef-f7-BYv" id="ata-5h-MSY"/>
                         <outlet property="numberOfQuestionsSegmentedController" destination="q8I-tY-ahQ" id="gdL-iZ-pcQ"/>
+                        <outlet property="startQuizButton" destination="t65-6F-LkK" id="zg7-6k-pSl"/>
                         <outlet property="timedButton" destination="5jV-Rc-3lb" id="XHZ-Tu-bqT"/>
                     </connections>
                 </viewController>

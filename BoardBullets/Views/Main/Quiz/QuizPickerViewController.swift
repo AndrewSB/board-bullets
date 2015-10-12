@@ -12,9 +12,25 @@ class QuizPickerViewController: UIViewController {
     @IBOutlet weak var learnAsYouGoButton: UIButton!
     @IBOutlet weak var timedButton: UIButton!
     @IBOutlet weak var numberOfQuestionsSegmentedController: UISegmentedControl!
+    
+    @IBOutlet weak var startQuizButton: UIButton!
+    
+    var quizData: [Question]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        startQuizButton.setTitle("loading...", forState: .Normal)
+        startQuizButton.userInteractionEnabled = false
+        
+        Async.background {
+            self.quizData = QuizHelper.genQuiz(20, vc: self)
+            print(self.quizData!.count)
+            Async.main {
+                self.startQuizButton.setTitle("start quiz", forState: .Normal)
+                self.startQuizButton.userInteractionEnabled = true
+            }
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -32,11 +48,15 @@ class QuizPickerViewController: UIViewController {
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
             case 1:
                 destination.numberOfQuestions = 10
+                destination.quizData = self.quizData!.dropLast(9).map { $0 }
             case 2:
                 destination.numberOfQuestions = 20
+                destination.quizData = self.quizData!
             default:
                 destination.numberOfQuestions = 5
+                destination.quizData = self.quizData!.dropLast(14).map { $0 }
             }
+            print("set things")
             if timedButton.titleLabel?.font == UIFont(name: "HelveticaNeue", size: 24) {
                 destination.timeTrail = true
             }

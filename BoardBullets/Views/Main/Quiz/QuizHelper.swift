@@ -11,12 +11,10 @@ import Parse
 
 class QuizHelper {
     
-    static var questionQuery: PFQuery {
-        get {
-            let questionQuery = PFQuery(className: "Questions")
-            questionQuery.whereKey("approved", equalTo: true)
-            return questionQuery
-        }
+    class func questionQuery() -> PFQuery {
+        let questionQuery = PFQuery(className: "Questions")
+        questionQuery.whereKey("approved", equalTo: true)
+        return questionQuery
     }
     
     class func genRandom(count: Int, limit: Int) -> [Int] {
@@ -38,18 +36,26 @@ class QuizHelper {
         
         var queries: [PFQuery]
         if InAppPurchase.bought {
-            queries = genRandom(numberOfQuestions, limit: cachedQuestionCount()).map {
+            queries = genRandom(numberOfQuestions - 1, limit: cachedQuestionCount()).map {
                 questionQuery.whereKey("index", equalTo: $0)
             }
         } else {
-            let indx = (0...numberOfQuestions).map { $0 }
+            
+            let indx = (0...(numberOfQuestions-1)).map { $0 }
+            print("lol bro \(indx)")
             queries = indx.map {
-                questionQuery.whereKey("index", equalTo: $0)
+                let qq = QuizHelper.questionQuery()
+                return qq.whereKey("index", equalTo: $0)
             }
+            print("ayy")
+            print(queries)
         }
         
+        
+        
         var errPointer: NSError?
-        let objects = PFQuery.orQueryWithSubqueries(queries).findObjects(&errPointer)
+        let objects = PFQuery.orQueryWithSubqueries(queries.dropLast(10).map {$0}).findObjects(&errPointer)
+        let otherObjects = PFQuery.orQueryWithSubqueries(queries.dropFirst(10).map {$0}).findObjects(&errPointer)
         
         if let err = errPointer {
             print("no internet")
@@ -57,29 +63,33 @@ class QuizHelper {
             let alert = UIAlertController(title: "Uh oh", message: err.localizedDescription, preferredStyle: .Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
             vc.presentViewController(alert, animated: true, completion: nil)
-        } else if let objects = objects {
+        } else if let objects = objects, let otherObjects = otherObjects {
             questions = objects.map { Question(parseObject: $0 as! PFObject) }
+            otherObjects.forEach {
+                questions.append(Question(parseObject: $0 as! PFObject))
+            }
         }
         
         return questions
     }
     
     class func cachedQuestionCount() -> Int {
-        let lastCachedDate = NSUserDefaults.standardUserDefaults().objectForKey("lastCachedDate")
+        let epoc = NSUserDefaults.standardUserDefaults().objectForKey("lastCachedDate")
         
-        if let lastCachedDate = lastCachedDate as? NSDate {
+        if let epoc = epoc as? Double {
+            let lastCachedDate = NSDate(timeIntervalSince1970: epoc)
             if abs(lastCachedDate.timeIntervalSinceNow) > (60*60*60*24*3) { // 3 days
-                let c = questionQuery.countObjects()
+                let c = questionQuery().countObjects()
                 NSUserDefaults.standardUserDefaults().setObject(c, forKey: "lastCachedValue")
-                NSUserDefaults.standardUserDefaults().setObject(NSDate(), forKey: "lastCachedDate")
+                NSUserDefaults.standardUserDefaults().setObject(abs(NSDate().timeIntervalSince1970), forKey: "lastCachedDate")
                 return c
             } else {
                 return NSUserDefaults.standardUserDefaults().objectForKey("lastCachedValue") as! Int
             }
         } else {
-            let c = questionQuery.countObjects()
+            let c = questionQuery().countObjects()
             NSUserDefaults.standardUserDefaults().setObject(c, forKey: "lastCachedValue")
-            NSUserDefaults.standardUserDefaults().setObject(NSDate(), forKey: "lastCachedDate")
+            NSUserDefaults.standardUserDefaults().setObject(abs(NSDate().timeIntervalSince1970), forKey: "lastCachedDate")
             return c
         }
     }

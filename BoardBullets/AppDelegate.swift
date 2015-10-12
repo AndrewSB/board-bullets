@@ -39,11 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
         window?.makeKeyAndVisible()
         
-        Async.background {
-            let _ = QuizHelper.cachedQuestionCount() // cache questions asap
-        }
-        
-        
         return true
     }
     
