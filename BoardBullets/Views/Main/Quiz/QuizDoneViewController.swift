@@ -36,10 +36,13 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         var a = PFUser.currentUser()!["answered"] as? Int
         var b: Int = a == nil ? questions.count : a! + questions.count
         PFUser.currentUser()!["answered"] = b as AnyObject?
+        NSUserDefaults.standardUserDefaults().setInteger(b, forKey: "answered")
         
         a = PFUser.currentUser()!["correct"] as! Int?
         b = a == nil ? numCorrect : a! + numCorrect
         PFUser.currentUser()!["correct"] = b
+        NSUserDefaults.standardUserDefaults().setInteger(b, forKey: "correct")
+        
     }
     
     

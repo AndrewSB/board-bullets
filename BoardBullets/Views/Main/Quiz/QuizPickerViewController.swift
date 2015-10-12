@@ -48,13 +48,13 @@ class QuizPickerViewController: UIViewController {
             switch self.numberOfQuestionsSegmentedController.selectedSegmentIndex {
             case 1:
                 destination.numberOfQuestions = 10
-                destination.quizData = self.quizData!.dropLast(9).map { $0 }
+                destination.quizData = self.quizData![0...9].map { $0 }
             case 2:
                 destination.numberOfQuestions = 20
                 destination.quizData = self.quizData!
             default:
                 destination.numberOfQuestions = 5
-                destination.quizData = self.quizData!.dropLast(14).map { $0 }
+                destination.quizData = self.quizData![0...4].map { $0 }
             }
             print("set things \(destination.quizData)")
             if timedButton.titleLabel?.font == UIFont(name: "HelveticaNeue", size: 24) {

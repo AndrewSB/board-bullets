@@ -16,8 +16,16 @@ class SubmitQuestionViewController: UIViewController {
     let subcategories = ["Cardiovascular", "Endocrine", "Gastrointestinal", "Hematology", "Oncology", "Anatomical Pathology", "Neurology", "Psychiatry", "Nephrology", "Respiratory", "Reproductive", "Other"]
     
     var cat = false
-    var categoryIndex = 0
-    var subcategoryIndex = 0
+    var categoryIndex = 0 {
+        didSet {
+            categoryTableView.reloadData()
+        }
+    }
+    var subcategoryIndex = 0 {
+        didSet {
+            categoryTableView.reloadData()
+        }
+    }
     
     @IBOutlet weak var questionLabel: CircularEdgeTextField!
     @IBOutlet weak var answerLabel: CircularEdgeTextField!

@@ -17,8 +17,8 @@ class PerformanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let c = PFUser.currentUser()!["correct"] as? Int
-        let n = PFUser.currentUser()!["answered"] as? Int
+        let c = NSUserDefaults.standardUserDefaults().objectForKey("correct") as? Int
+        let n = NSUserDefaults.standardUserDefaults().objectForKey("answered") as? Int
         
         if (c != nil) {
             

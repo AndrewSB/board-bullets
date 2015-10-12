@@ -61,6 +61,10 @@ class QuizAnswerViewController: UIViewController {
         print("swiped")
     }
     
+    @IBAction func moreInformationWasHit() {
+        UIApplication.sharedApplication().openURL(question.wikipediaLink)
+    }
+    
     @IBAction func unwindClicked(sender: AnyObject) {
     }
 

@@ -36,7 +36,9 @@ class Question {
         self.optionTwo = parseObject["optionTwo"] as! String
         self.optionThree = parseObject["optionThree"] as! String
         
-        self.wikipediaLink = NSURL(string: parseObject["Wikipedia"] as! String)!
+        let wikiString = String(parseObject["Wikipedia"] as! NSString)
+        
+        self.wikipediaLink = NSURL(string: wikiString) ?? NSURL()
         
         self.index = parseObject["index"] as! Int
         
