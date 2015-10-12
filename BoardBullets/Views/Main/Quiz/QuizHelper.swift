@@ -25,6 +25,7 @@ class QuizHelper {
                 a.append(i)
             }
         }
+        print("random is \(a)")
         return a
     }
     
@@ -36,21 +37,17 @@ class QuizHelper {
         
         var queries: [PFQuery]
         if InAppPurchase.bought {
-            queries = genRandom(numberOfQuestions - 1, limit: cachedQuestionCount()).map {
-                questionQuery.whereKey("index", equalTo: $0)
+            queries = genRandom(numberOfQuestions, limit: cachedQuestionCount()).map {
+                let qq = QuizHelper.questionQuery()
+                return qq.whereKey("index", equalTo: $0)
             }
         } else {
-            
             let indx = (0...(numberOfQuestions-1)).map { $0 }
-            print("lol bro \(indx)")
             queries = indx.map {
                 let qq = QuizHelper.questionQuery()
                 return qq.whereKey("index", equalTo: $0)
             }
-            print("ayy")
-            print(queries)
         }
-        
         
         
         var errPointer: NSError?

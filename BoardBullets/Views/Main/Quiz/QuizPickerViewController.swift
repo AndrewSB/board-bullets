@@ -56,7 +56,7 @@ class QuizPickerViewController: UIViewController {
                 destination.numberOfQuestions = 5
                 destination.quizData = self.quizData!.dropLast(14).map { $0 }
             }
-            print("set things")
+            print("set things \(destination.quizData)")
             if timedButton.titleLabel?.font == UIFont(name: "HelveticaNeue", size: 24) {
                 destination.timeTrail = true
             }

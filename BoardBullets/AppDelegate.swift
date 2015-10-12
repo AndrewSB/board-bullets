@@ -34,10 +34,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let loggedIn = PFUser.currentUser() != nil
         let storyboard = loggedIn ? "Main" : "Login"
-    
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
-        window?.makeKeyAndVisible()
+        self.window?.rootViewController = FakeLaunchViewController()
+        self.window?.makeKeyAndVisible()
+        
+        
+        PFUser.currentUser()?.fetchInBackgroundWithBlock { _ in
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            self.window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
+            self.window?.makeKeyAndVisible()
+        }
         
         return true
     }

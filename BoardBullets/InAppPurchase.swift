@@ -47,8 +47,11 @@ class InAppPurchase: NSObject {
     
     class var boughtFromParse: Bool {
         get {
+            print("getting")
             if let parseUser = PFUser.currentUser() {
+                print(parseUser)
                 if let remoteBought = parseUser["bought"] as? Bool {
+                    print(remoteBought)
                     return remoteBought
                 }
             }

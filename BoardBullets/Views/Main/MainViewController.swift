@@ -10,6 +10,7 @@ import UIKit
 import StoreKit
 
 import IQKeyboardManager
+import Parse
 
 class MainViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
@@ -24,16 +25,18 @@ class MainViewController: UIViewController {
         
         IQKeyboardManager.sharedManager().enable = true
         
-        switch InAppPurchase.bought {
-        case true:
-            getFullVersionButton.hidden = true
-        case false:
-            submitAQuestionButton.hidden = true
-            myPerformanceButton.hidden = true
+        PFUser.currentUser()!.fetchInBackgroundWithBlock { _ in
+            switch InAppPurchase.bought {
+            case true:
+                self.getFullVersionButton.hidden = true
+            case false:
+                self.submitAQuestionButton.hidden = true
+                self.myPerformanceButton.hidden = true
+            }
+            
+            self.addTextDismiss()
+            self.view.endEditing(true)
         }
-        
-        addTextDismiss()
-        view.endEditing(true)
     }
     
     @IBAction func didHitGetFullVersion() {
