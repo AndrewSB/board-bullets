@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         Async.background {
-            let _ = genQuiz(0) // cache questions asap
+            let _ = QuizHelper.cachedQuestionCount() // cache questions asap
         }
         
         
