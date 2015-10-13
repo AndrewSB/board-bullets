@@ -22,6 +22,13 @@ class QuizPickerViewController: UIViewController {
         
         startQuizButton.setTitle("loading...", forState: .Normal)
         startQuizButton.userInteractionEnabled = false
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        startQuizButton.setTitle("loading...", forState: .Normal)
+        startQuizButton.userInteractionEnabled = false
         
         Async.background {
             self.quizData = QuizHelper.genQuiz(20, vc: self)
@@ -31,10 +38,6 @@ class QuizPickerViewController: UIViewController {
                 self.startQuizButton.userInteractionEnabled = true
             }
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
         
         if !InAppPurchase.bought {
             let notFullVersionAlert = UIAlertController(title: "Twenty Demo Questions", message: "In this demo version of the app you get 20 demo questions to try out. The full version has over 1300", preferredStyle: .Alert)

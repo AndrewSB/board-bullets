@@ -61,7 +61,7 @@ class QuizDoneViewController: UIViewController, UICollectionViewDelegateFlowLayo
         cell.textLabel.text = questionItem.question
         cell.layer.backgroundColor = UIColor.whiteColor().CGColor
 
-        cell.layer.borderWidth = 1
+        cell.layer.borderWidth = 2
         cell.layer.cornerRadius = 2
         
         if questionItem.answer != questionItem.chosen {
