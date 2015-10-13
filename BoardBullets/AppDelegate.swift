@@ -39,11 +39,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = FakeLaunchViewController()
         self.window?.makeKeyAndVisible()
         
-        
-        PFUser.currentUser()?.fetchInBackgroundWithBlock { _ in
+        let completion = {
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
             self.window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
             self.window?.makeKeyAndVisible()
+        }
+        
+        if loggedIn {
+            PFUser.currentUser()?.fetchInBackgroundWithBlock { _ in
+                completion()
+            }
+        } else {
+            completion()
         }
         
         return true
