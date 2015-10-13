@@ -51,6 +51,21 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    @IBAction func didHitSocialButton(sender: UIButton) {
+        switch sender.titleLabel!.text! {
+        case "facebook":
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/boardbullets")!)
+        case "twitter":
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/BoardBullets")!)
+        case "instagram":
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://instagram.com/boardbullets/")!)
+        case "website":
+            UIApplication.sharedApplication().openURL(NSURL(string: "http://www.medboardbullets.com/")!)
+        default: ()
+        }
+    }
+    
+    
     @IBAction func logoutButtonHit(sender: AnyObject) {
         PFUser.logOut()
         appDelegate.switchToLogin()
