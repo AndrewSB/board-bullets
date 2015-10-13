@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if loggedIn {
-            PFUser.currentUser()?.fetchInBackgroundWithBlock { _ in
+            PFUser.currentUser()!.fetchInBackgroundWithBlock { _ in
                 completion()
             }
         } else {

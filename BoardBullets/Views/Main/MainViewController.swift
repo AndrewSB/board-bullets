@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
             case true:
                 self.getFullVersionButton.hidden = true
             case false:
-                self.submitAQuestionButton.hidden = true
+                self.getFullVersionButton.hidden = false
                 self.myPerformanceButton.hidden = true
             }
             

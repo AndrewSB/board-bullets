@@ -162,8 +162,8 @@
                                     <segue destination="8yz-Oy-S2v" kind="show" id="JlJ-SL-kTz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="164-4W-bD5">
-                                <rect key="frame" x="229" y="420.5" width="142" height="41"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="164-4W-bD5">
+                                <rect key="frame" x="229" y="443" width="142" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="get full version">
@@ -193,10 +193,10 @@
                             <constraint firstItem="6iU-tU-VGu" firstAttribute="leading" secondItem="Dkc-pV-aKK" secondAttribute="trailing" id="MPZ-o3-LYp"/>
                             <constraint firstItem="2bC-K7-S1e" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="10" id="OAM-Qa-4He"/>
                             <constraint firstItem="lR3-AF-JMO" firstAttribute="leading" secondItem="6iU-tU-VGu" secondAttribute="trailing" constant="-2" id="RZZ-Ix-Mku"/>
-                            <constraint firstItem="Vb6-wQ-unI" firstAttribute="top" secondItem="164-4W-bD5" secondAttribute="bottom" constant="28" id="UQ1-rz-Q1x"/>
                             <constraint firstItem="PMe-ac-hWU" firstAttribute="height" secondItem="gDn-MJ-oDJ" secondAttribute="height" id="buc-gM-Xgk"/>
                             <constraint firstItem="Dkc-pV-aKK" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="8" id="cHK-Pq-gdi"/>
                             <constraint firstItem="PMe-ac-hWU" firstAttribute="top" secondItem="Agi-LP-So5" secondAttribute="bottom" constant="-20" id="gu9-ES-uNj"/>
+                            <constraint firstItem="164-4W-bD5" firstAttribute="centerY" secondItem="YAA-RT-oQC" secondAttribute="centerY" id="iQj-y1-gHF"/>
                             <constraint firstItem="164-4W-bD5" firstAttribute="centerX" secondItem="7qb-a3-gcp" secondAttribute="centerX" id="j40-RB-KNd"/>
                             <constraint firstAttribute="centerX" secondItem="PMe-ac-hWU" secondAttribute="centerX" id="kce-rw-qgA"/>
                             <constraint firstItem="dYe-MT-yKv" firstAttribute="leading" secondItem="2bC-K7-S1e" secondAttribute="trailing" constant="-2" id="mwO-9z-hQl"/>
@@ -210,7 +210,6 @@
                             <constraint firstItem="3Fk-VT-9xe" firstAttribute="top" secondItem="b18-XE-GAM" secondAttribute="bottom" constant="5" id="wOa-RF-8fL"/>
                             <constraint firstItem="Vb6-wQ-unI" firstAttribute="top" secondItem="YAA-RT-oQC" secondAttribute="bottom" constant="5" id="wjq-02-wgq"/>
                             <constraint firstItem="Agi-LP-So5" firstAttribute="leading" secondItem="7qb-a3-gcp" secondAttribute="centerXWithinMargins" constant="-7" id="xRd-Qe-JAc"/>
-                            <constraint firstItem="164-4W-bD5" firstAttribute="top" secondItem="b18-XE-GAM" secondAttribute="bottom" constant="28" id="yJL-85-udA"/>
                             <constraint firstItem="fVA-uf-wYo" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="105" id="ysf-EN-8Ue"/>
                             <constraint firstItem="lR3-AF-JMO" firstAttribute="top" secondItem="hPp-oE-TmA" secondAttribute="bottom" constant="10" id="zjY-lh-MC9"/>
                         </constraints>
