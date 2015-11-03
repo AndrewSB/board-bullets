@@ -38,20 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = FakeLaunchViewController()
         self.window?.makeKeyAndVisible()
         
-        let completion = {
-            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-            self.window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
-            self.window?.makeKeyAndVisible()
-        }
-        
-        if loggedIn {
-            PFUser.currentUser()!.fetchInBackgroundWithBlock { _ in
-                completion()
-            }
-        } else {
-            completion()
-        }
-        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = (UIStoryboard(name: storyboard, bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
+        self.window?.makeKeyAndVisible()
+  
         return true
     }
     
@@ -65,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(application: UIApplication) {
         FBSDKAppEvents.activateApp()
     }
+    
     func switchToMain() {
         window?.rootViewController = (UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController()!)
     }

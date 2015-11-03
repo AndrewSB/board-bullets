@@ -24,18 +24,7 @@ class MainViewController: UIViewController {
         
         IQKeyboardManager.sharedManager().enable = true
         
-        PFUser.currentUser()!.fetchInBackgroundWithBlock { _ in
-            switch InAppPurchase.bought {
-            case true:
-                self.getFullVersionButton.hidden = true
-            case false:
-                self.getFullVersionButton.hidden = false
-                self.myPerformanceButton.hidden = true
-            }
-            
-            self.addTextDismiss()
-            self.view.endEditing(true)
-        }
+        self.getFullVersionButton.hidden = true
     }
     
     @IBAction func didHitGetFullVersion() {

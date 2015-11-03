@@ -39,11 +39,6 @@ class QuizPickerViewController: UIViewController {
             }
         }
         
-        if !InAppPurchase.bought {
-            let notFullVersionAlert = UIAlertController(title: "Twenty Demo Questions", message: "In this demo version of the app you get 20 demo questions to try out. The full version has over 1500", preferredStyle: .Alert)
-            notFullVersionAlert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: nil))
-            self.presentViewController(notFullVersionAlert, animated: true, completion: nil)
-        }
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

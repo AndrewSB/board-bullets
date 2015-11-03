@@ -36,17 +36,9 @@ class QuizHelper {
         questionQuery.whereKey("approved", equalTo: true)
         
         var queries: [PFQuery]
-        if InAppPurchase.bought {
-            queries = genRandom(numberOfQuestions, limit: cachedQuestionCount()).map {
-                let qq = QuizHelper.questionQuery()
-                return qq.whereKey("index", equalTo: $0)
-            }
-        } else {
-            let indx = (0...(numberOfQuestions-1)).map { $0 }
-            queries = indx.map {
-                let qq = QuizHelper.questionQuery()
-                return qq.whereKey("index", equalTo: $0)
-            }
+        queries = genRandom(numberOfQuestions, limit: cachedQuestionCount()).map {
+            let qq = QuizHelper.questionQuery()
+            return qq.whereKey("index", equalTo: $0)
         }
         
         
