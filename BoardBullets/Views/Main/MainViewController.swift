@@ -9,7 +9,6 @@
 import UIKit
 import StoreKit
 
-import IQKeyboardManager
 import Parse
 
 class MainViewController: UIViewController {

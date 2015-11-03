@@ -11,7 +11,6 @@ import Fabric
 import Crashlytics
 import Parse
 import Bolts
-import IQKeyboardManager
 import Async
 
 @UIApplicationMain
