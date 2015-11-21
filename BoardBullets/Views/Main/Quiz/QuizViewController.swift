@@ -31,6 +31,10 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        [option1Button, option2Button, option3Button].forEach {
+            $0.titleLabel?.textAlignment = .Center
+        }
+        
         loadQuestionInitial()
         configureTimer()
         configureQuestionNav()
